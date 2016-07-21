@@ -1,0 +1,24 @@
+//
+//  kqyPrefixHeader.pch
+//  百思不得姐g1
+//
+//  Created by kqy on 7/21/16.
+//  Copyright © 2016 kqy. All rights reserved.
+//
+
+#ifndef kqyPrefixHeader_pch
+#define kqyPrefixHeader_pch
+
+
+#define kqyRandomColor [UIColor colorWithRed:arc4random_uniform(255.0) green:arc4random_uniform(255.0) blue:arc4random(255.0) alpha:1]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#define kqyLog(...)  NSLog(__VA_ARGS__)
+#else
+#define kqyLog(...)
+#endif
+
+#define kqyLogFunc kqyLog(@"%s",  __func__);
+
+/* kqyPrefixHeader_pch */
