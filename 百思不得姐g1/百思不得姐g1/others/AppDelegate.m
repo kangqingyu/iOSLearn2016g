@@ -22,6 +22,8 @@
     kqyTabBarViewController *mainTabBarVC = [[kqyTabBarViewController alloc] init];
     _window.rootViewController = mainTabBarVC;
     [_window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
