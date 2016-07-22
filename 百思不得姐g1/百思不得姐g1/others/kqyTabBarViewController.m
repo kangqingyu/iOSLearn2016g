@@ -14,10 +14,24 @@
 #import "kqy4meViewController.h"
 
 @interface kqyTabBarViewController ()
+@property (nonatomic, strong) UIButton *publishBtn;
 
 @end
 
 @implementation kqyTabBarViewController
+- (UIButton *)publishBtn {
+    NSLog(@"lazy did load");
+    if (_publishBtn == nil) {
+    _publishBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        _publishBtn.backgroundColor = kqyRandomColor;
+    [_publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+    [_publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+        _publishBtn.frame = CGRectMake(0,0,self.tabBar.frame.size.width * 0.2, self.tabBar.frame.size.height);
+        _publishBtn.center = CGPointMake(self.tabBar.frame.size.width * 0.5, self.tabBar.frame.size.height * 0.5);
+    [_publishBtn addTarget:self action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _publishBtn;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,27 +51,24 @@
 }
 - (void) publishButtonClick {
     kqyLog(@"publish>..click");
+    kqy1essentialViewController *test1essVC = [[kqy1essentialViewController alloc] init];
+    [self presentViewController:test1essVC animated:YES completion:nil];
 }
 - (void)setOneChildVC:(UIViewController *) vc andTitle:(NSString *)title andImage:(NSString *)image andSelectedImg:(NSString *)selectedImg {
     vc.view.backgroundColor = kqyRandomColor;
     vc.tabBarItem.title = title;
+    // if image
+    if (image.length > 0) {
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImg];
+    }
     [self addChildViewController:vc];
     
 }
 - (void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:YES];
+    [super viewWillAppear:animated];
     
-    UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-    [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
-    //这样加按钮，并不是在正中间。 ??????
-    publishButton.center = CGPointMake(self.tabBar.frame.size.width * 0.5, self.tabBar.frame.size.height * 0.5);
-    publishButton.frame = CGRectMake(0,0,self.tabBar.frame.size.width * 0.2, self.tabBar.frame.size.height);
-    [publishButton addTarget:self action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
-//    [publishButton sizeToFit];
-    [self.tabBar addSubview:publishButton ];
+    [self.tabBar addSubview:self.publishBtn];
 }
 
 @end
