@@ -19,6 +19,7 @@
 		688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AF21D40A86100957101 /* kqy3noticeTableViewController.m */; };
 		688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AF91D40ABE100957101 /* kqy4meViewController.m */; };
 		688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AFF1D41F72B00957101 /* kqyTabBar.m */; };
+		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		688C7AF91D40ABE100957101 /* kqy4meViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqy4meViewController.m; sourceTree = "<group>"; };
 		688C7AFE1D41F72B00957101 /* kqyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyTabBar.h; sourceTree = "<group>"; };
 		688C7AFF1D41F72B00957101 /* kqyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBar.m; sourceTree = "<group>"; };
+		688C7B031D43047000957101 /* UIView+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+kqyExtension.h"; sourceTree = "<group>"; };
+		688C7B041D43047000957101 /* UIView+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+kqyExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				688C7AE91D40A67200957101 /* kqyTabBarViewController.m */,
 				688C7AFE1D41F72B00957101 /* kqyTabBar.h */,
 				688C7AFF1D41F72B00957101 /* kqyTabBar.m */,
+				688C7B031D43047000957101 /* UIView+kqyExtension.h */,
+				688C7B041D43047000957101 /* UIView+kqyExtension.m */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 			files = (
 				688C7AEA1D40A67200957101 /* kqyTabBarViewController.m in Sources */,
 				688C7AED1D40A81F00957101 /* kqy1essentialViewController.m in Sources */,
+				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
 				688C7AF01D40A85500957101 /* kqy2newViewController.m in Sources */,
