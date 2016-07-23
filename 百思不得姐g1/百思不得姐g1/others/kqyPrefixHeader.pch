@@ -10,7 +10,7 @@
 #define kqyPrefixHeader_pch
 
 
-#ifdef __OBJC
+#ifdef __OBJC__
 
 #import "UIView+kqyExtension"
 #define kqyRandomColor kqyColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))

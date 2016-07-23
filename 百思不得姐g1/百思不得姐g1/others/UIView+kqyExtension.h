@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (kqyExtension)
-@property (nonatomic, assign) CGFloat *kqy_width;
-@property (nonatomic, assign) CGFloat *kqy_height;
+@property (nonatomic, assign) CGFloat kqy_width;
+@property (nonatomic, assign) CGFloat kqy_height;
 
 @end

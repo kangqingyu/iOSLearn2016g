@@ -41,6 +41,7 @@
     
         self.publishBtn.frame = CGRectMake(0,0,self.frame.size.width * 0.2, self.frame.size.height);
         _publishBtn.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    
 }
 
 - (UIButton *)publishBtn {

@@ -9,19 +9,19 @@
 #import "UIView+kqyExtension.h"
 
 @implementation UIView (kqyExtension)
-- (CGFloat *)kqy_width {
+- (CGFloat )kqy_width {
     return self.frame.size.width;
 }
-- (CGFloat *)kqy_height {
+- (CGFloat )kqy_height {
     return self.frame.size.height;
 }
 
-- (void)setKqy_width:(CGFloat *)kqy_width {
-    self.kqy_width = kqy_width;
+- (void)setKqy_width:(CGFloat )kqy_width {
+//    self.kqy_width = kqy_width;
 }
 
-- (void)setKqy_height:(CGFloat *)kqy_height {
-    self.kqy_height = kqy_height;
+- (void)setKqy_height:(CGFloat )kqy_height {
+//    self.kqy_height = kqy_height;
 }
 
 @end
