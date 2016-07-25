@@ -19,7 +19,7 @@
 @property (nonatomic, assign) CGFloat kqy_right;
 @property (nonatomic, assign) CGFloat kqy_bottom;
 
-
+@property (nonatomic, assign) CGSize kqy_size;
 
 
 @end

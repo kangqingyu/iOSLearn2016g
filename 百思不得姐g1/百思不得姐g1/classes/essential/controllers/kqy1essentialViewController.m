@@ -20,13 +20,27 @@
     // Do any additional setup after loading the view.
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    [backBtn sizeToFit];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+//    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+//    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+//    backBtn.kqy_size = [UIImage imageNamed:@"MainTagSubIcon"].size;
+//    backBtn.kqy_size = [backBtn imageForState:UIControlStateNormal].size;
     
+//    [backBtn sizeToFit];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    UIBarButtonItem *leftMainItem = [
+    self.navigationItem.leftBarButtonItem = [self setItemImage:@"MainTagSubIcon" andHighlightImage:@"MainTagSubIconClick" andAction:@selector(backClick)];
+    
+}
+- (UIBarButtonItem *) setItemImage:(NSString *)image andHighlightImage:(NSString *) highLightImage andAction:(SEL)action {
+    UIButton *itemBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [itemBtn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [itemBtn setImage:[UIImage imageNamed:highLightImage] forState:UIControlStateHighlighted];
+    itemBtn.kqy_size = [itemBtn imageForState:UIControlStateNormal].size;
+    [itemBtn addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:itemBtn];
+    return barItem;
 }
 
 - (void) backClick {

@@ -75,5 +75,12 @@
     self.kqy_y = kqy_bottom - self.kqy_height;
 }
 
-
+- (CGSize)kqy_size {
+    return self.frame.size;
+}
+- (void)setKqy_size:(CGSize)kqy_size {
+    CGRect tempSize = self.frame;
+    tempSize.size = kqy_size;
+    self.frame = tempSize;
+}
 @end
