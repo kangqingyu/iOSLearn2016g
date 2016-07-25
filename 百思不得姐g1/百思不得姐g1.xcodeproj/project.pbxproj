@@ -84,6 +84,7 @@
 				688C7AC51D40A5B800957101 /* LaunchScreen.storyboard */,
 				688C7AE01D40A5DD00957101 /* others */,
 				688C7ACE1D40A5DD00957101 /* classes */,
+				688C7AF41D40A88800957101 /* me */,
 				688C7ADF1D40A5DD00957101 /* others */,
 				688C7AC81D40A5B800957101 /* Info.plist */,
 				688C7AC31D40A5B800957101 /* Assets.xcassets */,
@@ -212,7 +213,6 @@
 		688C7ADF1D40A5DD00957101 /* others */ = {
 			isa = PBXGroup;
 			children = (
-				688C7AF41D40A88800957101 /* me */,
 			);
 			name = others;
 			path = classes/others;
@@ -244,7 +244,7 @@
 				688C7AF71D40A88800957101 /* views */,
 			);
 			name = me;
-			path = ../notice/me;
+			path = classes/notice/me;
 			sourceTree = "<group>";
 		};
 		688C7AF51D40A88800957101 /* controllers */ = {

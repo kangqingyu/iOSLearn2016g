@@ -11,5 +11,15 @@
 @interface UIView (kqyExtension)
 @property (nonatomic, assign) CGFloat kqy_width;
 @property (nonatomic, assign) CGFloat kqy_height;
+@property (nonatomic, assign) CGFloat kqy_x;
+@property (nonatomic, assign) CGFloat kqy_y;
+
+@property (nonatomic, assign) CGFloat kqy_centerX;
+@property (nonatomic, assign) CGFloat kqy_centerY;
+@property (nonatomic, assign) CGFloat kqy_right;
+@property (nonatomic, assign) CGFloat kqy_bottom;
+
+
+
 
 @end

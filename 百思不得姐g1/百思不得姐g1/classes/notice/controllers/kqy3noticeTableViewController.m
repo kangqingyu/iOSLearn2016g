@@ -16,14 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = kqyRandomColor;
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.title = @"attention";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIButton *friendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [friendBtn setImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
+    [friendBtn setImage:[UIImage imageNamed:@"friendsTrend_login_click"] forState:UIControlStateHighlighted];
+    [friendBtn sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:friendBtn];
+    [friendBtn addTarget:self action:@selector(friednClick) forControlEvents:UIControlEventTouchUpInside];
+    
 }
-
+- (void) friendClick {
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

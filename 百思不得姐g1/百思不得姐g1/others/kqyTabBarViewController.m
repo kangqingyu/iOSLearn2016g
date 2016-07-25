@@ -40,7 +40,7 @@
 }
 
 - (void)setOneChildVC:(UIViewController *) vc andTitle:(NSString *)title andImage:(NSString *)image andSelectedImg:(NSString *)selectedImg {
-    vc.view.backgroundColor = kqyRandomColor;
+    
     vc.tabBarItem.title = title;
     // if image
     if (image.length > 0) {

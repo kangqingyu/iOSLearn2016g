@@ -18,11 +18,9 @@
     [super layoutSubviews];
     int i = 0;
     
-    
     CGFloat tabbarWidth = self.frame.size.width * 0.2;
     CGFloat tabbarHeight = self.frame.size.height ;
     
-//    [self presentViewController:test1essVC animated:YES completion:nil];
     for (UIView *subView in self.subviews) {
         if (subView.class != NSClassFromString(@"UITabBarButton")) {
             continue;
@@ -31,7 +29,6 @@
             continue;
         }
         
-        NSLog(@"i:%zd",i);
         subView.frame  = CGRectMake(i * tabbarWidth, 0, tabbarWidth, tabbarHeight);
         if (i == 1) {
             ++ i;

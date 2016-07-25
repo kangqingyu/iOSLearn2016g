@@ -18,6 +18,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
     // Do any additional setup after loading the view.
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    [backBtn sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    
+}
+
+- (void) backClick {
+    kqyLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

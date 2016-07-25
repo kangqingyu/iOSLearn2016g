@@ -11,5 +11,16 @@
 @implementation kqy2newViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = kqyRandomColor;
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    UIButton *tagBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+    [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    [tagBtn sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagBtn];
+    
+    
+    
 }
 @end
