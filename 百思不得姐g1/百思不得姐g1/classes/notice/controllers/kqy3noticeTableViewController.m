@@ -25,7 +25,7 @@
     [friendBtn setImage:[UIImage imageNamed:@"friendsTrend_login_click"] forState:UIControlStateHighlighted];
     [friendBtn sizeToFit];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:friendBtn];
-    [friendBtn addTarget:self action:@selector(friednClick) forControlEvents:UIControlEventTouchUpInside];
+    [friendBtn addTarget:self action:@selector(friendClick) forControlEvents:UIControlEventTouchUpInside];
     
 }
 - (void) friendClick {

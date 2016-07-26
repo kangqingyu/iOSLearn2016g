@@ -20,6 +20,8 @@
 		688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AF91D40ABE100957101 /* kqy4meViewController.m */; };
 		688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AFF1D41F72B00957101 /* kqyTabBar.m */; };
 		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
+		68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */; };
+		68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA51D46FF9D00BFBD4D /* settingVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		688C7AFF1D41F72B00957101 /* kqyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBar.m; sourceTree = "<group>"; };
 		688C7B031D43047000957101 /* UIView+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+kqyExtension.h"; sourceTree = "<group>"; };
 		688C7B041D43047000957101 /* UIView+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+kqyExtension.m"; sourceTree = "<group>"; };
+		68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+kqyExtension.h"; sourceTree = "<group>"; };
+		68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+kqyExtension.m"; sourceTree = "<group>"; };
+		68EDCEA41D46FF9D00BFBD4D /* settingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingVc.h; sourceTree = "<group>"; };
+		68EDCEA51D46FF9D00BFBD4D /* settingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +238,8 @@
 				688C7AFF1D41F72B00957101 /* kqyTabBar.m */,
 				688C7B031D43047000957101 /* UIView+kqyExtension.h */,
 				688C7B041D43047000957101 /* UIView+kqyExtension.m */,
+				68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */,
+				68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -252,6 +260,8 @@
 			children = (
 				688C7AF81D40ABE100957101 /* kqy4meViewController.h */,
 				688C7AF91D40ABE100957101 /* kqy4meViewController.m */,
+				68EDCEA41D46FF9D00BFBD4D /* settingVc.h */,
+				68EDCEA51D46FF9D00BFBD4D /* settingVc.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -345,8 +355,10 @@
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
+				68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */,
 				688C7AF01D40A85500957101 /* kqy2newViewController.m in Sources */,
 				688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */,
+				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
 				688C7AE31D40A5F600957101 /* AppDelegate.m in Sources */,
 				688C7AE71D40A66500957101 /* kqyNavViewController.m in Sources */,
 				688C7AB91D40A5B800957101 /* main.m in Sources */,
@@ -500,6 +512,7 @@
 				688C7ACD1D40A5B800957101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

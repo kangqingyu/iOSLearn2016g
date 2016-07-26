@@ -7,50 +7,40 @@
 //
 
 #import "kqy4meViewController.h"
-
+#import "settingVc.h"
 @interface kqy4meViewController ()
 
 @end
 
 @implementation kqy4meViewController
-
+- (void) testBtnClick {
+    NSLog(@"test click");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
-    self.navigationItem.title = @"me";
-    
+    self.navigationItem.title = @"me我的控制作器制作制";
+    self.navigationItem.hidesBackButton = YES;
+    UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(150, 300, 60, 40);
+    [self.view addSubview:testBtn];
+    [testBtn addTarget:self action:@selector(testBtnClick) forControlEvents:UIControlEventTouchUpInside];
     // right 1
-    UIButton *setttingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [setttingBtn setImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [setttingBtn setImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    [setttingBtn sizeToFit];
-    [setttingBtn addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:setttingBtn];
-    // right 2
-    UIButton *moonBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    UIBarButtonItem *moonItem = [[UIBarButtonItem alloc] initWithCustomView:moonBtn];
-    [moonBtn addTarget:self action:@selector(moonClick) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *settingItem = [UIBarButtonItem setItemImage:@"mine-setting-icon" andHighlightImage:@"mine-setting-icon-click" andTarget:self andAction:@selector(settingClick)];
     
+    // right 2
+    UIBarButtonItem *moonItem = [UIBarButtonItem setItemImage:@"mine-moon-icon" andHighlightImage:@"mine-moon-icon-click" andTarget:self andAction:@selector(moonClick)];
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
     
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) settingClick {
+    settingVc *settingVC = [[settingVc alloc] init];
+    settingVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) moonClick {
+    NSLog(@"moon click");
 }
-*/
 
 @end
