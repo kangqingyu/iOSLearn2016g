@@ -14,24 +14,25 @@
 
 @implementation kqyNavViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.childViewControllers.count > 0) {
+        UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
+        [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
+        [backBtn setTitle:@"back" forState:UIControlStateNormal];
+        [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+        [backBtn sizeToFit];
+        backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -18, 0, 0);
+        [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    }
+    [super pushViewController:viewController animated:animated];
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) backClick {
+    [self.navigationController popViewControllerAnimated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

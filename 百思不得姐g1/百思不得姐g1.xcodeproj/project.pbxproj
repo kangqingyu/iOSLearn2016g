@@ -22,6 +22,8 @@
 		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
 		68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */; };
 		68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA51D46FF9D00BFBD4D /* settingVc.m */; };
+		68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */; };
+		68EDCEAC1D4746B600BFBD4D /* newViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEAB1D4746B600BFBD4D /* newViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+kqyExtension.m"; sourceTree = "<group>"; };
 		68EDCEA41D46FF9D00BFBD4D /* settingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingVc.h; sourceTree = "<group>"; };
 		68EDCEA51D46FF9D00BFBD4D /* settingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingVc.m; sourceTree = "<group>"; };
+		68EDCEA71D47465E00BFBD4D /* kqyBaseTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyBaseTestViewController.h; sourceTree = "<group>"; };
+		68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyBaseTestViewController.m; sourceTree = "<group>"; };
+		68EDCEAA1D4746B600BFBD4D /* newViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newViewController.h; sourceTree = "<group>"; };
+		68EDCEAB1D4746B600BFBD4D /* newViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,8 @@
 			children = (
 				688C7AEE1D40A85500957101 /* kqy2newViewController.h */,
 				688C7AEF1D40A85500957101 /* kqy2newViewController.m */,
+				68EDCEAA1D4746B600BFBD4D /* newViewController.h */,
+				68EDCEAB1D4746B600BFBD4D /* newViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 				688C7AF91D40ABE100957101 /* kqy4meViewController.m */,
 				68EDCEA41D46FF9D00BFBD4D /* settingVc.h */,
 				68EDCEA51D46FF9D00BFBD4D /* settingVc.m */,
+				68EDCEA71D47465E00BFBD4D /* kqyBaseTestViewController.h */,
+				68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -355,8 +365,10 @@
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
+				68EDCEAC1D4746B600BFBD4D /* newViewController.m in Sources */,
 				68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */,
 				688C7AF01D40A85500957101 /* kqy2newViewController.m in Sources */,
+				68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */,
 				688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */,
 				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
 				688C7AE31D40A5F600957101 /* AppDelegate.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "kqy2newViewController.h"
-
+#import "newViewController.h"
 @implementation kqy2newViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -17,10 +17,14 @@
     UIButton *tagBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
     [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    [tagBtn addTarget:self action:@selector(newClick) forControlEvents:UIControlEventTouchUpInside];
     [tagBtn sizeToFit];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagBtn];
     
-    
+}
+- (void) newClick {
+    newViewController *newVc = [[newViewController alloc] init];
+    [self.navigationController pushViewController:newVc animated:YES];
     
 }
 @end
