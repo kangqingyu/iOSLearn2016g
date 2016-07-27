@@ -7,12 +7,16 @@
 //
 
 #import "recommendFriendViewController.h"
-
+#import "kqyLoginRegisterViewController.h"
 @interface recommendFriendViewController ()
 
 @end
 
 @implementation recommendFriendViewController
+- (IBAction)loginClick {
+    kqyLoginRegisterViewController *loginRegesierVc = [[kqyLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegesierVc animated:YES completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

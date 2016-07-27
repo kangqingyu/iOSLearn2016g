@@ -15,11 +15,54 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3G-Yw-OE4">
-                    <rect key="frame" x="116" y="119" width="51" height="31"/>
-                </switch>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jpG-s0-vn3">
+                    <rect key="frame" x="143" y="61" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="TvY-Eo-WEb"/>
+                        <constraint firstAttribute="height" constant="51" id="jdB-p6-2zw"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-ls-cT1">
+                    <rect key="frame" x="179" y="375" width="243" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="login right now" backgroundImage="friendsTrend_login">
+                        <color key="titleColor" red="0.85194798520000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="0.45065789470000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="friendsTrend_login_click"/>
+                    <connections>
+                        <action selector="loginClick" destination="-1" eventType="touchUpInside" id="loJ-rT-WsW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFt-Tw-9QD">
+                    <rect key="frame" x="35" y="87" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQf-Ma-i9y">
+                    <rect key="frame" x="162" y="280" width="277" height="82"/>
+                    <string key="text">百思不得解这是什么 这个是
+dlkfajsdjsklafjlks
+dlkfdsa 什么的了
+ 是呀。这个好的了呀</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qQf-Ma-i9y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4MQ-by-XGW"/>
+                <constraint firstItem="qQf-Ma-i9y" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IRH-Fh-OX5"/>
+                <constraint firstItem="qQf-Ma-i9y" firstAttribute="top" secondItem="jpG-s0-vn3" secondAttribute="bottom" constant="39" id="PH0-Bw-sM6"/>
+                <constraint firstItem="Cd1-ls-cT1" firstAttribute="top" secondItem="qQf-Ma-i9y" secondAttribute="bottom" constant="34" id="PN1-qM-KVO"/>
+                <constraint firstItem="Cd1-ls-cT1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q70-WL-hJg"/>
+                <constraint firstItem="jpG-s0-vn3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mlw-dC-TUo"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
 </document>
