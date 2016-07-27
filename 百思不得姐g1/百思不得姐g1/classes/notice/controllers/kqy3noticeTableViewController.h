@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface kqy3noticeTableViewController : UITableViewController
+@interface kqy3noticeTableViewController : UIViewController
 
 @end

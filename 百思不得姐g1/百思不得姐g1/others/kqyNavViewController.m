@@ -8,12 +8,16 @@
 
 #import "kqyNavViewController.h"
 
-@interface kqyNavViewController ()
+@interface kqyNavViewController () <UIGestureRecognizerDelegate>
 
 @end
 
 @implementation kqyNavViewController
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.interactivePopGestureRecognizer.delegate = self;
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) {
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -26,13 +30,31 @@
         [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+        viewController.hidesBottomBarWhenPushed = YES;
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     }
     [super pushViewController:viewController animated:animated];
     
 }
-- (void) backClick {
-    [self.navigationController popViewControllerAnimated:YES];
-}
+//- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+//    return [super popViewControllerAnimated:animated];
+//}
+//- (NSArray<UIViewController *> *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    
+//    [super popToViewController:viewController animated:animated];
+//    return YES;
+//    
+//}
 
+
+- (void) backClick {
+    [ self popViewControllerAnimated:YES];
+}
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+//    if (self.childViewControllers.count == 1) {
+//        return NO;
+//    }
+//    return YES;
+    return self.childViewControllers.count > 1;
+}
 @end

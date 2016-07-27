@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681A9CE21D48937500568316 /* recommendFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CE11D48937500568316 /* recommendFriendViewController.m */; };
+		681A9CE41D48938400568316 /* recommendFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681A9CE31D48938400568316 /* recommendFriendViewController.xib */; };
 		688C7AB91D40A5B800957101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AB81D40A5B800957101 /* main.m */; };
 		688C7AC21D40A5B800957101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC01D40A5B800957101 /* Main.storyboard */; };
 		688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC31D40A5B800957101 /* Assets.xcassets */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		681A9CE01D48937500568316 /* recommendFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recommendFriendViewController.h; sourceTree = "<group>"; };
+		681A9CE11D48937500568316 /* recommendFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recommendFriendViewController.m; sourceTree = "<group>"; };
+		681A9CE31D48938400568316 /* recommendFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommendFriendViewController.xib; sourceTree = "<group>"; };
 		688C7AB41D40A5B800957101 /* 百思不得姐g1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐g1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688C7AB81D40A5B800957101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		688C7AC11D40A5B800957101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -206,6 +211,8 @@
 			children = (
 				688C7AF11D40A86100957101 /* kqy3noticeTableViewController.h */,
 				688C7AF21D40A86100957101 /* kqy3noticeTableViewController.m */,
+				681A9CE01D48937500568316 /* recommendFriendViewController.h */,
+				681A9CE11D48937500568316 /* recommendFriendViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 		688C7ADE1D40A5DD00957101 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				681A9CE31D48938400568316 /* recommendFriendViewController.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -348,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				688C7AC71D40A5B800957101 /* LaunchScreen.storyboard in Resources */,
+				681A9CE41D48938400568316 /* recommendFriendViewController.xib in Resources */,
 				688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */,
 				688C7AC21D40A5B800957101 /* Main.storyboard in Resources */,
 			);
@@ -371,6 +380,7 @@
 				68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */,
 				688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */,
 				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
+				681A9CE21D48937500568316 /* recommendFriendViewController.m in Sources */,
 				688C7AE31D40A5F600957101 /* AppDelegate.m in Sources */,
 				688C7AE71D40A66500957101 /* kqyNavViewController.m in Sources */,
 				688C7AB91D40A5B800957101 /* main.m in Sources */,

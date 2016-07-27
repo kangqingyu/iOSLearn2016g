@@ -70,12 +70,12 @@
     kqy1essentialViewController *test1essVC = [[kqy1essentialViewController alloc] init];
 //    [self presentViewController:test1essVC animated:YES completion:nil];
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+        
+    }
+    return self;
 }
-*/
 
 @end
