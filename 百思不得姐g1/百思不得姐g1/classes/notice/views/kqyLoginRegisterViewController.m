@@ -9,6 +9,8 @@
 #import "kqyLoginRegisterViewController.h"
 
 @interface kqyLoginRegisterViewController ()
+- (IBAction)closeBtn;
+- (IBAction)registerBtn:(id)sender;
 
 @end
 
@@ -28,4 +30,10 @@
     
 }
 
+- (IBAction)closeBtn {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)registerBtn:(id)sender {
+}
 @end

@@ -29,12 +29,12 @@
 }
 - (void) setupChildVc {
     
-    [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[kqy3noticeTableViewController alloc] init] ] andTitle:@"3" andImage:@"tabBar_friendTrends_icon" andSelectedImg:@"tabBar_friendTrends_click_icon"];
     
     [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[kqy1essentialViewController alloc] init ]] andTitle:@"111" andImage:@"tabBar_essence_icon" andSelectedImg:@"tabBar_essence_click_icon"];
     [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[kqy2newViewController alloc] init]] andTitle:@"22" andImage:@"tabBar_new_icon" andSelectedImg:@"tabBar_new_click_icon"];
 //    [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[UIViewController alloc] init]] andTitle:@"" andImage:@"" andSelectedImg:@""];
-   
+   [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[kqy3noticeTableViewController alloc] init] ] andTitle:@"3" andImage:@"tabBar_friendTrends_icon" andSelectedImg:@"tabBar_friendTrends_click_icon"];
+    
     [self setOneChildVC:[[kqyNavViewController alloc] initWithRootViewController:[[kqy4meViewController alloc] init]] andTitle:@"4" andImage:@"tabBar_me_icon" andSelectedImg:@"tabBar_me_click_icon"];
    //change tabbar
     [self setValue:[[kqyTabBar alloc] init] forKey:@"tabBar"];

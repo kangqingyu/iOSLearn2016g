@@ -23,7 +23,6 @@
     _window.rootViewController = mainTabBarVC;
     [_window makeKeyAndVisible];
     
-    
     return YES;
 }
 

@@ -11,9 +11,9 @@
 @implementation loginBtn
 
 - (void)awakeFromNib {
-    self.backgroundColor = [UIColor grayColor];
-    self.imageView.backgroundColor = [UIColor redColor];
-    self.titleLabel.backgroundColor = [UIColor greenColor];
+//    self.backgroundColor = [UIColor grayColor];
+//    self.imageView.backgroundColor = [UIColor redColor];
+//    self.titleLabel.backgroundColor = [UIColor greenColor];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
 
 }
