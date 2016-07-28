@@ -9,6 +9,9 @@
 #import "kqy1essentialViewController.h"
 
 @interface kqy1essentialViewController ()
+@property (nonatomic, weak) UIButton *selectedButton;
+@property (nonatomic, weak) UIView *indicatorView;
+
 
 @end
 
@@ -46,12 +49,21 @@
         [titleBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         titleBtn.frame = CGRectMake(i * titleWidth, 0, titleWidth, titleHeight);
         [titleView addSubview:titleBtn];
+        
+        [titleBtn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     }
-
+    _indicatorView = [[UIView alloc] init];
+    _indicatorView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:_indicatorView];
+    
     
 }
 - (void) titleClick:(UIButton *) titBtn {
     NSLog(@"tit btn click");
+    _selectedButton.selected = NO;
+    titBtn.selected = YES;
+    _selectedButton = titBtn;
+    
 }
 
 - (void) setupScrollView {
