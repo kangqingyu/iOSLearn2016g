@@ -11,6 +11,7 @@
 		681A9CE41D48938400568316 /* recommendFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681A9CE31D48938400568316 /* recommendFriendViewController.xib */; };
 		681A9CE81D48A1CB00568316 /* kqyLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CE61D48A1CB00568316 /* kqyLoginRegisterViewController.m */; };
 		681A9CE91D48A1CB00568316 /* kqyLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681A9CE71D48A1CB00568316 /* kqyLoginRegisterViewController.xib */; };
+		681A9CED1D49A19B00568316 /* loginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CEC1D49A19B00568316 /* loginBtn.m */; };
 		688C7AB91D40A5B800957101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AB81D40A5B800957101 /* main.m */; };
 		688C7AC21D40A5B800957101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC01D40A5B800957101 /* Main.storyboard */; };
 		688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC31D40A5B800957101 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 		681A9CE51D48A1CB00568316 /* kqyLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kqyLoginRegisterViewController.h; path = "百思不得姐g1/classes/notice/views/kqyLoginRegisterViewController.h"; sourceTree = SOURCE_ROOT; };
 		681A9CE61D48A1CB00568316 /* kqyLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kqyLoginRegisterViewController.m; path = "百思不得姐g1/classes/notice/views/kqyLoginRegisterViewController.m"; sourceTree = SOURCE_ROOT; };
 		681A9CE71D48A1CB00568316 /* kqyLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = kqyLoginRegisterViewController.xib; path = "百思不得姐g1/classes/notice/views/kqyLoginRegisterViewController.xib"; sourceTree = SOURCE_ROOT; };
+		681A9CEB1D49A19B00568316 /* loginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginBtn.h; sourceTree = "<group>"; };
+		681A9CEC1D49A19B00568316 /* loginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginBtn.m; sourceTree = "<group>"; };
 		688C7AB41D40A5B800957101 /* 百思不得姐g1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐g1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688C7AB81D40A5B800957101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		688C7AC11D40A5B800957101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681A9CEA1D49A11100568316 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				681A9CEB1D49A19B00568316 /* loginBtn.h */,
+				681A9CEC1D49A19B00568316 /* loginBtn.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		688C7AAB1D40A5B800957101 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +276,7 @@
 				688C7B041D43047000957101 /* UIView+kqyExtension.m */,
 				68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */,
 				68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */,
+				681A9CEA1D49A11100568316 /* Login */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -392,6 +405,7 @@
 				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
 				681A9CE21D48937500568316 /* recommendFriendViewController.m in Sources */,
 				688C7AE31D40A5F600957101 /* AppDelegate.m in Sources */,
+				681A9CED1D49A19B00568316 /* loginBtn.m in Sources */,
 				688C7AE71D40A66500957101 /* kqyNavViewController.m in Sources */,
 				688C7AB91D40A5B800957101 /* main.m in Sources */,
 			);
