@@ -52,17 +52,36 @@
         
         [titleBtn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     }
-    _indicatorView = [[UIView alloc] init];
-    _indicatorView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:_indicatorView];
+    UIView *indicatorView = [[UIView alloc] init];
+    indicatorView.backgroundColor = [UIColor redColor];
+    indicatorView.kqy_y = titleView.kqy_height - 1;
+    indicatorView.kqy_height = 1;
+    _indicatorView = indicatorView;
+    
+    [titleView addSubview:_indicatorView];
+    
+    UIButton *lastTitleView = titleView.subviews.firstObject;
+    _indicatorView.kqy_centerX = lastTitleView.kqy_centerX;
+    
     
     
 }
 - (void) titleClick:(UIButton *) titBtn {
-    NSLog(@"tit btn click");
     _selectedButton.selected = NO;
     titBtn.selected = YES;
     _selectedButton = titBtn;
+    //1
+    CGFloat titleW = [titBtn.currentTitle sizeWithAttributes:@{NSFontAttributeName:titBtn.titleLabel.font}].width;
+    // 2
+//    _indicatorView.kqy_width = titBtn.titleLabel.kqy_width;
+    
+    [UIView animateWithDuration:1 animations:^{
+        _indicatorView.kqy_width = titleW + 6;
+//        _indicatorView.kqy_centerX = titBtn.titleLabel.kqy_centerX; 用这个不行，原来这个不错的。。。。
+        _indicatorView.kqy_centerX = titBtn.kqy_centerX;
+    }];
+    
+    
     
 }
 

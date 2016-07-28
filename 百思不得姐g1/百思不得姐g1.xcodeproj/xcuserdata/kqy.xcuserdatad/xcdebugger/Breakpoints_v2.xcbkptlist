@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x767e;&#x601d;&#x4e0d;&#x5f97;&#x59d0;g1/classes/essential/controllers/kqy1essentialViewController.m"
-            timestampString = "491391116.900862"
+            timestampString = "491392476.751031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "-setupTitlesView"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x767e;&#x601d;&#x4e0d;&#x5f97;&#x59d0;g1/classes/essential/controllers/kqy1essentialViewController.m"
-            timestampString = "491391116.900862"
+            timestampString = "491392476.751031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-setupTitlesView"
             landmarkType = "5">
          </BreakpointContent>
