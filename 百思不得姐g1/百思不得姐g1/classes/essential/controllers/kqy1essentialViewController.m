@@ -31,6 +31,7 @@
     [self setupChildView];
     [self setupScrollView];
     [self setupTitlesView];
+    [self addChildVcAfterScrollView ];
 }
 
 - (void) setupUIBarButtonItem {
@@ -87,7 +88,7 @@
     // 2
 //    _indicatorView.kqy_width = titBtn.titleLabel.kqy_width;
     
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.2  animations:^{
         _indicatorView.kqy_width = titleW + 6;
 //        _indicatorView.kqy_centerX = titBtn.titleLabel.kqy_centerX; 用这个不行，原来这个不错的。。。。
         _indicatorView.kqy_centerX = titBtn.kqy_centerX;
@@ -102,29 +103,25 @@
     [self addChildVcAfterScrollView];
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self addChildVcAfterScrollView];
+    
     CGFloat contentOffset = _mainScrollView.contentOffset.x;
     NSInteger index  = contentOffset / self.view.kqy_width;
     titleButton *titBtn = _titleView.subviews[index];
     [self titleClick:titBtn];
     
-    [self addChildVcAfterScrollView];
     
 }
 
 - (void) addChildVcAfterScrollView {
     NSInteger index = self.mainScrollView.contentOffset.x / self.view.kqy_width;
     UIViewController *childVc = self.childViewControllers[index];
-//    UITableView *childVc =  self.childViewControllers[index];
-//    childVc.contentInset = UIEdgeInsetsMake(64 + 35, 0, 29, 0);
     childVc.view.kqy_y = 0;
     childVc.view.kqy_x = index * self.view.kqy_width;
     childVc.view.kqy_width = self.view.kqy_width;
     childVc.view.kqy_height = self.view.kqy_height;
-//    childVc.kqy_y = 0;
-//    childVc.kqy_x = index *self.view.kqy_width;
-//    childVc.kqy_width = self.view.kqy_width;
-//    childVc.kqy_height = self.view.kqy_height;
     
+    childVc.view.frame = self.mainScrollView.bounds;
     [_mainScrollView addSubview:childVc.view];
 }
 
