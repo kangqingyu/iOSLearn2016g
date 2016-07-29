@@ -7,7 +7,12 @@
 //
 
 #import "kqy1essentialViewController.h"
-
+#import "titleButton.h"
+#import "allTableViewController.h"
+#import "voiceTableViewController.h"    
+#import "videoTableViewController.h"
+#import "pictureTableViewController.h"  
+#import "wordTableViewController.h"
 @interface kqy1essentialViewController ()
 @property (nonatomic, weak) UIButton *selectedButton;
 @property (nonatomic, weak) UIView *indicatorView;
@@ -22,6 +27,7 @@
     self.view.backgroundColor = kqyRandomColor;
     [self setupUIBarButtonItem];
     [self setupScrollView];
+    [self setupChildView];
     [self setupTitlesView];
 }
 
@@ -43,14 +49,12 @@
     CGFloat titleHeight = 35;
     NSArray *titleArray =@[@"all", @"videos", @"voices", @"com", @"5"];
     for (int i = 0; i < titleBtnNumber; ++i) {
-        UIButton *titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        titleButton *titleBtn = [titleButton buttonWithType:UIButtonTypeCustom];
         [titleBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [titleBtn setTitle:titleArray[i] forState:UIControlStateNormal];
-        [titleBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         titleBtn.frame = CGRectMake(i * titleWidth, 0, titleWidth, titleHeight);
         [titleView addSubview:titleBtn];
         
-        [titleBtn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     }
     UIView *indicatorView = [[UIView alloc] init];
     indicatorView.backgroundColor = [UIColor redColor];
@@ -60,11 +64,13 @@
     
     [titleView addSubview:_indicatorView];
     
-    UIButton *lastTitleView = titleView.subviews.firstObject;
-    _indicatorView.kqy_centerX = lastTitleView.kqy_centerX;
+    titleButton *firstTitleView = titleView.subviews.firstObject;
+    [firstTitleView.titleLabel sizeToFit];
+    _indicatorView.kqy_centerX = firstTitleView.kqy_centerX;
+    _indicatorView.kqy_width = firstTitleView.titleLabel.kqy_width ;
     
-    
-    
+    firstTitleView.selected = YES;
+    self.selectedButton = firstTitleView;
 }
 - (void) titleClick:(UIButton *) titBtn {
     _selectedButton.selected = NO;
@@ -80,9 +86,6 @@
 //        _indicatorView.kqy_centerX = titBtn.titleLabel.kqy_centerX; 用这个不行，原来这个不错的。。。。
         _indicatorView.kqy_centerX = titBtn.kqy_centerX;
     }];
-    
-    
-    
 }
 
 - (void) setupScrollView {
@@ -90,29 +93,44 @@
     mainScrollView.backgroundColor  = kqyRandomColor;
     mainScrollView.frame = [UIScreen mainScreen].bounds;
     [self.view addSubview:mainScrollView];
+    mainScrollView.pagingEnabled = YES;
+    NSInteger vcCount = self.childViewControllers.count;
+    
+    mainScrollView.contentSize = CGSizeMake(vcCount * mainScrollView.kqy_width, 0);
+    for (int i = 0; i < vcCount; ++i) {
+        UITableView *childVc = (UITableView *)self.childViewControllers[i].view;
+        childVc.frame = CGRectMake(i * childVc.kqy_width, 0, childVc.kqy_width, childVc.kqy_height);
+        
+        [mainScrollView addSubview:childVc];
+        
+    }
+
     
 }
 
-
+- (void) setupChildView {
+    allTableViewController *all = [[allTableViewController alloc] init];
+    [self addChildViewController:all];
+    
+    voiceTableViewController *voiceVc = [[voiceTableViewController alloc] init];
+    [self addChildViewController:voiceVc];
+    
+    videoTableViewController *videoVc = [[videoTableViewController alloc] init];
+    [self addChildViewController:videoVc];
+    
+    pictureTableViewController *picVc = [[pictureTableViewController alloc] init];
+    [self addChildViewController:picVc];
+    
+    wordTableViewController *wordVc = [[wordTableViewController alloc] init];
+    [self addChildViewController: wordVc];
+    
+}
 - (void) backClick {
     kqyLogFunc;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

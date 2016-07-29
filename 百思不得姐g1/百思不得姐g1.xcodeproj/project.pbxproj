@@ -12,6 +12,12 @@
 		681A9CE81D48A1CB00568316 /* kqyLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CE61D48A1CB00568316 /* kqyLoginRegisterViewController.m */; };
 		681A9CE91D48A1CB00568316 /* kqyLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681A9CE71D48A1CB00568316 /* kqyLoginRegisterViewController.xib */; };
 		681A9CED1D49A19B00568316 /* loginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CEC1D49A19B00568316 /* loginBtn.m */; };
+		681A9CF01D4AE77000568316 /* titleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CEF1D4AE77000568316 /* titleButton.m */; };
+		681A9CF31D4AF75600568316 /* allTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CF21D4AF75600568316 /* allTableViewController.m */; };
+		681A9CF61D4AF76500568316 /* videoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CF51D4AF76500568316 /* videoTableViewController.m */; };
+		681A9CF91D4AF76D00568316 /* voiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CF81D4AF76D00568316 /* voiceTableViewController.m */; };
+		681A9CFC1D4AF77300568316 /* pictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CFB1D4AF77300568316 /* pictureTableViewController.m */; };
+		681A9CFF1D4AF77900568316 /* wordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681A9CFE1D4AF77900568316 /* wordTableViewController.m */; };
 		688C7AB91D40A5B800957101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AB81D40A5B800957101 /* main.m */; };
 		688C7AC21D40A5B800957101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC01D40A5B800957101 /* Main.storyboard */; };
 		688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688C7AC31D40A5B800957101 /* Assets.xcassets */; };
@@ -40,6 +46,18 @@
 		681A9CE71D48A1CB00568316 /* kqyLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = kqyLoginRegisterViewController.xib; path = "百思不得姐g1/classes/notice/views/kqyLoginRegisterViewController.xib"; sourceTree = SOURCE_ROOT; };
 		681A9CEB1D49A19B00568316 /* loginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginBtn.h; sourceTree = "<group>"; };
 		681A9CEC1D49A19B00568316 /* loginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginBtn.m; sourceTree = "<group>"; };
+		681A9CEE1D4AE77000568316 /* titleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = titleButton.h; sourceTree = "<group>"; };
+		681A9CEF1D4AE77000568316 /* titleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = titleButton.m; sourceTree = "<group>"; };
+		681A9CF11D4AF75600568316 /* allTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allTableViewController.h; sourceTree = "<group>"; };
+		681A9CF21D4AF75600568316 /* allTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = allTableViewController.m; sourceTree = "<group>"; };
+		681A9CF41D4AF76500568316 /* videoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoTableViewController.h; sourceTree = "<group>"; };
+		681A9CF51D4AF76500568316 /* videoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoTableViewController.m; sourceTree = "<group>"; };
+		681A9CF71D4AF76D00568316 /* voiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voiceTableViewController.h; sourceTree = "<group>"; };
+		681A9CF81D4AF76D00568316 /* voiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = voiceTableViewController.m; sourceTree = "<group>"; };
+		681A9CFA1D4AF77300568316 /* pictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pictureTableViewController.h; sourceTree = "<group>"; };
+		681A9CFB1D4AF77300568316 /* pictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pictureTableViewController.m; sourceTree = "<group>"; };
+		681A9CFD1D4AF77900568316 /* wordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordTableViewController.h; sourceTree = "<group>"; };
+		681A9CFE1D4AF77900568316 /* wordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wordTableViewController.m; sourceTree = "<group>"; };
 		688C7AB41D40A5B800957101 /* 百思不得姐g1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐g1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688C7AB81D40A5B800957101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		688C7AC11D40A5B800957101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +178,16 @@
 			children = (
 				688C7AEB1D40A81F00957101 /* kqy1essentialViewController.h */,
 				688C7AEC1D40A81F00957101 /* kqy1essentialViewController.m */,
+				681A9CF11D4AF75600568316 /* allTableViewController.h */,
+				681A9CF21D4AF75600568316 /* allTableViewController.m */,
+				681A9CF41D4AF76500568316 /* videoTableViewController.h */,
+				681A9CF51D4AF76500568316 /* videoTableViewController.m */,
+				681A9CF71D4AF76D00568316 /* voiceTableViewController.h */,
+				681A9CF81D4AF76D00568316 /* voiceTableViewController.m */,
+				681A9CFA1D4AF77300568316 /* pictureTableViewController.h */,
+				681A9CFB1D4AF77300568316 /* pictureTableViewController.m */,
+				681A9CFD1D4AF77900568316 /* wordTableViewController.h */,
+				681A9CFE1D4AF77900568316 /* wordTableViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -174,6 +202,8 @@
 		688C7AD21D40A5DD00957101 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				681A9CEE1D4AE77000568316 /* titleButton.h */,
+				681A9CEF1D4AE77000568316 /* titleButton.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -395,8 +425,12 @@
 				688C7AED1D40A81F00957101 /* kqy1essentialViewController.m in Sources */,
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
+				681A9CF01D4AE77000568316 /* titleButton.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
+				681A9CFC1D4AF77300568316 /* pictureTableViewController.m in Sources */,
 				68EDCEAC1D4746B600BFBD4D /* newViewController.m in Sources */,
+				681A9CF91D4AF76D00568316 /* voiceTableViewController.m in Sources */,
+				681A9CF61D4AF76500568316 /* videoTableViewController.m in Sources */,
 				68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */,
 				688C7AF01D40A85500957101 /* kqy2newViewController.m in Sources */,
 				68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */,
@@ -404,8 +438,10 @@
 				681A9CE81D48A1CB00568316 /* kqyLoginRegisterViewController.m in Sources */,
 				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
 				681A9CE21D48937500568316 /* recommendFriendViewController.m in Sources */,
+				681A9CFF1D4AF77900568316 /* wordTableViewController.m in Sources */,
 				688C7AE31D40A5F600957101 /* AppDelegate.m in Sources */,
 				681A9CED1D49A19B00568316 /* loginBtn.m in Sources */,
+				681A9CF31D4AF75600568316 /* allTableViewController.m in Sources */,
 				688C7AE71D40A66500957101 /* kqyNavViewController.m in Sources */,
 				688C7AB91D40A5B800957101 /* main.m in Sources */,
 			);
