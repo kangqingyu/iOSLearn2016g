@@ -20,7 +20,6 @@
     [tagBtn addTarget:self action:@selector(newClick) forControlEvents:UIControlEventTouchUpInside];
     [tagBtn sizeToFit];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagBtn];
-    tagBtn addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
     
 }
 - (void) newClick {
