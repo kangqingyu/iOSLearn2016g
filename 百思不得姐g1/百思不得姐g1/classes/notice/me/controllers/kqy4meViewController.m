@@ -8,6 +8,7 @@
 
 #import "kqy4meViewController.h"
 #import "settingVc.h"
+
 @interface kqy4meViewController ()
 
 @end
@@ -31,8 +32,16 @@
     // right 2
     UIBarButtonItem *moonItem = [UIBarButtonItem setItemImage:@"mine-moon-icon" andHighlightImage:@"mine-moon-icon-click" andTarget:self andAction:@selector(moonClick)];
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
-    
+    [self setupTestXib];
     // Do any additional setup after loading the view.
+}
+- (void) setupTestXib {
+    NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"test3buttonxib" owner:nil options:nil];
+    UIView *plainView = [nibContents lastObject];
+//    CGSize padding = (CGSize) {0,69};
+//    plainView.frame = (CGRect){padding.width, padding.height, plainView.frame.size};
+    plainView.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height);
+    [self.view addSubview:plainView];
 }
 - (void) settingClick {
     settingVc *settingVC = [[settingVc alloc] init];

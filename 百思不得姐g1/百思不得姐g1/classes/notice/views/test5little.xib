@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIn-94-N1S">
+                    <rect key="frame" x="225" y="95" width="150" height="103"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="0GA-ie-Lko"/>
+                        <constraint firstAttribute="width" secondItem="PIn-94-N1S" secondAttribute="height" multiplier="51:35" id="JmP-Zm-GK2"/>
+                    </constraints>
+                    <state key="normal" title="bbb" image="login_sina_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X12-HD-Rkx">
+                    <rect key="frame" x="559" y="183" width="41" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="X12-HD-Rkx" secondAttribute="height" multiplier="2:1" id="fvu-Qi-6qv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOe-L7-ZM8">
+                    <rect key="frame" x="0.0" y="90" width="225" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LOe-L7-ZM8" secondAttribute="height" multiplier="2:1" id="dkf-4t-aae"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="LOe-L7-ZM8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2pp-Iw-5Me"/>
+                <constraint firstItem="LOe-L7-ZM8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="EhP-04-JcW"/>
+                <constraint firstItem="PIn-94-N1S" firstAttribute="leading" secondItem="LOe-L7-ZM8" secondAttribute="trailing" id="P8v-Kg-Ubk"/>
+                <constraint firstItem="PIn-94-N1S" firstAttribute="centerY" secondItem="LOe-L7-ZM8" secondAttribute="centerY" id="Xtw-Xu-5aQ"/>
+                <constraint firstAttribute="trailing" secondItem="X12-HD-Rkx" secondAttribute="trailing" id="dY3-Ku-IXG"/>
+                <constraint firstItem="X12-HD-Rkx" firstAttribute="leading" secondItem="PIn-94-N1S" secondAttribute="trailing" id="q4Q-wY-9bo"/>
+                <constraint firstItem="X12-HD-Rkx" firstAttribute="width" secondItem="LOe-L7-ZM8" secondAttribute="width" id="yTw-zo-JCU"/>
+                <constraint firstItem="X12-HD-Rkx" firstAttribute="centerY" secondItem="LOe-L7-ZM8" secondAttribute="centerY" id="zrT-u4-5Ky"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_sina_icon" width="70" height="70"/>
+    </resources>
+</document>

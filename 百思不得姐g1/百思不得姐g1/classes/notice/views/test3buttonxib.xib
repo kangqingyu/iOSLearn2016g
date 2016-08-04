@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETT-8q-HDR" customClass="loginBtn">
+                    <rect key="frame" x="238" y="11" width="124" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ETT-8q-HDR" secondAttribute="height" multiplier="62:35" id="ChW-tH-ZkR"/>
+                        <constraint firstAttribute="width" constant="124" id="mAK-g1-uMX"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="login_tecent_icon"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLE-dz-RQX" customClass="loginBtn">
+                    <rect key="frame" x="432" y="12" width="124" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wLE-dz-RQX" secondAttribute="height" multiplier="62:35" id="R36-dV-HpT"/>
+                        <constraint firstAttribute="width" constant="124" id="kWx-cA-Wlw"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="login_QQ_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17p-rk-Ldw">
+                    <rect key="frame" x="375" y="36" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="17p-rk-Ldw" secondAttribute="height" multiplier="2:1" id="P6C-L2-W8H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUn-ZL-PuC">
+                    <rect key="frame" x="558" y="37" width="42" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hUn-ZL-PuC" secondAttribute="height" multiplier="2:1" id="jZc-Q7-CmY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-yH-C36" customClass="loginBtn">
+                    <rect key="frame" x="50" y="11" width="125" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IyL-yH-C36" secondAttribute="height" multiplier="25:14" id="8ze-iE-luw"/>
+                        <constraint firstAttribute="width" constant="125" id="Y9f-4S-V7o"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="login_sina_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nE4-p5-7tD">
+                    <rect key="frame" x="0.0" y="35" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nE4-p5-7tD" secondAttribute="height" multiplier="2:1" id="Cfx-g4-w0z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bef-KD-EYv">
+                    <rect key="frame" x="194" y="36" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Bef-KD-EYv" secondAttribute="height" multiplier="2:1" id="UMa-UN-00a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nE4-p5-7tD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="049-6s-StI"/>
+                <constraint firstItem="wLE-dz-RQX" firstAttribute="leading" secondItem="17p-rk-Ldw" secondAttribute="trailing" id="0Mm-mY-iOp"/>
+                <constraint firstItem="IyL-yH-C36" firstAttribute="leading" secondItem="nE4-p5-7tD" secondAttribute="trailing" id="6v9-J8-SNH"/>
+                <constraint firstItem="17p-rk-Ldw" firstAttribute="width" secondItem="nE4-p5-7tD" secondAttribute="width" id="7Yj-XJ-EZb"/>
+                <constraint firstItem="wLE-dz-RQX" firstAttribute="centerY" secondItem="nE4-p5-7tD" secondAttribute="centerY" id="8Jm-sc-B2h"/>
+                <constraint firstItem="hUn-ZL-PuC" firstAttribute="leading" secondItem="wLE-dz-RQX" secondAttribute="trailing" id="9qT-Xo-7n4"/>
+                <constraint firstItem="ETT-8q-HDR" firstAttribute="centerY" secondItem="nE4-p5-7tD" secondAttribute="centerY" id="FG8-Zq-ppW"/>
+                <constraint firstItem="hUn-ZL-PuC" firstAttribute="baseline" secondItem="nE4-p5-7tD" secondAttribute="baseline" id="IWD-eu-OdM"/>
+                <constraint firstItem="nE4-p5-7tD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JTz-Jo-c5d"/>
+                <constraint firstAttribute="trailing" secondItem="hUn-ZL-PuC" secondAttribute="trailing" id="MlT-73-2vW"/>
+                <constraint firstItem="ETT-8q-HDR" firstAttribute="width" secondItem="nE4-p5-7tD" secondAttribute="width" id="OxI-Yg-qfZ"/>
+                <constraint firstItem="17p-rk-Ldw" firstAttribute="centerY" secondItem="nE4-p5-7tD" secondAttribute="centerY" id="Pvu-NV-6GY"/>
+                <constraint firstItem="Bef-KD-EYv" firstAttribute="leading" secondItem="IyL-yH-C36" secondAttribute="trailing" id="QQD-ej-riB"/>
+                <constraint firstItem="17p-rk-Ldw" firstAttribute="leading" secondItem="ETT-8q-HDR" secondAttribute="trailing" id="RxT-tG-Eey"/>
+                <constraint firstItem="ETT-8q-HDR" firstAttribute="leading" secondItem="Bef-KD-EYv" secondAttribute="trailing" id="ZFy-AZ-iTI"/>
+                <constraint firstItem="IyL-yH-C36" firstAttribute="centerY" secondItem="nE4-p5-7tD" secondAttribute="centerY" id="ax3-Tg-w9S"/>
+                <constraint firstItem="Bef-KD-EYv" firstAttribute="centerY" secondItem="nE4-p5-7tD" secondAttribute="centerY" id="che-mW-pUo"/>
+                <constraint firstItem="hUn-ZL-PuC" firstAttribute="width" secondItem="nE4-p5-7tD" secondAttribute="width" id="h6a-HA-7lm"/>
+                <constraint firstItem="Bef-KD-EYv" firstAttribute="width" secondItem="nE4-p5-7tD" secondAttribute="width" id="skc-nm-uZ8"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="OxI-Yg-qfZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="466" y="382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_QQ_icon" width="70" height="70"/>
+        <image name="login_sina_icon" width="70" height="70"/>
+        <image name="login_tecent_icon" width="70" height="70"/>
+    </resources>
+</document>

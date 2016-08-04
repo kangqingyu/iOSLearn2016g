@@ -31,6 +31,9 @@
 		688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AF91D40ABE100957101 /* kqy4meViewController.m */; };
 		688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AFF1D41F72B00957101 /* kqyTabBar.m */; };
 		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
+		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
+		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
+		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
 		68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */; };
 		68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA51D46FF9D00BFBD4D /* settingVc.m */; };
 		68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */; };
@@ -83,6 +86,9 @@
 		688C7AFF1D41F72B00957101 /* kqyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBar.m; sourceTree = "<group>"; };
 		688C7B031D43047000957101 /* UIView+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+kqyExtension.h"; sourceTree = "<group>"; };
 		688C7B041D43047000957101 /* UIView+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+kqyExtension.m"; sourceTree = "<group>"; };
+		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
+		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
+		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
 		68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+kqyExtension.h"; sourceTree = "<group>"; };
 		68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+kqyExtension.m"; sourceTree = "<group>"; };
 		68EDCEA41D46FF9D00BFBD4D /* settingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingVc.h; sourceTree = "<group>"; };
@@ -278,6 +284,9 @@
 				681A9CE51D48A1CB00568316 /* kqyLoginRegisterViewController.h */,
 				681A9CE61D48A1CB00568316 /* kqyLoginRegisterViewController.m */,
 				681A9CE71D48A1CB00568316 /* kqyLoginRegisterViewController.xib */,
+				68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */,
+				68DF96C11D5323A0003EB5DD /* test4labelxib.xib */,
+				68DF96C31D532673003EB5DD /* test5little.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -407,9 +416,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				688C7AC71D40A5B800957101 /* LaunchScreen.storyboard in Resources */,
+				68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */,
 				681A9CE41D48938400568316 /* recommendFriendViewController.xib in Resources */,
+				68DF96C41D532673003EB5DD /* test5little.xib in Resources */,
 				688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */,
 				681A9CE91D48A1CB00568316 /* kqyLoginRegisterViewController.xib in Resources */,
+				68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */,
 				688C7AC21D40A5B800957101 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
