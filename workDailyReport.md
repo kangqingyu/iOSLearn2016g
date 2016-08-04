@@ -26,4 +26,20 @@ vim:
 
 autoLayout:
     NSLayoutAttributeLeft 和 NSLayoutAttributeRight ；NSLayoutAttributeLeading和 NSLayoutAttributeTrailing 。他们有什么不同？原来中国是从左到右的习惯。所以左边就是leading,右边就是trailing.而希伯来人,阿拉伯人却是相反的习惯。
-    
+  
+#2016.8.4
+  aspect ratio可设长和宽对应
+  content priority ambiguity
+  set horizontal hugging priority to 252.
+  set horizontal compression resistance priority to 751.
+  set horizontal hugging priority to 249.
+  set horizontal hugging priority to 249.
+  set horizontal compression resistance priority to 751.
+  content priority ambiguity
+  set veritical hugging priority to 249
+  set vertical compression resistance priority to 751
+  set vertical hugging priority to 249.
+  set vertical compression resistance priority to 749.
+  set vertical hugging priority to 252.
+  做分享的3个图，间距相同。总是出现这些错。原来是中间的4个空格label的宽没有相等，虽然各自成比例，但是整体并没有关系，结果就会出错。
+  
