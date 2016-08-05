@@ -116,10 +116,10 @@
 - (void) addChildVcAfterScrollView {
     NSInteger index = self.mainScrollView.contentOffset.x / self.view.kqy_width;
     UIViewController *childVc = self.childViewControllers[index];
-    childVc.view.kqy_y = 0;
-    childVc.view.kqy_x = index * self.view.kqy_width;
-    childVc.view.kqy_width = self.view.kqy_width;
-    childVc.view.kqy_height = self.view.kqy_height;
+//    childVc.view.kqy_y = 0;
+//    childVc.view.kqy_x = index * self.view.kqy_width;
+//    childVc.view.kqy_width = self.view.kqy_width;
+//    childVc.view.kqy_height = self.view.kqy_height;
     
     childVc.view.frame = self.mainScrollView.bounds;
     [_mainScrollView addSubview:childVc.view];

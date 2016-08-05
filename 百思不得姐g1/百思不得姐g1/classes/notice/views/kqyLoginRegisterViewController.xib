@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="401" width="600" height="190"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loginQuickly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-2p-4bD">
-                            <rect key="frame" x="253" y="8" width="94" height="21"/>
+                            <rect key="frame" x="253" y="8" width="94" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -99,13 +99,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6SR-Os-8SR" userLabel="middle big view">
                     <rect key="frame" x="0.0" y="111" width="600" height="244"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="547-m2-mrs" userLabel="name tfd">
-                            <rect key="frame" x="67" y="-111" width="466" height="17"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="547-m2-mrs" userLabel="name tfd">
+                            <rect key="frame" x="67" y="26" width="466" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="SWF-8h-Tzg"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-9z-bcN">
-                            <rect key="frame" x="67" y="22" width="466" height="94"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-9z-bcN">
+                            <rect key="frame" x="67" y="16" width="466" height="94"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="466" id="W7P-2Z-Zxa"/>
                                 <constraint firstAttribute="height" constant="94" id="s6w-rp-Bu9"/>
@@ -119,7 +122,7 @@
                         <constraint firstItem="547-m2-mrs" firstAttribute="leading" secondItem="LNz-9z-bcN" secondAttribute="leading" id="apH-0l-bg4"/>
                         <constraint firstItem="LNz-9z-bcN" firstAttribute="leading" secondItem="6SR-Os-8SR" secondAttribute="leading" constant="67" id="cqK-ao-nPA"/>
                         <constraint firstAttribute="trailing" secondItem="LNz-9z-bcN" secondAttribute="trailing" constant="67" id="esH-bx-ich"/>
-                        <constraint firstItem="547-m2-mrs" firstAttribute="top" secondItem="LNz-9z-bcN" secondAttribute="top" id="mJg-0U-NNM"/>
+                        <constraint firstItem="547-m2-mrs" firstAttribute="top" secondItem="LNz-9z-bcN" secondAttribute="top" constant="10" id="mJg-0U-NNM"/>
                         <constraint firstItem="LNz-9z-bcN" firstAttribute="centerX" secondItem="6SR-Os-8SR" secondAttribute="centerX" id="owh-kT-vRV"/>
                         <constraint firstAttribute="height" constant="244" id="viz-jn-nr4"/>
                     </constraints>
