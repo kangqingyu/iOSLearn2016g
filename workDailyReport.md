@@ -1,4 +1,4 @@
-﻿#2016.8.1
+#2016.8.1
 Rm –rf fileName  删除文件夹及其文件.
 跳到对应的括号：%.
 
@@ -42,4 +42,4 @@ autoLayout:
   set vertical compression resistance priority to 749.
   set vertical hugging priority to 252.
   做分享的3个图，间距相同。总是出现这些错。原来是中间的4个空格label的宽没有相等，虽然各自成比例，但是整体并没有关系，结果就会出错。
-  
+  #2016.8.8
