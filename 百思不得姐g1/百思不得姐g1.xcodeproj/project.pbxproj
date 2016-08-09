@@ -143,7 +143,6 @@
 				688C7AE01D40A5DD00957101 /* others */,
 				688C7ACE1D40A5DD00957101 /* classes */,
 				688C7AF41D40A88800957101 /* me */,
-				688C7ADF1D40A5DD00957101 /* others */,
 				688C7AC81D40A5B800957101 /* Info.plist */,
 				688C7AC31D40A5B800957101 /* Assets.xcassets */,
 				688C7AB71D40A5B800957101 /* Supporting Files */,
@@ -289,14 +288,6 @@
 				68DF96C31D532673003EB5DD /* test5little.xib */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		688C7ADF1D40A5DD00957101 /* others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = others;
-			path = classes/others;
 			sourceTree = "<group>";
 		};
 		688C7AE01D40A5DD00957101 /* others */ = {
