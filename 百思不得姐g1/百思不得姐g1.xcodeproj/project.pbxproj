@@ -34,6 +34,8 @@
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
+		68DFAD971D59D4BF0095CACA /* kqyMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFAD961D59D4BF0095CACA /* kqyMeCell.m */; };
+		68DFAD9A1D59D4DC0095CACA /* kqyCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFAD991D59D4DC0095CACA /* kqyCommonConst.m */; };
 		68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */; };
 		68EDCEA61D46FF9D00BFBD4D /* settingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA51D46FF9D00BFBD4D /* settingVc.m */; };
 		68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */; };
@@ -89,6 +91,10 @@
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
+		68DFAD951D59D4BF0095CACA /* kqyMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyMeCell.h; sourceTree = "<group>"; };
+		68DFAD961D59D4BF0095CACA /* kqyMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyMeCell.m; sourceTree = "<group>"; };
+		68DFAD981D59D4DC0095CACA /* kqyCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyCommonConst.h; sourceTree = "<group>"; };
+		68DFAD991D59D4DC0095CACA /* kqyCommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyCommonConst.m; sourceTree = "<group>"; };
 		68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+kqyExtension.h"; sourceTree = "<group>"; };
 		68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+kqyExtension.m"; sourceTree = "<group>"; };
 		68EDCEA41D46FF9D00BFBD4D /* settingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingVc.h; sourceTree = "<group>"; };
@@ -306,6 +312,8 @@
 				688C7B041D43047000957101 /* UIView+kqyExtension.m */,
 				68EDCEA11D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.h */,
 				68EDCEA21D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m */,
+				68DFAD981D59D4DC0095CACA /* kqyCommonConst.h */,
+				68DFAD991D59D4DC0095CACA /* kqyCommonConst.m */,
 				681A9CEA1D49A11100568316 /* Login */,
 			);
 			path = others;
@@ -345,6 +353,8 @@
 		688C7AF71D40A88800957101 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				68DFAD951D59D4BF0095CACA /* kqyMeCell.h */,
+				68DFAD961D59D4BF0095CACA /* kqyMeCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -429,7 +439,9 @@
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
 				681A9CF01D4AE77000568316 /* titleButton.m in Sources */,
+				68DFAD971D59D4BF0095CACA /* kqyMeCell.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
+				68DFAD9A1D59D4DC0095CACA /* kqyCommonConst.m in Sources */,
 				681A9CFC1D4AF77300568316 /* pictureTableViewController.m in Sources */,
 				68EDCEAC1D4746B600BFBD4D /* newViewController.m in Sources */,
 				681A9CF91D4AF76D00568316 /* voiceTableViewController.m in Sources */,

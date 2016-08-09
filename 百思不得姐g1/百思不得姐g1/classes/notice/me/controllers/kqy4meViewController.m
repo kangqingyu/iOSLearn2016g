@@ -17,32 +17,41 @@
 - (void) testBtnClick {
     NSLog(@"test click");
 }
+- (instancetype)init {
+    return [self initWithStyle:UITableViewStyleGrouped];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.tableView.sectionFooterHeight = 0;
+//    self.tableView.sectionHeaderHeight = 10;
+///    UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    testBtn.frame = CGRectMake(150, 300, 60, 40);
+//    [self.view addSubview:testBtn];
+//    [testBtn addTarget:self action:@selector(testBtnClick) forControlEvents:UIControlEventTouchUpInside];
+//    // right 1
+    [self setupNav];
+    [self setupTableView];
+    [self setupFootView];
+}
+- (void)setupNav {
+    self.tableView.contentInset = UIEdgeInsetsMake(- KqyMargin * 2 , 0, 0, 0);
+
+}
+- (void)setupTableView {
+    self.tableView.contentInset = UIEdgeInsetsMake(-30 , 0, 0, 0);
     self.view.backgroundColor = kqyRandomColor;
     self.navigationItem.title = @"me我的控制作器制作制";
     self.navigationItem.hidesBackButton = YES;
-    UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    testBtn.frame = CGRectMake(150, 300, 60, 40);
-    [self.view addSubview:testBtn];
-    [testBtn addTarget:self action:@selector(testBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    // right 1
-    UIBarButtonItem *settingItem = [UIBarButtonItem setItemImage:@"mine-setting-icon" andHighlightImage:@"mine-setting-icon-click" andTarget:self andAction:@selector(settingClick)];
-    
-    // right 2
-    UIBarButtonItem *moonItem = [UIBarButtonItem setItemImage:@"mine-moon-icon" andHighlightImage:@"mine-moon-icon-click" andTarget:self andAction:@selector(moonClick)];
-    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
-//    [self setupTestXib];
-    // Do any additional setup after loading the view.
 }
-//- (void) setupTestXib {
-//    NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"test3buttonxib" owner:nil options:nil];
-//    UIView *plainView = [nibContents lastObject];
-////    CGSize padding = (CGSize) {0,69};
-////    plainView.frame = (CGRect){padding.width, padding.height, plainView.frame.size};
-//    plainView.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height);
-//    [self.view addSubview:plainView];
-//}
+- (void)setupFootView {
+    UIView *footView = [[UIView alloc] init];
+    footView.backgroundColor = [UIColor greenColor];
+//    footView.kqy_height = 200;
+    CGRect tempFootViewFrame = footView.frame;
+    tempFootViewFrame.size.height = 200;
+    footView.frame = tempFootViewFrame;
+    self.tableView.tableFooterView = footView;
+}
 - (void) settingClick {
     settingVc *settingVC = [[settingVc alloc] init];
     settingVC.hidesBottomBarWhenPushed = YES;
@@ -53,11 +62,11 @@
 }
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"cell";
@@ -66,9 +75,39 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         
     }
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"setup-head-default"];
+        cell.textLabel.text = @"login/registrer";
+    } else if (indexPath.section == 1) {
+        cell.textLabel.text = @"download outline";
+    }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"list: %zd", indexPath.row];
     return cell;
 }
-
 @end
+//- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.section == 2) {
+//        return 200;
+//    } else {
+//        return 49;
+//    }
+//}
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+//    if ( section == 0 ) { return 10; }
+//    else {
+//        return 30;
+//    }
+//}
+//- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+//    kqyLog(@"%@",NSStringFromCGRect(selectedCell.frame));
+//}
+
+//- (void) setupTestXib {
+//    NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"test3buttonxib" owner:nil options:nil];
+//    UIView *plainView = [nibContents lastObject];
+////    CGSize padding = (CGSize) {0,69};
+////    plainView.frame = (CGRect){padding.width, padding.height, plainView.frame.size};
+//    plainView.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height);
+//    [self.view addSubview:plainView];
+//}
