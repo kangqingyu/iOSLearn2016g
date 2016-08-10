@@ -69,7 +69,7 @@
     return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"cell";
+    static NSString *identifier = @"identifierCell";
     kqyMeCell *cell = [tableView dequeueReusableCellWithIdentifier: identifier];
     if (!cell) {
         cell = [[kqyMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
