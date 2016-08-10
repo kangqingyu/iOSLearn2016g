@@ -9,6 +9,7 @@
 #import "kqy4meViewController.h"
 #import "settingVc.h"
 #import "kqyMeCell.h"
+#import "kqyFootView.h"
 @interface kqy4meViewController ()
 
 @end
@@ -42,6 +43,7 @@
     self.view.backgroundColor = kqyRandomColor;
     self.navigationItem.title = @"me我的控制作器制作制";
     self.navigationItem.hidesBackButton = YES;
+    self.tableView.tableFooterView = [[kqyFootView alloc] init];
 }
 - (void)setupFootView {
     UIView *footView = [[UIView alloc] init];
@@ -69,8 +71,9 @@
     return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"identifierCell";
-    kqyMeCell *cell = [tableView dequeueReusableCellWithIdentifier: identifier];
+    
+    static NSString *identifier = @"identIdCell";
+    kqyMeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[kqyMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         

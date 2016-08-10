@@ -32,6 +32,7 @@
 		688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7AFF1D41F72B00957101 /* kqyTabBar.m */; };
 		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
 		68ACD2581D5B16C4000BB60B /* kqyFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD2571D5B16C4000BB60B /* kqyFootView.m */; };
+		68ACD25B1D5B2CBA000BB60B /* meSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */; };
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
@@ -95,6 +96,8 @@
 		688C7B041D43047000957101 /* UIView+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+kqyExtension.m"; sourceTree = "<group>"; };
 		68ACD2561D5B16C4000BB60B /* kqyFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyFootView.h; sourceTree = "<group>"; };
 		68ACD2571D5B16C4000BB60B /* kqyFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyFootView.m; sourceTree = "<group>"; };
+		68ACD2591D5B2CBA000BB60B /* meSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meSquareModel.h; sourceTree = "<group>"; };
+		68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meSquareModel.m; sourceTree = "<group>"; };
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 		688C7AF61D40A88800957101 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				68ACD2591D5B2CBA000BB60B /* meSquareModel.h */,
+				68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68ACD25B1D5B2CBA000BB60B /* meSquareModel.m in Sources */,
 				688C7AEA1D40A67200957101 /* kqyTabBarViewController.m in Sources */,
 				688C7AED1D40A81F00957101 /* kqy1essentialViewController.m in Sources */,
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
@@ -653,6 +659,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "百思不得姐g1/others/kqyPrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐g1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hust.-----g1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +675,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "百思不得姐g1/others/kqyPrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐g1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hust.-----g1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
