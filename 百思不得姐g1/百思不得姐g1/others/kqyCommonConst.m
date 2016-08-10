@@ -6,5 +6,5 @@
 //  Copyright © 2016 kqy. All rights reserved.
 //
 
-
-CGFloat const kqyMargin = 10;
+#import <UIKit/UIKit.h>
+//CGFloat const kqyMargin = 10;

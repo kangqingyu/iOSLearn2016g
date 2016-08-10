@@ -8,7 +8,7 @@
 
 #import "kqy4meViewController.h"
 #import "settingVc.h"
-
+#import "kqyMeCell.h"
 @interface kqy4meViewController ()
 
 @end
@@ -34,7 +34,7 @@
     [self setupFootView];
 }
 - (void)setupNav {
-    self.tableView.contentInset = UIEdgeInsetsMake(- KqyMargin * 2 , 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(- 10 * 2 , 0, 0, 0);
 
 }
 - (void)setupTableView {
@@ -70,9 +70,9 @@
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: identifier];
+    kqyMeCell *cell = [tableView dequeueReusableCellWithIdentifier: identifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[kqyMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         
     }
     if (indexPath.section == 0) {

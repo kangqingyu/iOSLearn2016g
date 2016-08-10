@@ -7,5 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-UIKIT_EXTERN CGFloat const KqyMargin ;
+//UIKIT_EXTERN CGFloat const KqyMargin ;
