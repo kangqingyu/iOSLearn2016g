@@ -32,18 +32,19 @@
 //    // right 1
     [self setupNav];
     [self setupTableView];
-    [self setupFootView];
+//    [self setupFootView];// this is test
 }
 - (void)setupNav {
-    self.tableView.contentInset = UIEdgeInsetsMake(- 10 * 2 , 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(-10 * 2 , 0, 50, 0);
 
 }
 - (void)setupTableView {
-    self.tableView.contentInset = UIEdgeInsetsMake(-30 , 0, 0, 0);
+//    self.tableView.contentInset = UIEdgeInsetsMake(-30 , 0, -100, 0);
     self.view.backgroundColor = kqyRandomColor;
     self.navigationItem.title = @"me我的控制作器制作制";
     self.navigationItem.hidesBackButton = YES;
     self.tableView.tableFooterView = [[kqyFootView alloc] init];
+    
 }
 - (void)setupFootView {
     UIView *footView = [[UIView alloc] init];
