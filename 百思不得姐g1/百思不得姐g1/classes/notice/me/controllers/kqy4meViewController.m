@@ -35,7 +35,7 @@
 //    [self setupFootView];// this is test
 }
 - (void)setupNav {
-    self.tableView.contentInset = UIEdgeInsetsMake(-10 * 2 , 0, 50, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(-10 * 2 , 0, 0, 0);
 
 }
 - (void)setupTableView {

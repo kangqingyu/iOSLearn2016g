@@ -10,6 +10,9 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "meSquareModel.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "loginBtn.h"
 @implementation kqyFootView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -47,20 +50,39 @@
 - (void)createSquares:(NSArray *)squares {
     NSInteger totalNumber = squares.count;
     NSInteger columns = 4 ;
-    CGFloat margin = 15;
     CGFloat btnWidth = self.frame.size.width / columns;
     for (int i = 0; i < totalNumber; ++i) {
         int colIdx = i % columns;
         int rowIdx = i / columns;
         meSquareModel *squarMod = squares[i];
         
-        UIButton *button = [[UIButton alloc] init];
+        loginBtn *button = [[loginBtn alloc] init];
         CGFloat btnX = colIdx * btnWidth;
         CGFloat btnY = rowIdx * btnWidth;
         button.frame = CGRectMake(btnX, btnY, btnWidth, btnWidth);
         button.backgroundColor = kqyRandomColor;
         [self addSubview:button];
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [button setTitle:squarMod.name forState:UIControlStateNormal];
+//        [button setImage:[UIImage imageNamed:@"setup-head-default"] forState:UIControlStateNormal];
+//        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:squarMod.icon] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+//            [button setImage:image forState:UIControlStateNormal];
+//        }];
+        [button sd_setImageWithURL:[NSURL URLWithString:squarMod.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
     }
+//    CGFloat footHeight = CGRectGetMaxY([self.subviews lastObject].frame);
+//    CGFloat footHeight = CGRectGetMaxY(self.subviews.lastObject.frame);
+//    CGRect tempFrame = self.frame;
+//    tempFrame.origin.y = footHeight;
+//    self.frame = tempFrame;
+    self.kqy_height = self.subviews.lastObject.kqy_bottom;
+    UITableView *supeTabV = (UITableView *)self.superview;
 
+    supeTabV.tableFooterView = self;
+
+}
+- (void) buttonCLick:(UIButton *)button {
+//    meSquareModel *squareMod =
 }
 @end
