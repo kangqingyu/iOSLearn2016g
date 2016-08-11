@@ -33,6 +33,7 @@
 		688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C7B041D43047000957101 /* UIView+kqyExtension.m */; };
 		68ACD2581D5B16C4000BB60B /* kqyFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD2571D5B16C4000BB60B /* kqyFootView.m */; };
 		68ACD25B1D5B2CBA000BB60B /* meSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */; };
+		68ACD25E1D5C503F000BB60B /* meSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD25D1D5C503F000BB60B /* meSquareButton.m */; };
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
@@ -98,6 +99,8 @@
 		68ACD2571D5B16C4000BB60B /* kqyFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyFootView.m; sourceTree = "<group>"; };
 		68ACD2591D5B2CBA000BB60B /* meSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meSquareModel.h; sourceTree = "<group>"; };
 		68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meSquareModel.m; sourceTree = "<group>"; };
+		68ACD25C1D5C503F000BB60B /* meSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meSquareButton.h; sourceTree = "<group>"; };
+		68ACD25D1D5C503F000BB60B /* meSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meSquareButton.m; sourceTree = "<group>"; };
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 				68DFAD961D59D4BF0095CACA /* kqyMeCell.m */,
 				68ACD2561D5B16C4000BB60B /* kqyFootView.h */,
 				68ACD2571D5B16C4000BB60B /* kqyFootView.m */,
+				68ACD25C1D5C503F000BB60B /* meSquareButton.h */,
+				68ACD25D1D5C503F000BB60B /* meSquareButton.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,
 				688C7AF31D40A86100957101 /* kqy3noticeTableViewController.m in Sources */,
 				681A9CF01D4AE77000568316 /* titleButton.m in Sources */,
+				68ACD25E1D5C503F000BB60B /* meSquareButton.m in Sources */,
 				68DFAD971D59D4BF0095CACA /* kqyMeCell.m in Sources */,
 				688C7AFA1D40ABE100957101 /* kqy4meViewController.m in Sources */,
 				68DFAD9A1D59D4DC0095CACA /* kqyCommonConst.m in Sources */,

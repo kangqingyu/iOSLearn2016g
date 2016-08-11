@@ -12,11 +12,12 @@
 #import "meSquareModel.h"
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
-#import "loginBtn.h"
+#import "meSquareButton.h"
 @implementation kqyFootView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor whiteColor];
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
@@ -56,14 +57,15 @@
         int rowIdx = i / columns;
         meSquareModel *squarMod = squares[i];
         
-        loginBtn *button = [[loginBtn alloc] init];
+        meSquareButton *button = [meSquareButton buttonWithType:UIButtonTypeCustom];
         CGFloat btnX = colIdx * btnWidth;
         CGFloat btnY = rowIdx * btnWidth;
         button.frame = CGRectMake(btnX, btnY, btnWidth, btnWidth);
-        button.backgroundColor = kqyRandomColor;
-        [self addSubview:button];
-        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
+        [self addSubview:button];
+       
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+
         [button setTitle:squarMod.name forState:UIControlStateNormal];
 //        [button setImage:[UIImage imageNamed:@"setup-head-default"] forState:UIControlStateNormal];
 //        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:squarMod.icon] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
@@ -82,7 +84,7 @@
     supeTabV.tableFooterView = self;
 
 }
-- (void) buttonCLick:(UIButton *)button {
+- (void) buttonClick:(UIButton *)button {
 //    meSquareModel *squareMod =
 }
 @end
