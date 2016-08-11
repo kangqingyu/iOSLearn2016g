@@ -14,17 +14,17 @@
 #import "UIButton+WebCache.h"
 #import "meSquareButton.h"
 @interface kqyFootView ()
-@property (nonatomic, strong) NSMutableDictionary<NSString *, meSquareModel *> *allSquares;
+//@property (nonatomic, strong) NSMutableDictionary<NSString *, meSquareModel *> *allSquares;
 
 @end
 
 @implementation kqyFootView
-- (NSMutableDictionary<NSString *,meSquareModel *> *)allSquares {
-    if (!_allSquares) {
-        _allSquares = [NSMutableDictionary dictionary];
-    }
-    return _allSquares;
-}
+//- (NSMutableDictionary<NSString *,meSquareModel *> *)allSquares {
+//    if (!_allSquares) {
+//        _allSquares = [NSMutableDictionary dictionary];
+//    }
+//    return _allSquares;
+//}
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -68,24 +68,25 @@
         int rowIdx = i / columns;
         meSquareModel *squarMod = squares[i];
         
-        self.allSquares[squarMod.name] = squarMod;//name as key.存squarMod模型。
+//        self.allSquares[squarMod.name] = squarMod;//name as key.存squarMod模型。
         
         meSquareButton *button = [meSquareButton buttonWithType:UIButtonTypeCustom];
         CGFloat btnX = colIdx * btnWidth;
         CGFloat btnY = rowIdx * btnWidth;
         button.frame = CGRectMake(btnX, btnY, btnWidth, btnWidth);
+        button.squreModel = squarMod;
         
         [self addSubview:button];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
 
-        [button setTitle:squarMod.name forState:UIControlStateNormal];
-        self.allSquares[button.currentTitle] = squarMod;
+
+//        self.allSquares[button.currentTitle] = squarMod;
 
 //        [button setImage:[UIImage imageNamed:@"setup-head-default"] forState:UIControlStateNormal];
 //        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:squarMod.icon] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
 //            [button setImage:image forState:UIControlStateNormal];
 //        }];
-        [button sd_setImageWithURL:[NSURL URLWithString:squarMod.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
+
     }
 //    CGFloat footHeight = CGRectGetMaxY([self.subviews lastObject].frame);
 //    CGFloat footHeight = CGRectGetMaxY(self.subviews.lastObject.frame);
@@ -100,8 +101,9 @@
     
 
 }
-- (void) buttonClick:(UIButton *)button {
-    meSquareModel *square = self.allSquares[button.currentTitle];
+- (void) buttonClick:(meSquareButton *)button {
+//    meSquareModel *square = self.allSquares[button.currentTitle];
+    meSquareModel *square = button.squreModel; 
     NSLog(@"click: %@,%@",square.name, square.icon);
     if ([square.url hasPrefix:@"http"]) {
         

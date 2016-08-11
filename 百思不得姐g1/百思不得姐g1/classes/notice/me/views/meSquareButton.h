@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class meSquareModel;
 @interface meSquareButton : UIButton
+@property (nonatomic, strong) meSquareModel *squreModel;
 
 @end

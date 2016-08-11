@@ -7,7 +7,8 @@
 //
 
 #import "meSquareButton.h"
-
+#import "UIButton+WebCache.h"
+#import "meSquareModel.h"
 @implementation meSquareButton
 
 - (void)layoutSubviews {
@@ -46,5 +47,9 @@
 //    self.titleLabel.kqy_width = self.kqy_width;
 //    
 //}
-
+- (void)setSqureModel:(meSquareModel *)squreModel {
+    _squreModel = squreModel;
+    [self setTitle:squreModel.name forState:UIControlStateNormal];
+    [self sd_setImageWithURL:[NSURL URLWithString:squreModel.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
+}
 @end
