@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface settingVc : UIViewController
+@interface settingVc : UITableViewController
 
 @end

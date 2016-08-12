@@ -7,28 +7,57 @@
 //
 
 #import "settingVc.h"
-
+#import "SDImageCache.h"
 @implementation settingVc
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
-    // left backBtn
-//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [backBtn setTitle:@"back" forState:UIControlStateNormal];
-//    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-//    [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-//    [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
-//    [backBtn sizeToFit];
-//    backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -25, 0, 0);
-//    [backBtn addTarget:self action:@selector(testClick) forControlEvents:UIControlEventTouchUpInside];
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-//    
+    [self getCacheSize];
+
+}
+- (instancetype)init {
+    return [self initWithStyle:UITableViewStyleGrouped];
 }
 
-- (void) testClick {
-    [self.navigationController popViewControllerAnimated:YES];
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    static NSString *identifier = @"identIdCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        
+    }
+    cell.textLabel.text = @"clear cache";
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath == 0) {
+        NSLog(@"click 0 0");
+      
+    }
+    NSInteger imgSize = [SDImageCache sharedImageCache].getSize;
+    
+    NSLog(@"imgSize: %zd", imgSize);
+ 
+}
+
+- (void)getCacheSize {
+
+    NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+    NSString *dirPath = [cachesPath stringByAppendingPathComponent:@"MP3"];
+    NSLog(@"dirPath:%@",dirPath);
+    //file manager
+    NSFileManager *fileMng =  [NSFileManager defaultManager];
+    // attribute属性
+    NSDictionary *attrs = [fileMng attributesOfItemAtPath:dirPath error:nil];
+    kqyLog(@"%@", attrs);
+    //得到一层文件夹的大小，得到所有的
+    kqyLog(@"content: %@", [fileMng contentsOfDirectoryAtPath:dirPath error:nil]);
+    kqyLog(@"subpaths:%@", [fileMng subpathsAtPath:dirPath]);
+}
 @end
