@@ -59,5 +59,17 @@
     //得到一层文件夹的大小，得到所有的
     kqyLog(@"content: %@", [fileMng contentsOfDirectoryAtPath:dirPath error:nil]);
     kqyLog(@"subpaths:%@", [fileMng subpathsAtPath:dirPath]);
+    NSUInteger size = 0;
+    NSArray *subpaths = [fileMng subpathsAtPath:dirPath];
+    for (NSString *subpath in subpaths) {
+        NSString *fullSubPath = [dirPath stringByAppendingPathComponent:subpath];
+        //文件的FileSize属性
+        NSDictionary *attrs = [fileMng attributesOfItemAtPath:fullSubPath error:nil];
+        size += [attrs[NSFileSize] unsignedIntegerValue];
+    }
+    kqyLog(@"file size : %zd", size / 1000.0);
+    
+    
+    // 
 }
 @end
