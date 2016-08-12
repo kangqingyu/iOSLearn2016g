@@ -34,6 +34,8 @@
 		68ACD2581D5B16C4000BB60B /* kqyFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD2571D5B16C4000BB60B /* kqyFootView.m */; };
 		68ACD25B1D5B2CBA000BB60B /* meSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */; };
 		68ACD25E1D5C503F000BB60B /* meSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD25D1D5C503F000BB60B /* meSquareButton.m */; };
+		68ACD2651D5D66B1000BB60B /* meWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD2631D5D66B1000BB60B /* meWebViewController.m */; };
+		68ACD2661D5D66B1000BB60B /* meWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68ACD2641D5D66B1000BB60B /* meWebViewController.xib */; };
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
@@ -101,6 +103,9 @@
 		68ACD25A1D5B2CBA000BB60B /* meSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meSquareModel.m; sourceTree = "<group>"; };
 		68ACD25C1D5C503F000BB60B /* meSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meSquareButton.h; sourceTree = "<group>"; };
 		68ACD25D1D5C503F000BB60B /* meSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meSquareButton.m; sourceTree = "<group>"; };
+		68ACD2621D5D66B1000BB60B /* meWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meWebViewController.h; sourceTree = "<group>"; };
+		68ACD2631D5D66B1000BB60B /* meWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meWebViewController.m; sourceTree = "<group>"; };
+		68ACD2641D5D66B1000BB60B /* meWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = meWebViewController.xib; sourceTree = "<group>"; };
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
@@ -363,6 +368,9 @@
 				68EDCEA51D46FF9D00BFBD4D /* settingVc.m */,
 				68EDCEA71D47465E00BFBD4D /* kqyBaseTestViewController.h */,
 				68EDCEA81D47465E00BFBD4D /* kqyBaseTestViewController.m */,
+				68ACD2621D5D66B1000BB60B /* meWebViewController.h */,
+				68ACD2631D5D66B1000BB60B /* meWebViewController.m */,
+				68ACD2641D5D66B1000BB60B /* meWebViewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -463,6 +471,7 @@
 				681A9CE41D48938400568316 /* recommendFriendViewController.xib in Resources */,
 				68DF96C41D532673003EB5DD /* test5little.xib in Resources */,
 				688C7AC41D40A5B800957101 /* Assets.xcassets in Resources */,
+				68ACD2661D5D66B1000BB60B /* meWebViewController.xib in Resources */,
 				681A9CE91D48A1CB00568316 /* kqyLoginRegisterViewController.xib in Resources */,
 				68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */,
 				688C7AC21D40A5B800957101 /* Main.storyboard in Resources */,
@@ -525,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68ACD25B1D5B2CBA000BB60B /* meSquareModel.m in Sources */,
+				68ACD2651D5D66B1000BB60B /* meWebViewController.m in Sources */,
 				688C7AEA1D40A67200957101 /* kqyTabBarViewController.m in Sources */,
 				688C7AED1D40A81F00957101 /* kqy1essentialViewController.m in Sources */,
 				688C7B051D43047000957101 /* UIView+kqyExtension.m in Sources */,

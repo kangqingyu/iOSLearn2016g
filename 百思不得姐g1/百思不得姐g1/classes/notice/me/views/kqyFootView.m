@@ -13,6 +13,8 @@
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
 #import "meSquareButton.h"
+#import <SafariServices/SafariServices.h>
+#import "meWebViewController.h"
 @interface kqyFootView ()
 //@property (nonatomic, strong) NSMutableDictionary<NSString *, meSquareModel *> *allSquares;
 
@@ -104,11 +106,21 @@
 - (void) buttonClick:(meSquareButton *)button {
 //    meSquareModel *square = self.allSquares[button.currentTitle];
     meSquareModel *square = button.squreModel; 
-    NSLog(@"click: %@,%@",square.name, square.icon);
+    NSLog(@"click: %@,%@.url:%@",square.name, square.icon, square.url);
     if ([square.url hasPrefix:@"http"]) {
+        NSLog(@"jump...");
+//        meWebViewController *webVC = [[meWebViewController alloc] init];
+//        webVC.url = square.url;
+//        webVC.navigationItem.title = square.name;
+        SFSafariViewController *safarWebV = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:square.url]];
         
+        UITabBarController *mainTabBarVC = self.window.rootViewController;
+//        UINavigationController *meNav = mainTabBarVC.childViewControllers.firstObject;//yp su 这样会因控制器的位置变 而出错。
+        UINavigationController *meNav = mainTabBarVC.selectedViewController;
+        [meNav pushViewController:safarWebV animated:YES];
     } else if([square.url hasSuffix:@"mod"]) {
         
+          
     } else {
         
     }

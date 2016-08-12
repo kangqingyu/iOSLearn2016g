@@ -7,7 +7,7 @@
 //
 
 #import "kqyMeCell.h"
-
+#import <SafariServices/SafariServices.h>
 @implementation kqyMeCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
