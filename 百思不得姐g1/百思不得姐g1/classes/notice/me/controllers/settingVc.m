@@ -68,7 +68,7 @@
         size += [attrs[NSFileSize] unsignedIntegerValue];
     }
     kqyLog(@"file size : %zd", size / 1000.0);
-    
+    // story
     
     // 
 }
