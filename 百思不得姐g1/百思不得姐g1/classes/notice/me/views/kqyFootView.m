@@ -36,7 +36,7 @@
         params[@"c"] = @"topic";
         
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//        manager.securityPolicy.validatesDomainName = NO;// 这个可以忽略HTTP7的安全。
+//        manager.securityPolicy.validatesDomainName = NO;// 这个可以忽略HTTP7的安全。 ee
         
         [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
