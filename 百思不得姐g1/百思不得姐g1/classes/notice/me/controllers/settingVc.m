@@ -13,6 +13,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
     [self getCacheSize];
+    unsigned long long fileSize = [NSString fileSizeForFilePath:@"/Users/kqy/Desktop/mindNumber"];
+    NSLog(@"file desktop: %zd", fileSize);
+    kqyLog(@"%zd",@"/Users/kqy/Desktop/mindNumber".fileSize);
 
 }
 - (instancetype)init {
@@ -47,6 +50,19 @@
 }
 
 - (void)getCacheSize {
+    unsigned long long size = 0;
+    NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+    NSString *dirpath = [cachesPath stringByAppendingPathComponent:@"MP3"];
+    
+    NSFileManager *filMgr = [NSFileManager defaultManager];
+    
+    NSDirectoryEnumerator *enumerator = [filMgr enumeratorAtPath:dirpath];
+    for (NSString *subpath in enumerator) {
+        NSString *fullSubpath = [dirpath stringByAppendingPathComponent:subpath];
+        size += [filMgr attributesOfItemAtPath:fullSubpath error:nil].fileSize;
+    }
+}
+- (void)getCacheSize2 {
 
     NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     NSString *dirPath = [cachesPath stringByAppendingPathComponent:@"MP3"];

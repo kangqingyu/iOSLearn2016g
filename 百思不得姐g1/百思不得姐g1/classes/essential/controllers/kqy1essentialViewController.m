@@ -137,7 +137,6 @@
     
 //    mainScrollView.contentInset = UIEdgeInsetsMake(64 + 20, 0, 49, 0); //不是他，而是tableview 的contentInset.
     
-    NSLog(@"vc count: %zd",vcCount);
     mainScrollView.contentSize = CGSizeMake(vcCount * mainScrollView.kqy_width, 0);
 //    for (int i = 0; i < vcCount; ++i) {
 //        UITableView *childVc = (UITableView *)self.childViewControllers[i].view;
