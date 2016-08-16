@@ -8,14 +8,19 @@
 
 #import "settingVc.h"
 #import "SDImageCache.h"
+#import "meClearCacheCell.h"
 @implementation settingVc
+
+static NSString *const meClearCacheCellId = @"meClearCacheCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
     [self getCacheSize];
-    unsigned long long fileSize = [NSString fileSizeForFilePath:@"/Users/kqy/Desktop/mindNumber"];
-    NSLog(@"file desktop: %zd", fileSize);
-    kqyLog(@"%zd",@"/Users/kqy/Desktop/mindNumber".fileSize);
+//    unsigned long long fileSize = [NSString fileSizeForFilePath:@"/Users/kqy/Desktop/mindNumber"];
+//    NSLog(@"file desktop: %zd", fileSize);
+//    kqyLog(@"%zd",@"/Users/kqy/Desktop/mindNumber".fileSize);
+    
+    [self.tableView registerClass:[meClearCacheCell class] forCellReuseIdentifier:meClearCacheCellId];
 
 }
 - (instancetype)init {
@@ -26,27 +31,21 @@
     return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    static NSString *identifier = @"identIdCell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+//    }
+    meClearCacheCell *cacheCell = [tableView dequeueReusableCellWithIdentifier:meClearCacheCellId];
     
-    static NSString *identifier = @"identIdCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        
-    }
-    cell.textLabel.text = @"clear cache";
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell;
+    return cacheCell;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    kqyLogFunc;
     if (indexPath == 0) {
         NSLog(@"click 0 0");
-      
     }
-    NSInteger imgSize = [SDImageCache sharedImageCache].getSize;
-    
-    NSLog(@"imgSize: %zd", imgSize);
- 
 }
 
 - (void)getCacheSize {

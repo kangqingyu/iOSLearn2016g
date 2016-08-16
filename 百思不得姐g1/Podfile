@@ -5,4 +5,5 @@ target '百思不得姐g1' do
 pod 'AFNetworking',  '~>3.0.4'
 pod 'SDWebImage'
 pod 'MJExtension'
+pod 'SVProgressHUD'
 end

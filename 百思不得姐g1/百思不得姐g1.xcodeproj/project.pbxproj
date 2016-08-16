@@ -37,6 +37,7 @@
 		68ACD2651D5D66B1000BB60B /* meWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD2631D5D66B1000BB60B /* meWebViewController.m */; };
 		68ACD2661D5D66B1000BB60B /* meWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68ACD2641D5D66B1000BB60B /* meWebViewController.xib */; };
 		68BE88DF1D62B1E6001B800E /* NSString+kqyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BE88DE1D62B1E6001B800E /* NSString+kqyExtension.m */; };
+		68BE88E21D62F115001B800E /* meClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BE88E11D62F115001B800E /* meClearCacheCell.m */; };
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
@@ -109,6 +110,8 @@
 		68ACD2641D5D66B1000BB60B /* meWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = meWebViewController.xib; sourceTree = "<group>"; };
 		68BE88DD1D62B1E6001B800E /* NSString+kqyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+kqyExtension.h"; sourceTree = "<group>"; };
 		68BE88DE1D62B1E6001B800E /* NSString+kqyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+kqyExtension.m"; sourceTree = "<group>"; };
+		68BE88E01D62F115001B800E /* meClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meClearCacheCell.h; sourceTree = "<group>"; };
+		68BE88E11D62F115001B800E /* meClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meClearCacheCell.m; sourceTree = "<group>"; };
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
@@ -398,6 +401,8 @@
 				68ACD2571D5B16C4000BB60B /* kqyFootView.m */,
 				68ACD25C1D5C503F000BB60B /* meSquareButton.h */,
 				68ACD25D1D5C503F000BB60B /* meSquareButton.m */,
+				68BE88E01D62F115001B800E /* meClearCacheCell.h */,
+				68BE88E11D62F115001B800E /* meClearCacheCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				688C7AF01D40A85500957101 /* kqy2newViewController.m in Sources */,
 				68ACD2581D5B16C4000BB60B /* kqyFootView.m in Sources */,
 				68EDCEA91D47465E00BFBD4D /* kqyBaseTestViewController.m in Sources */,
+				68BE88E21D62F115001B800E /* meClearCacheCell.m in Sources */,
 				688C7B001D41F72B00957101 /* kqyTabBar.m in Sources */,
 				681A9CE81D48A1CB00568316 /* kqyLoginRegisterViewController.m in Sources */,
 				68EDCEA31D46F59800BFBD4D /* UIBarButtonItem+kqyExtension.m in Sources */,
