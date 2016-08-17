@@ -13,6 +13,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.textLabel.text = @"clear cache（calculating...)";
+        self.userInteractionEnabled = NO;
         //    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [loadingView startAnimating];
@@ -20,6 +21,8 @@
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             
 //            unsigned long long size = @"/Users/kqy/Desktop/kedouxueche".fileSize;
+            [NSThread sleepForTimeInterval:2];
+
             NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
             NSString *dirpath = [cachesPath stringByAppendingPathComponent:@"MP5"];
     
@@ -45,14 +48,19 @@
                 self.textLabel.text = cacheNumber;
                 self.accessoryView = nil;
                 self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellClick)]];
+                self.userInteractionEnabled = YES;
+                //        [self reloadInputViews];
+                //        [self layoutIfNeeded];
+                
             });
         });
-        [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellClick)]];
+        
     }
     return self;
 }
 - (void)cellClick {
-    [SVProgressHUD showWithStatus:@"calculating...."];
+    [SVProgressHUD showWithStatus:@"deleting...."];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     
 //    [SDImageCache sharedImageCache].clearDisk;
@@ -72,6 +80,7 @@
             self.textLabel.text = @"clear (0b)";
             }) ;
         });
+     
     }];
 }
 @end

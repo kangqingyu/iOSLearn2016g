@@ -9,9 +9,13 @@
 #import "settingVc.h"
 #import "SDImageCache.h"
 #import "meClearCacheCell.h"
+#import "meSettingOtherCell.h"
+#import "meOtherCell.h"
 @implementation settingVc
 
 static NSString *const meClearCacheCellId = @"meClearCacheCell";
+static NSString *const meSettingOtherCellId = @"meOtherCell";
+static NSString *const meOtherCellIden = @"otherCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kqyRandomColor;
@@ -21,24 +25,47 @@ static NSString *const meClearCacheCellId = @"meClearCacheCell";
 //    kqyLog(@"%zd",@"/Users/kqy/Desktop/mindNumber".fileSize);
     
     [self.tableView registerClass:[meClearCacheCell class] forCellReuseIdentifier:meClearCacheCellId];
+    [self.tableView registerClass:[meSettingOtherCell class] forCellReuseIdentifier:meSettingOtherCellId];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([meOtherCell class]) bundle:nil] forCellReuseIdentifier:meOtherCellIden];
 
+    
 }
 - (instancetype)init {
     return [self initWithStyle:UITableViewStyleGrouped];
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 15;
+//    if (section == 0) {
+//        return 9    ;
+//    } else {
+//        return 5;
+//    }
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    static NSString *identifier = @"identIdCell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-//    }
-    meClearCacheCell *cacheCell = [tableView dequeueReusableCellWithIdentifier:meClearCacheCellId];
-    
-    return cacheCell;
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0  ) {
+        return [tableView dequeueReusableCellWithIdentifier:meClearCacheCellId];
+        } else {
+            meSettingOtherCell *otherCell = [tableView dequeueReusableCellWithIdentifier:meSettingOtherCellId];
+            if (indexPath.row == 1) {
+                otherCell.textLabel.text = @"222";
+            } else if (indexPath.row == 2) {
+                otherCell.textLabel.text = @"333";
+            } else if (indexPath.row == 3) {
+                otherCell.textLabel.text = @"4444444";
+            } else {
+                otherCell.textLabel.text = @"oooo";
+            }
+            return otherCell;
+        }
+        int x = 5;
+    } else  {
+        return [tableView dequeueReusableCellWithIdentifier:meOtherCellIden];
+    }
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
