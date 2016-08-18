@@ -11,6 +11,7 @@
 #import "essenTopModel.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
 //#import <AFNetworking.h>
 
 @interface allTableViewController ()
@@ -29,15 +30,26 @@
     [self setupRefresh];
 }
 - (void)setupRefresh {
-    UIRefreshControl *control = [[UIRefreshControl alloc] init];
-    [control addTarget:self action:@selector(loadNewTopics:) forControlEvents:UIControlEventValueChanged];
-    [control beginRefreshing];
-    [self loadNewTopics:control];
+//    UIRefreshControl *control = [[UIRefreshControl alloc] init];
+//    [control addTarget:self action:@selector(loadNewTopics:) forControlEvents:UIControlEventValueChanged];
+//    [control beginRefreshing];
+//    [self loadNewTopics:control];
+//    
+//    [self.tableView addSubview:control];
     
-    [self.tableView addSubview:control];
+//    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        kqyLogFunc
+//    }];
+    MJRefreshNormalHeader *mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
+    mj_header.automaticallyChangeAlpha = YES;
+    mj_header.lastUpdatedTime.accessibilityElementsHidden = YES;
+    mj_header.stateLabel.hidden = YES;
+    mj_header.arrowView.hidden = YES;
+    self.tableView.mj_header = mj_header;
 }
 
-- (void)loadNewTopics:(UIRefreshControl *)control {
+//- (void)loadNewTopics:(UIRefreshControl *)control {
+- (void)loadNewTopics{
     kqyLogFunc;
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
@@ -50,11 +62,12 @@
          kqyLog(@"write ok 0818.plist");
          self.topics = [essenTopModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
          [self.tableView reloadData];
-
-         [control endRefreshing];
+         [self.tableView.mj_header endRefreshing];
+//         [control endRefreshing];
      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
          kqyLog(@"error:%@", error);
-         [control endRefreshing];
+         [self.tableView.mj_header endRefreshing];
+//         [control endRefreshing];
      }];
 }
 
