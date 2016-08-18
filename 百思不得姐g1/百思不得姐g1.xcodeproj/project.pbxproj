@@ -41,6 +41,7 @@
 		68BE88E51D63F9AB001B800E /* meSettingOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BE88E41D63F9AB001B800E /* meSettingOtherCell.m */; };
 		68BE88E91D640667001B800E /* meOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BE88E71D640667001B800E /* meOtherCell.m */; };
 		68BE88EA1D640667001B800E /* meOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68BE88E81D640667001B800E /* meOtherCell.xib */; };
+		68BE88ED1D6553EC001B800E /* essenTopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BE88EC1D6553EC001B800E /* essenTopModel.m */; };
 		68DF96C01D52F493003EB5DD /* test3buttonxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */; };
 		68DF96C21D5323A0003EB5DD /* test4labelxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C11D5323A0003EB5DD /* test4labelxib.xib */; };
 		68DF96C41D532673003EB5DD /* test5little.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF96C31D532673003EB5DD /* test5little.xib */; };
@@ -120,6 +121,8 @@
 		68BE88E61D640667001B800E /* meOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meOtherCell.h; sourceTree = "<group>"; };
 		68BE88E71D640667001B800E /* meOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meOtherCell.m; sourceTree = "<group>"; };
 		68BE88E81D640667001B800E /* meOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = meOtherCell.xib; sourceTree = "<group>"; };
+		68BE88EB1D6553EC001B800E /* essenTopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = essenTopModel.h; sourceTree = "<group>"; };
+		68BE88EC1D6553EC001B800E /* essenTopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = essenTopModel.m; sourceTree = "<group>"; };
 		68DF96BF1D52F493003EB5DD /* test3buttonxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test3buttonxib.xib; sourceTree = "<group>"; };
 		68DF96C11D5323A0003EB5DD /* test4labelxib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test4labelxib.xib; sourceTree = "<group>"; };
 		68DF96C31D532673003EB5DD /* test5little.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test5little.xib; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 		688C7AD11D40A5DD00957101 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				68BE88EB1D6553EC001B800E /* essenTopModel.h */,
+				68BE88EC1D6553EC001B800E /* essenTopModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -589,6 +594,7 @@
 				681A9CED1D49A19B00568316 /* loginBtn.m in Sources */,
 				681A9CF31D4AF75600568316 /* allTableViewController.m in Sources */,
 				688C7AE71D40A66500957101 /* kqyNavViewController.m in Sources */,
+				68BE88ED1D6553EC001B800E /* essenTopModel.m in Sources */,
 				688C7AB91D40A5B800957101 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

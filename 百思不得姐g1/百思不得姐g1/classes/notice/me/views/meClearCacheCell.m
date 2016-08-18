@@ -18,11 +18,17 @@
         UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [loadingView startAnimating];
         self.accessoryView = loadingView;
+        __weak typeof(self) weakSelf = self;
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             
 //            unsigned long long size = @"/Users/kqy/Desktop/kedouxueche".fileSize;
-            [NSThread sleepForTimeInterval:2];
+            [NSThread sleepForTimeInterval:5];
 
+            kqyLog(@"1111");
+            if (!weakSelf) {
+                return ;
+            }
+            kqyLog(@"222");
             NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
             NSString *dirpath = [cachesPath stringByAppendingPathComponent:@"MP5"];
     
@@ -45,11 +51,11 @@
             NSString *cacheNumber = [NSString stringWithFormat:@"%@",cacheStr];
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                self.textLabel.text = cacheNumber;
-                self.accessoryView = nil;
-                self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-                [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellClick)]];
-                self.userInteractionEnabled = YES;
+                weakSelf.textLabel.text = cacheNumber;
+                weakSelf.accessoryView = nil;
+                weakSelf.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                [weakSelf addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:weakSelf action:@selector(cellClick)]];
+                weakSelf.userInteractionEnabled = YES;
                 //        [self reloadInputViews];
                 //        [self layoutIfNeeded];
                 
@@ -58,6 +64,9 @@
         
     }
     return self;
+}
+- (void)dealloc {
+    kqyLogFunc;
 }
 - (void)cellClick {
     [SVProgressHUD showWithStatus:@"deleting...."];
@@ -82,5 +91,11 @@
         });
      
     }];
+}
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    UIActivityIndicatorView *loadingView = (UIActivityIndicatorView *)self.accessoryView;
+    [loadingView startAnimating];
+    kqyLogFunc;
 }
 @end

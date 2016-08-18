@@ -27,7 +27,6 @@ static NSString *const meOtherCellIden = @"otherCell";
     [self.tableView registerClass:[meClearCacheCell class] forCellReuseIdentifier:meClearCacheCellId];
     [self.tableView registerClass:[meSettingOtherCell class] forCellReuseIdentifier:meSettingOtherCellId];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([meOtherCell class]) bundle:nil] forCellReuseIdentifier:meOtherCellIden];
-
     
 }
 - (instancetype)init {
@@ -48,7 +47,11 @@ static NSString *const meOtherCellIden = @"otherCell";
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == 0  ) {
-        return [tableView dequeueReusableCellWithIdentifier:meClearCacheCellId];
+            meClearCacheCell *clearCacheCell = [tableView dequeueReusableCellWithIdentifier:meClearCacheCellId];
+            // reload circle
+//            UIActivityIndicatorView *loadingView = (UIActivityIndicatorView *)clearCacheCell.accessoryView;
+//            [loadingView startAnimating];
+            return clearCacheCell;
         } else {
             meSettingOtherCell *otherCell = [tableView dequeueReusableCellWithIdentifier:meSettingOtherCellId];
             if (indexPath.row == 1) {
@@ -62,7 +65,6 @@ static NSString *const meOtherCellIden = @"otherCell";
             }
             return otherCell;
         }
-        int x = 5;
     } else  {
         return [tableView dequeueReusableCellWithIdentifier:meOtherCellIden];
     }

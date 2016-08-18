@@ -7,8 +7,14 @@
 //
 
 #import "allTableViewController.h"
+#import "AFNetworking.h"
+#import "essenTopModel.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+//#import <AFNetworking.h>
 
 @interface allTableViewController ()
+@property (nonatomic, strong) NSArray<essenTopModel *> *topics;
 
 @end
 
@@ -18,24 +24,43 @@
     [super viewDidLoad];
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    [self loadNewTopics];
+    [self setupRefresh];
+}
+- (void)setupRefresh {
+    UIRefreshControl *control = [[UIRefreshControl alloc] init];
+    [control addTarget:self action:@selector(loadNewTopics:) forControlEvents:UIControlEventValueChanged];
+    [control beginRefreshing];
+    [self loadNewTopics:control];
+    
+    [self.tableView addSubview:control];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadNewTopics:(UIRefreshControl *)control {
+    kqyLogFunc;
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php"
+    parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    
+     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//         [responseObject writeToFile:@"/Users/kqy/Desktop/0818plist" atomically:YES];
+         kqyLog(@"write ok 0818.plist");
+         self.topics = [essenTopModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+         [self.tableView reloadData];
+
+         [control endRefreshing];
+     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         kqyLog(@"error:%@", error);
+         [control endRefreshing];
+     }];
 }
-
-#pragma mark - Table view data source
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 35;
+    return self.topics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,8 +71,10 @@
         cell.backgroundColor = kqyRandomColor;
         
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %zd",[self class], indexPath.row];
-    
+    essenTopModel *topModel = self.topics[indexPath.row];
+    cell.textLabel.text = topModel.name;
+    cell.detailTextLabel.text = topModel.text;
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topModel.profile_image] placeholderImage:[UIImage imageNamed:@"common-gif"]];
     // Configure the cell...
     
     return cell;
