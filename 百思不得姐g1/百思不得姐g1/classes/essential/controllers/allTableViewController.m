@@ -48,6 +48,7 @@
     self.tableView.mj_header = mj_header;
 }
 //
+//
 
 //- (void)loadNewTopics:(UIRefreshControl *)control {
 - (void)loadNewTopics{
