@@ -98,4 +98,5 @@
     [loadingView startAnimating];
     kqyLogFunc;
 }
+
 @end
