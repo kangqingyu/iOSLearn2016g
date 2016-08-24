@@ -99,5 +99,4 @@
     kqyLogFunc;
 }
 
-//
 @end
