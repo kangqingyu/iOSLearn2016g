@@ -7,15 +7,49 @@
 //
 
 #import "kqyTabBarView.h"
-
+#import "kqyTabBarButton.h"
+@interface kqyTabBarView ()
+@property (nonatomic, weak) UIButton *selectedBtn;
+@end
 @implementation kqyTabBarView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)setBarItems:(NSArray *)barItems {
+    _barItems = barItems;
+    int i = 100;
+    for (UITabBarItem *item in barItems) {
+        kqyTabBarButton *button = [kqyTabBarButton buttonWithType:UIButtonTypeCustom];
+        button.tag = i;
+        [button setImage:item.image forState:UIControlStateNormal];
+        [button setImage:item.selectedImage forState:UIControlStateSelected];
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+        ++ i;
+     if (i == 100) {
+        [self buttonClick:button ];
+        }
+        [self addSubview:button];
+    }
 }
-*/
 
+- (void)buttonClick:(UIButton *)button {
+    self.selectedBtn.selected = NO;
+    _selectedBtn = button;
+    _selectedBtn.selected = YES;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    int count = (int)self.barItems.count;
+    
+//    CGFloat buttonW = self.frame.size.width / count;
+//    CGFloat buttonH = self.frame.size.height;
+    CGFloat buttonW = self.bounds.size.width / count;
+    CGFloat buttonH = self.bounds.size.height;
+    CGFloat buttonX = 0;
+    CGFloat buttonY = 0;
+    for (int i = 0; i < count; ++i) {
+        UIButton *button = self.subviews[i];
+        buttonX = buttonW * i;
+        button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
+    }
+
+}
 @end

@@ -8,24 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		6804ABFC1D7D0BC7008DC2C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804ABFB1D7D0BC7008DC2C4 /* main.m */; };
-		6804ABFF1D7D0BC7008DC2C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804ABFE1D7D0BC7008DC2C4 /* AppDelegate.m */; };
-		6804AC021D7D0BC7008DC2C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC011D7D0BC7008DC2C4 /* ViewController.m */; };
 		6804AC051D7D0BC7008DC2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6804AC031D7D0BC7008DC2C4 /* Main.storyboard */; };
 		6804AC071D7D0BC7008DC2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6804AC061D7D0BC7008DC2C4 /* Assets.xcassets */; };
 		6804AC0A1D7D0BC7008DC2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6804AC081D7D0BC7008DC2C4 /* LaunchScreen.storyboard */; };
+		6804AC2D1D7D0D30008DC2C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC2C1D7D0D30008DC2C4 /* AppDelegate.m */; };
+		6804AC301D7D0E9F008DC2C4 /* kqyArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC2F1D7D0E9F008DC2C4 /* kqyArenaViewController.m */; };
+		6804AC331D7D0EC5008DC2C4 /* kqyDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC321D7D0EC5008DC2C4 /* kqyDiscoveryViewController.m */; };
+		6804AC361D7D0EDD008DC2C4 /* kqyHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC351D7D0EDD008DC2C4 /* kqyHistoryViewController.m */; };
+		6804AC391D7D0EFA008DC2C4 /* kqyHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC381D7D0EFA008DC2C4 /* kqyHallViewController.m */; };
+		6804AC3C1D7D0F17008DC2C4 /* kqyMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC3B1D7D0F17008DC2C4 /* kqyMyLotteryViewController.m */; };
+		6804AC3F1D7D0FCE008DC2C4 /* kqyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC3E1D7D0FCE008DC2C4 /* kqyTabBarViewController.m */; };
+		6804AC421D7D0FE1008DC2C4 /* kqyNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC411D7D0FE1008DC2C4 /* kqyNavViewController.m */; };
+		6804AC451D7D48A0008DC2C4 /* kqyTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC441D7D48A0008DC2C4 /* kqyTabBarView.m */; };
+		6804AC481D7D5CD2008DC2C4 /* kqyTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804AC471D7D5CD2008DC2C4 /* kqyTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6804ABF71D7D0BC7008DC2C4 /* 网易彩票g1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易彩票g1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6804ABFB1D7D0BC7008DC2C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6804ABFD1D7D0BC7008DC2C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6804ABFE1D7D0BC7008DC2C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6804AC001D7D0BC7008DC2C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6804AC011D7D0BC7008DC2C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6804AC041D7D0BC7008DC2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6804AC061D7D0BC7008DC2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6804AC091D7D0BC7008DC2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6804AC0B1D7D0BC7008DC2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6804AC2B1D7D0D30008DC2C4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6804AC2C1D7D0D30008DC2C4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6804AC2E1D7D0E9F008DC2C4 /* kqyArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyArenaViewController.h; sourceTree = "<group>"; };
+		6804AC2F1D7D0E9F008DC2C4 /* kqyArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyArenaViewController.m; sourceTree = "<group>"; };
+		6804AC311D7D0EC5008DC2C4 /* kqyDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyDiscoveryViewController.h; sourceTree = "<group>"; };
+		6804AC321D7D0EC5008DC2C4 /* kqyDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyDiscoveryViewController.m; sourceTree = "<group>"; };
+		6804AC341D7D0EDD008DC2C4 /* kqyHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyHistoryViewController.h; sourceTree = "<group>"; };
+		6804AC351D7D0EDD008DC2C4 /* kqyHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyHistoryViewController.m; sourceTree = "<group>"; };
+		6804AC371D7D0EFA008DC2C4 /* kqyHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyHallViewController.h; sourceTree = "<group>"; };
+		6804AC381D7D0EFA008DC2C4 /* kqyHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyHallViewController.m; sourceTree = "<group>"; };
+		6804AC3A1D7D0F17008DC2C4 /* kqyMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyMyLotteryViewController.h; sourceTree = "<group>"; };
+		6804AC3B1D7D0F17008DC2C4 /* kqyMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyMyLotteryViewController.m; sourceTree = "<group>"; };
+		6804AC3D1D7D0FCE008DC2C4 /* kqyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyTabBarViewController.h; sourceTree = "<group>"; };
+		6804AC3E1D7D0FCE008DC2C4 /* kqyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBarViewController.m; sourceTree = "<group>"; };
+		6804AC401D7D0FE1008DC2C4 /* kqyNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyNavViewController.h; sourceTree = "<group>"; };
+		6804AC411D7D0FE1008DC2C4 /* kqyNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyNavViewController.m; sourceTree = "<group>"; };
+		6804AC431D7D48A0008DC2C4 /* kqyTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyTabBarView.h; sourceTree = "<group>"; };
+		6804AC441D7D48A0008DC2C4 /* kqyTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBarView.m; sourceTree = "<group>"; };
+		6804AC461D7D5CD2008DC2C4 /* kqyTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqyTabBarButton.h; sourceTree = "<group>"; };
+		6804AC471D7D5CD2008DC2C4 /* kqyTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kqyTabBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +82,10 @@
 		6804ABF91D7D0BC7008DC2C4 /* 网易彩票g1 */ = {
 			isa = PBXGroup;
 			children = (
-				6804ABFD1D7D0BC7008DC2C4 /* AppDelegate.h */,
-				6804ABFE1D7D0BC7008DC2C4 /* AppDelegate.m */,
-				6804AC001D7D0BC7008DC2C4 /* ViewController.h */,
-				6804AC011D7D0BC7008DC2C4 /* ViewController.m */,
-				6804AC031D7D0BC7008DC2C4 /* Main.storyboard */,
+				6804AC111D7D0D30008DC2C4 /* Classes */,
 				6804AC061D7D0BC7008DC2C4 /* Assets.xcassets */,
 				6804AC081D7D0BC7008DC2C4 /* LaunchScreen.storyboard */,
+				6804AC031D7D0BC7008DC2C4 /* Main.storyboard */,
 				6804AC0B1D7D0BC7008DC2C4 /* Info.plist */,
 				6804ABFA1D7D0BC7008DC2C4 /* Supporting Files */,
 			);
@@ -77,6 +98,233 @@
 				6804ABFB1D7D0BC7008DC2C4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6804AC111D7D0D30008DC2C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC121D7D0D30008DC2C4 /* Arena */,
+				6804AC161D7D0D30008DC2C4 /* Discover */,
+				6804AC1A1D7D0D30008DC2C4 /* History */,
+				6804AC1E1D7D0D30008DC2C4 /* LotteryHall */,
+				6804AC261D7D0D30008DC2C4 /* MyLottery */,
+				6804AC221D7D0D30008DC2C4 /* Main */,
+				6804AC2A1D7D0D30008DC2C4 /* others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6804AC121D7D0D30008DC2C4 /* Arena */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC131D7D0D30008DC2C4 /* Controllers */,
+				6804AC141D7D0D30008DC2C4 /* Models */,
+				6804AC151D7D0D30008DC2C4 /* Views */,
+			);
+			path = Arena;
+			sourceTree = "<group>";
+		};
+		6804AC131D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC2E1D7D0E9F008DC2C4 /* kqyArenaViewController.h */,
+				6804AC2F1D7D0E9F008DC2C4 /* kqyArenaViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC141D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC151D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC161D7D0D30008DC2C4 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC171D7D0D30008DC2C4 /* Controllers */,
+				6804AC181D7D0D30008DC2C4 /* Models */,
+				6804AC191D7D0D30008DC2C4 /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		6804AC171D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC311D7D0EC5008DC2C4 /* kqyDiscoveryViewController.h */,
+				6804AC321D7D0EC5008DC2C4 /* kqyDiscoveryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC181D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC191D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC1A1D7D0D30008DC2C4 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC1B1D7D0D30008DC2C4 /* Controllers */,
+				6804AC1C1D7D0D30008DC2C4 /* Models */,
+				6804AC1D1D7D0D30008DC2C4 /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		6804AC1B1D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC341D7D0EDD008DC2C4 /* kqyHistoryViewController.h */,
+				6804AC351D7D0EDD008DC2C4 /* kqyHistoryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC1C1D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC1D1D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC1E1D7D0D30008DC2C4 /* LotteryHall */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC1F1D7D0D30008DC2C4 /* Controllers */,
+				6804AC201D7D0D30008DC2C4 /* Models */,
+				6804AC211D7D0D30008DC2C4 /* Views */,
+			);
+			path = LotteryHall;
+			sourceTree = "<group>";
+		};
+		6804AC1F1D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC371D7D0EFA008DC2C4 /* kqyHallViewController.h */,
+				6804AC381D7D0EFA008DC2C4 /* kqyHallViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC201D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC211D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC221D7D0D30008DC2C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC231D7D0D30008DC2C4 /* Controllers */,
+				6804AC241D7D0D30008DC2C4 /* Models */,
+				6804AC251D7D0D30008DC2C4 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6804AC231D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC3D1D7D0FCE008DC2C4 /* kqyTabBarViewController.h */,
+				6804AC3E1D7D0FCE008DC2C4 /* kqyTabBarViewController.m */,
+				6804AC401D7D0FE1008DC2C4 /* kqyNavViewController.h */,
+				6804AC411D7D0FE1008DC2C4 /* kqyNavViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC241D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC251D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC431D7D48A0008DC2C4 /* kqyTabBarView.h */,
+				6804AC441D7D48A0008DC2C4 /* kqyTabBarView.m */,
+				6804AC461D7D5CD2008DC2C4 /* kqyTabBarButton.h */,
+				6804AC471D7D5CD2008DC2C4 /* kqyTabBarButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC261D7D0D30008DC2C4 /* MyLottery */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC271D7D0D30008DC2C4 /* Controllers */,
+				6804AC281D7D0D30008DC2C4 /* Models */,
+				6804AC291D7D0D30008DC2C4 /* Views */,
+			);
+			path = MyLottery;
+			sourceTree = "<group>";
+		};
+		6804AC271D7D0D30008DC2C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC3A1D7D0F17008DC2C4 /* kqyMyLotteryViewController.h */,
+				6804AC3B1D7D0F17008DC2C4 /* kqyMyLotteryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6804AC281D7D0D30008DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6804AC291D7D0D30008DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6804AC2A1D7D0D30008DC2C4 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				6804AC2B1D7D0D30008DC2C4 /* AppDelegate.h */,
+				6804AC2C1D7D0D30008DC2C4 /* AppDelegate.m */,
+			);
+			path = others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +353,7 @@
 		6804ABEF1D7D0BC7008DC2C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = kqy;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = kqy;
 				TargetAttributes = {
@@ -149,9 +398,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6804AC021D7D0BC7008DC2C4 /* ViewController.m in Sources */,
-				6804ABFF1D7D0BC7008DC2C4 /* AppDelegate.m in Sources */,
+				6804AC2D1D7D0D30008DC2C4 /* AppDelegate.m in Sources */,
+				6804AC421D7D0FE1008DC2C4 /* kqyNavViewController.m in Sources */,
 				6804ABFC1D7D0BC7008DC2C4 /* main.m in Sources */,
+				6804AC301D7D0E9F008DC2C4 /* kqyArenaViewController.m in Sources */,
+				6804AC361D7D0EDD008DC2C4 /* kqyHistoryViewController.m in Sources */,
+				6804AC3F1D7D0FCE008DC2C4 /* kqyTabBarViewController.m in Sources */,
+				6804AC451D7D48A0008DC2C4 /* kqyTabBarView.m in Sources */,
+				6804AC481D7D5CD2008DC2C4 /* kqyTabBarButton.m in Sources */,
+				6804AC331D7D0EC5008DC2C4 /* kqyDiscoveryViewController.m in Sources */,
+				6804AC391D7D0EFA008DC2C4 /* kqyHallViewController.m in Sources */,
+				6804AC3C1D7D0F17008DC2C4 /* kqyMyLotteryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

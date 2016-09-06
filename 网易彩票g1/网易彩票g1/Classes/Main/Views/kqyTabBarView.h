@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface kqyTabBarView : UIView
+@property (nonatomic, strong) NSArray  *barItems;
 
-@end
+@end       
