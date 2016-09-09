@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class kqyTabBarView;
+@protocol kqyTabBarViewDelegate <NSObject>
+@optional
+- (void)tabBar:(kqyTabBarView *)tabBar didClickBtn:(NSInteger)buttonIndex;
+@end
+                
 @interface kqyTabBarView : UIView
+@property (nonatomic, weak) id<kqyTabBarViewDelegate> delegate;
 @property (nonatomic, strong) NSArray  *barItems;
 
 @end       
