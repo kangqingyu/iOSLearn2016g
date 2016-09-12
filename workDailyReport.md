@@ -337,7 +337,151 @@ pod install --no-repo-update 这样快多了。
     解决了使用三方库时编译错误的问题。
     学习了3场部门的讲座。
    
+#2016.8.22
  
+ 教练端的代码，看完第3部分发现。
+ ddcoach:
+ userSafeViewController这个是以后打算用的？
+#2016.8.23
+常用的json序列化工具JsonKit,SBJson,TouchJson,NSJSONSerialization.从服务器收到的 json数据转为模型常用的框架有Mantle,JSONM。
+当有一个APP的ipa时，可以用iOS Image Extractor提取出其中的图。
+当一个控制器没有设背景色，tabbar出现这个时会移动一点，给人以延时的感觉，原来这是原生的特性。
  
- 
- 
+#2016.8.24
+通过stringByAppendingPathComponent，stringByAppendingString这2个方法可以得到路径，但是如果不小心出错，并没有提醒，使用NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+大多数文件夹都有枚举定义，个别没有的就需要拼接了。
+   当模型要存储时，但是无法调用writeToFile时，就要用归档，反归档了。
+    一个tabBarVc中有A,B，C,3个控制器，调用的方法顺序，如果是A切换到B，刚是：B viewDidLoad.B viewWillAppear.A viewWillDisappear. A viewDidDisAppear. B viewDidAppear. 当来回切换，view DidLoad 则不再调用。
+
+
+
+
+本周练习：通讯录的代码写法。其中用了3种存储方法。
+
+
+#2016.8.25
+bool 类改写getter方法。getter = isVip.
+如果用了autolayout. 则不可以用frame了。如果想要改，.通过storyboard拖线可以得到对应的约束。
+
+#2016.8.26
+uicollectionViewLayout作为父类，uicollectionFlowLayout多了更多的功能。
+开会讲了下次进行推广的细节，大家都要了解一下客服的流程。
+本周：看教练端的代码，看完第3部分发现。对法律模块字体进行修改。
+学习了常用的json序列化工具。通讯录中存联系人的3种方法，顺，逆传值。
+学习了collectionView的使用。
+
+#2016.8.29  
+Masonry现在都加上了mas前缀。
+装箱：make.top.mas_equalTo(42)，不加mas就会出错。
+纯代码写自动布局，不等高算定义cell 的时候，在算定义cell的setBlogModel方法时，对时有时无的图（微博有些没图，有些有图）在这里判断并分两种情况写上布局的改变。
+
+#2016.8.30 
+uicollectionView sectionInset可以设四周的边距；
+minimumInteritemSpacing 设item之间的距离；
+uicollectionViewController的头尾要通过代理来设置.
+查找某个类可以用command+shift+o.
+
+400电话客服的问题：武汉信呼通讯有限责任公司。可以连20个人的手机。
+1.按顺序依次震铃，间隔可自定义，第一个绑定的电话没人接听或占线时即呼叫第一个绑定的电话，依次呼叫； 
+2.在绑定的电话中随机选择一个电话震铃，如其占线，则随机呼叫另外一个绑定的电话；
+3.绑定的电话同时震铃，直到其中一个电话接起电话为止。    
+企业为了达到为客户提供24小时全天候的服务，也可以将不同的来电时间转接到不同的号码接听，比如工作时间将来电转接至公司座机、非工作时间可以转接至客服人员手机。这样确保了在任何时间下不错失任何一个电话，也体现了企业用户至上的服务理念。
+向外拨打问题：联通的是买3年的套餐才可以向外拨打
+
+
+#2016.8.31
+launch screen file 可以省去不同尺寸的麻烦。
+用uicollectionView,uiTAbleView的时候，如果横屏，刚左右两侧会空出很多地方，这是因为旋转的时候屏宽并没变。在uicollectionView中就可以用uicollectionViewFlowLayout来解决这个问题。
+
+#2016.9.1
+tabbar Image的图过大无法显示,会变成一个方块
+要自定义tabBar才可解决这个问题.
+1.自定义tabBar.2自定义UIView代替tabBar
+因为即使自定义了tabBar,依然是tabBar，所以用uiview可以有其他的优势。
+
+在ARC中，没有被强引用的何时被销毁？
+并不会马上被销毁，在下一次运行循环到来时，看哪些没有强引用，才会被销毁。
+
+
+#2016.9.2
+搜索到很多结果时，google选中一个只会转到另一个界面，并不会重新打开一个标签，command+k之后再按可以解决这个问题。
+封装不同的类，用代理更方便进行相与之前的联系。uitableView,uiScrollView都用代理，统一性更好，扩展性更好。
+
+本周的总结：
+学习了uicollectionView;masonry框架，这在蝌蚪两款产品中应用广泛。
+解决了400只有梦瑶一个客服的问题。
+
+#2016.9.5
+重写tabBar用uiView的话，要先把tabBar移除，才可以显示出来算定义的uiView;
+
+400电话绑定，联系：QQ:130950400.TELL:18986228758；88863803。需要绑定的手机的发票，发给400服务商就可以把这个手机号绑定。
+
+#2016.9.6
+在uinavigationcontroller中得到其他的uinavigationBar.可以用[uinavigationBar appearance]，这个可以改变所有的uinavigationBar的颜色。但是实际只要改变一部分，就可以用uinavigationBar appearanceWehnContainedInInstancesOfClasses:self];
+init方法在其和子类中都会调用。如果只想调用一次，刚要判断其是不是为父类。
+蒙版中加入uiview,其透明度都是一样的，分开写可以让只有其中一个是透明的。
+代理可以让类之前更加低耦合。
+
+#2016.9.7
+block在ARC中，要定义为strong，才不会被销毁。非arc中没有strong,weak，要用copy. 
+
+为了方便等到uiview的width,height,x,y，可以写uiview的分类，上一个百思项目是都是一个个写的定义，其实可以写property，这样就自动生成了声名，只要自己实现一下方法就可以了。
+
+#2016.9.8
+uisegment.tintcolor是分割线有颜色。
+discover界面用storyboard来写。
+当定义一个button有imageView,title的时候，如果要多次发动这个文字内容，每次都要sizeToFit，可以重写setTitle方法，把sizeToFit写在这里边。  
+#2016.9.9
+QZ周一发布的APP已上架。
+从git上pull的时候，提示：
+kangMac:DDCoach kqy$ git pull origin master
+remote: Counting objects: 18, done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 18 (delta 14), reused 0 (delta 0)
+Unpacking objects: 100% (18/18), done.
+From git.oschina.net:A3dexam/DDCoach
+ * branch            master     -> FETCH_HEAD
+   c6551ba..9059e43  master     -> origin/master
+Updating c6551ba..9059e43
+error: Your local changes to the following files would be overwritten by merge:
+	DDCoach/DDCoach.xcodeproj/project.pbxproj
+	DDCoach/DDCoach/Classes/Me-我的/Info-个人信息/UserInfoCell.xib
+Please, commit your changes or stash them before you can merge.
+Aborting
+
+当转到kqy 分支时。
+error: you need to resolve your current index first
+好像上一次因为和master不同步，一直没管他了，原来这里有错导致后边总是出错。
+git：回退到上一个版本：
+git reset --hard HEAD^^
+然后在 kqy分支中pull master 就可以得到最新的同步，现在在kqy，在这里改，提交到kqy即可。
+
+
+conflict:
+order:writeorder viewcontroller
+205行有错。
+/Users/kqy/Desktop/A3dexam-qianzhen/A3dexam/A3dexam/A3dexam/Classes/Order-订单/View/WriteOrderTableViewCell.xib
+Line 40:startTag: invalid element name
+xib冲突：原来用textEdit打开可以改冲突。
+<<<<<<< HEAD
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-ox-bpY">
+                        <rect key="frame" x="110" y="10" width="459" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+=======
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-ox-bpY">
+                        <rect key="frame" x="110" y="10" width="459" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+>>>>>>> a064d3730a6a017e0f8c5fbebf8fadc7f85b8d40
+
+
+日志：冲突时可以回退：git reset --hard HEAD^^
+Line 40:startTag: invalid element name
+xib冲突：原来用textEdit打开可以改冲突。
+周总结：修改关于我们界面箭头的颜色，全局统一；
+版本介绍后没有界面，取消箭头；
+引导页面第4页为空，删除这个空白页。
+#2016.9.11
+看完彩票第2天的隐藏tabbar。
+data:
+完成蝌蚪聚力公众号简单的自动回复。
+选择以后为做公众号学习的内容：h4,css,js,h5,php等计划。
