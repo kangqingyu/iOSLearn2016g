@@ -17,4 +17,5 @@
 @property (nonatomic, weak) id<kqyTabBarViewDelegate> delegate;
 @property (nonatomic, strong) NSArray  *barItems;
 
+//
 @end       
