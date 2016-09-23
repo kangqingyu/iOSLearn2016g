@@ -36,6 +36,7 @@
     return self;
 }
 
+//
 //- (void)layoutSubviews {
 //    [super layoutSubviews];
 //    self.imageView.kqy_y = 0;
