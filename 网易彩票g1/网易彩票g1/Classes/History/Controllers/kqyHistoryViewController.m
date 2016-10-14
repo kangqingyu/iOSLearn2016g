@@ -28,8 +28,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//
-//
 
 //
 #pragma mark - Table view data source
