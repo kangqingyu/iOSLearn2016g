@@ -32,7 +32,7 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,7 +48,7 @@
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,7 +64,7 @@
             startingLineNumber = "45"
             endingLineNumber = "45"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,7 +80,7 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,7 +96,7 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,7 +128,7 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -176,7 +176,7 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "-initWithStyle:reuseIdentifier:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

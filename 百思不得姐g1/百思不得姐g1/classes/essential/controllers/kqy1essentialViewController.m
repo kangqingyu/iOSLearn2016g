@@ -56,6 +56,7 @@
     NSArray *titleArray =@[@"all", @"videos", @"voices", @"com", @"5"];
     for (int i = 0; i < titleBtnNumber; ++i) {
         titleButton *titleBtn = [titleButton buttonWithType:UIButtonTypeCustom];
+        [titleBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [titleBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         titleBtn.tag = i;
         [titleBtn setTitle:titleArray[i] forState:UIControlStateNormal];
