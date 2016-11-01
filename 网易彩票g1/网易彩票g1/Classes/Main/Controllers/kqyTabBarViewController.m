@@ -54,7 +54,7 @@
     kqyNavViewController *nav =[[kqyNavViewController alloc] initWithRootViewController:childVC];
     childVC.navigationItem.title = title;
     self.tabBarItem.title = title;
-   
+   //
 //    self.tabBarItem.image = [UIImage imageNamed:image];
 //    self.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     nav.tabBarItem.image = [UIImage imageNamed:image];
