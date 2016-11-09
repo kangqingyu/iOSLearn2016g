@@ -57,7 +57,6 @@
    //
     //
     //
-    //
 //    self.tabBarItem.image = [UIImage imageNamed:image];
 //    self.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     nav.tabBarItem.image = [UIImage imageNamed:image];
