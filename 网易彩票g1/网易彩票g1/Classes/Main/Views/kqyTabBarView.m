@@ -31,14 +31,17 @@
 
 - (void)buttonClick:(UIButton *)button {
     self.selectedBtn.selected = NO;
+    button.selected = YES;
     _selectedBtn = button;
-    _selectedBtn.selected = YES;
+//
+    if ([_delegate respondsToSelector:@selector((tabBar:didClickBtn:))]) {
+        [_delegate tabBar:self didClickBtn:button.tag];
+    }
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     int count = (int)self.barItems.count;
-    
 //    CGFloat buttonW = self.frame.size.width / count;
 //    CGFloat buttonH = self.frame.size.height;
     CGFloat buttonW = self.bounds.size.width / count;
@@ -50,6 +53,5 @@
         buttonX = buttonW * i;
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
     }
-
 }
 @end

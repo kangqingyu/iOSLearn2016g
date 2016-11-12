@@ -14,7 +14,7 @@
 #import "kqyMyLotteryViewController.h"
 #import "kqyNavViewController.h"
 #import "kqyTabBarView.h"
-@interface kqyTabBarViewController ()
+@interface kqyTabBarViewController () <kqyTabBarViewDelegate>
 @property (nonatomic, strong) NSMutableArray *items;
 
 @end
@@ -35,10 +35,10 @@
     [self.tabBar removeFromSuperview];
     kqyTabBarView *tabBarView = [[kqyTabBarView alloc] initWithFrame:self.tabBar.frame];
     tabBarView.barItems = _items;
+    tabBarView.delegate = self;
     [self.view addSubview:tabBarView];
 }
 - (void)setupChildVC {
-    
     kqyArenaViewController *arenaVC = [[kqyArenaViewController alloc] init];
     [self addOneChildVC:arenaVC withTitle:@"arena" withImage:@"TabBar_Arena_new" withSelectedImage:@"TabBar_Arena_selected_new"];
     kqyHallViewController *hallVC = [[kqyHallViewController alloc] init];
@@ -54,10 +54,7 @@
     kqyNavViewController *nav =[[kqyNavViewController alloc] initWithRootViewController:childVC];
     childVC.navigationItem.title = title;
     self.tabBarItem.title = title;
-   //
-    //
-    //
-    //
+ 
 //    self.tabBarItem.image = [UIImage imageNamed:image];
 //    self.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     nav.tabBarItem.image = [UIImage imageNamed:image];
@@ -65,6 +62,7 @@
     [self.items addObject:nav.tabBarItem];
     [self addChildViewController:nav];
 }
-//
-//
+- (void)tabBar:(kqyTabBarView *)tabBar didClickBtn:(NSInteger)buttonIndex {
+    self.selectedIndex = buttonIndex;  
+}
 @end
