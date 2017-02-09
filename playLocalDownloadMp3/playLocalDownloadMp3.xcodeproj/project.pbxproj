@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6803324C1E4C896000A47DF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6803324B1E4C896000A47DF4 /* main.m */; };
+		6803324F1E4C896000A47DF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6803324E1E4C896000A47DF4 /* AppDelegate.m */; };
+		680332521E4C896000A47DF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680332511E4C896000A47DF4 /* ViewController.m */; };
+		680332551E4C896000A47DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680332531E4C896000A47DF4 /* Main.storyboard */; };
+		680332571E4C896000A47DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680332561E4C896000A47DF4 /* Assets.xcassets */; };
+		6803325A1E4C896000A47DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680332581E4C896000A47DF4 /* LaunchScreen.storyboard */; };
+		680332651E4C896000A47DF4 /* playLocalDownloadMp3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 680332641E4C896000A47DF4 /* playLocalDownloadMp3Tests.m */; };
+		680332701E4C896000A47DF4 /* playLocalDownloadMp3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6803326F1E4C896000A47DF4 /* playLocalDownloadMp3UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		680332611E4C896000A47DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6803323F1E4C896000A47DF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680332461E4C896000A47DF4;
+			remoteInfo = playLocalDownloadMp3;
+		};
+		6803326C1E4C896000A47DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6803323F1E4C896000A47DF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680332461E4C896000A47DF4;
+			remoteInfo = playLocalDownloadMp3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		680332471E4C896000A47DF4 /* playLocalDownloadMp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playLocalDownloadMp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6803324B1E4C896000A47DF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6803324D1E4C896000A47DF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6803324E1E4C896000A47DF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		680332501E4C896000A47DF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		680332511E4C896000A47DF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		680332541E4C896000A47DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		680332561E4C896000A47DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680332591E4C896000A47DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6803325B1E4C896000A47DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680332601E4C896000A47DF4 /* playLocalDownloadMp3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playLocalDownloadMp3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		680332641E4C896000A47DF4 /* playLocalDownloadMp3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = playLocalDownloadMp3Tests.m; sourceTree = "<group>"; };
+		680332661E4C896000A47DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6803326B1E4C896000A47DF4 /* playLocalDownloadMp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playLocalDownloadMp3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6803326F1E4C896000A47DF4 /* playLocalDownloadMp3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = playLocalDownloadMp3UITests.m; sourceTree = "<group>"; };
+		680332711E4C896000A47DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		680332441E4C896000A47DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6803325D1E4C896000A47DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680332681E4C896000A47DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6803323E1E4C896000A47DF4 = {
+			isa = PBXGroup;
+			children = (
+				680332491E4C896000A47DF4 /* playLocalDownloadMp3 */,
+				680332631E4C896000A47DF4 /* playLocalDownloadMp3Tests */,
+				6803326E1E4C896000A47DF4 /* playLocalDownloadMp3UITests */,
+				680332481E4C896000A47DF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		680332481E4C896000A47DF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680332471E4C896000A47DF4 /* playLocalDownloadMp3.app */,
+				680332601E4C896000A47DF4 /* playLocalDownloadMp3Tests.xctest */,
+				6803326B1E4C896000A47DF4 /* playLocalDownloadMp3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		680332491E4C896000A47DF4 /* playLocalDownloadMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				6803324D1E4C896000A47DF4 /* AppDelegate.h */,
+				6803324E1E4C896000A47DF4 /* AppDelegate.m */,
+				680332501E4C896000A47DF4 /* ViewController.h */,
+				680332511E4C896000A47DF4 /* ViewController.m */,
+				680332531E4C896000A47DF4 /* Main.storyboard */,
+				680332561E4C896000A47DF4 /* Assets.xcassets */,
+				680332581E4C896000A47DF4 /* LaunchScreen.storyboard */,
+				6803325B1E4C896000A47DF4 /* Info.plist */,
+				6803324A1E4C896000A47DF4 /* Supporting Files */,
+			);
+			path = playLocalDownloadMp3;
+			sourceTree = "<group>";
+		};
+		6803324A1E4C896000A47DF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6803324B1E4C896000A47DF4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		680332631E4C896000A47DF4 /* playLocalDownloadMp3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				680332641E4C896000A47DF4 /* playLocalDownloadMp3Tests.m */,
+				680332661E4C896000A47DF4 /* Info.plist */,
+			);
+			path = playLocalDownloadMp3Tests;
+			sourceTree = "<group>";
+		};
+		6803326E1E4C896000A47DF4 /* playLocalDownloadMp3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6803326F1E4C896000A47DF4 /* playLocalDownloadMp3UITests.m */,
+				680332711E4C896000A47DF4 /* Info.plist */,
+			);
+			path = playLocalDownloadMp3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		680332461E4C896000A47DF4 /* playLocalDownloadMp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680332741E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3" */;
+			buildPhases = (
+				680332431E4C896000A47DF4 /* Sources */,
+				680332441E4C896000A47DF4 /* Frameworks */,
+				680332451E4C896000A47DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playLocalDownloadMp3;
+			productName = playLocalDownloadMp3;
+			productReference = 680332471E4C896000A47DF4 /* playLocalDownloadMp3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6803325F1E4C896000A47DF4 /* playLocalDownloadMp3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680332771E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3Tests" */;
+			buildPhases = (
+				6803325C1E4C896000A47DF4 /* Sources */,
+				6803325D1E4C896000A47DF4 /* Frameworks */,
+				6803325E1E4C896000A47DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				680332621E4C896000A47DF4 /* PBXTargetDependency */,
+			);
+			name = playLocalDownloadMp3Tests;
+			productName = playLocalDownloadMp3Tests;
+			productReference = 680332601E4C896000A47DF4 /* playLocalDownloadMp3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6803326A1E4C896000A47DF4 /* playLocalDownloadMp3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6803327A1E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3UITests" */;
+			buildPhases = (
+				680332671E4C896000A47DF4 /* Sources */,
+				680332681E4C896000A47DF4 /* Frameworks */,
+				680332691E4C896000A47DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6803326D1E4C896000A47DF4 /* PBXTargetDependency */,
+			);
+			name = playLocalDownloadMp3UITests;
+			productName = playLocalDownloadMp3UITests;
+			productReference = 6803326B1E4C896000A47DF4 /* playLocalDownloadMp3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6803323F1E4C896000A47DF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KQY;
+				TargetAttributes = {
+					680332461E4C896000A47DF4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					6803325F1E4C896000A47DF4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 680332461E4C896000A47DF4;
+					};
+					6803326A1E4C896000A47DF4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 680332461E4C896000A47DF4;
+					};
+				};
+			};
+			buildConfigurationList = 680332421E4C896000A47DF4 /* Build configuration list for PBXProject "playLocalDownloadMp3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6803323E1E4C896000A47DF4;
+			productRefGroup = 680332481E4C896000A47DF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				680332461E4C896000A47DF4 /* playLocalDownloadMp3 */,
+				6803325F1E4C896000A47DF4 /* playLocalDownloadMp3Tests */,
+				6803326A1E4C896000A47DF4 /* playLocalDownloadMp3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		680332451E4C896000A47DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6803325A1E4C896000A47DF4 /* LaunchScreen.storyboard in Resources */,
+				680332571E4C896000A47DF4 /* Assets.xcassets in Resources */,
+				680332551E4C896000A47DF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6803325E1E4C896000A47DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680332691E4C896000A47DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		680332431E4C896000A47DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680332521E4C896000A47DF4 /* ViewController.m in Sources */,
+				6803324F1E4C896000A47DF4 /* AppDelegate.m in Sources */,
+				6803324C1E4C896000A47DF4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6803325C1E4C896000A47DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680332651E4C896000A47DF4 /* playLocalDownloadMp3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680332671E4C896000A47DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680332701E4C896000A47DF4 /* playLocalDownloadMp3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		680332621E4C896000A47DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680332461E4C896000A47DF4 /* playLocalDownloadMp3 */;
+			targetProxy = 680332611E4C896000A47DF4 /* PBXContainerItemProxy */;
+		};
+		6803326D1E4C896000A47DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680332461E4C896000A47DF4 /* playLocalDownloadMp3 */;
+			targetProxy = 6803326C1E4C896000A47DF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		680332531E4C896000A47DF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680332541E4C896000A47DF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		680332581E4C896000A47DF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680332591E4C896000A47DF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		680332721E4C896000A47DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		680332731E4C896000A47DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		680332751E4C896000A47DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playLocalDownloadMp3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		680332761E4C896000A47DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playLocalDownloadMp3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		680332781E4C896000A47DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = playLocalDownloadMp3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playLocalDownloadMp3.app/playLocalDownloadMp3";
+			};
+			name = Debug;
+		};
+		680332791E4C896000A47DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = playLocalDownloadMp3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playLocalDownloadMp3.app/playLocalDownloadMp3";
+			};
+			name = Release;
+		};
+		6803327B1E4C896000A47DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = playLocalDownloadMp3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = playLocalDownloadMp3;
+			};
+			name = Debug;
+		};
+		6803327C1E4C896000A47DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = playLocalDownloadMp3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hust.playLocalDownloadMp3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = playLocalDownloadMp3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		680332421E4C896000A47DF4 /* Build configuration list for PBXProject "playLocalDownloadMp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680332721E4C896000A47DF4 /* Debug */,
+				680332731E4C896000A47DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680332741E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680332751E4C896000A47DF4 /* Debug */,
+				680332761E4C896000A47DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		680332771E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680332781E4C896000A47DF4 /* Debug */,
+				680332791E4C896000A47DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6803327A1E4C896000A47DF4 /* Build configuration list for PBXNativeTarget "playLocalDownloadMp3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6803327B1E4C896000A47DF4 /* Debug */,
+				6803327C1E4C896000A47DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6803323F1E4C896000A47DF4 /* Project object */;
+}
