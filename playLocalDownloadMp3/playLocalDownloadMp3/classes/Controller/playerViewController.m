@@ -32,6 +32,21 @@
         make.height.mas_equalTo(@35);
     }];
     songNameLbl.text = @"text ";
+    
+    // bottom UIView
+    UIView *bottomView = [[UIView alloc] init];
+    [self.view addSubview:bottomView];
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.view.mas_bottom);
+        make.left.mas_equalTo(self.view.mas_left);
+        make.right.mas_equalTo(self.view.mas_right);
+        make.height.mas_equalTo(180);
+    }];
+    
+    // start btn
+    UIButton *startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:startBtn];
+    
 }
 
 @end
