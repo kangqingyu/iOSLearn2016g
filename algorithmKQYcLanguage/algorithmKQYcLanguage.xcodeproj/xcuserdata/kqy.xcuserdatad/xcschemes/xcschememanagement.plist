@@ -19,6 +19,21 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>jz04_ReplaceBlank_p46.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>jz05_reverseList_p51.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>jz05_reverseList_p52.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -93,6 +108,21 @@
 			<true/>
 		</dict>
 		<key>68384E781E824ADD00E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68384E831E826C5000E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68384E8E1E828B9500E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68384E991E828BD800E58F68</key>
 		<dict>
 			<key>primary</key>
 			<true/>

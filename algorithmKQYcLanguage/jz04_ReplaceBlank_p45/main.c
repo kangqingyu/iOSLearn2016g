@@ -11,7 +11,7 @@
 void changeStrBlack(char *strHead) {
     char *pHead = strHead;
     while (pHead) {
-        if (pHead == ' ') {
+        if (*pHead == ' ') {
             //向后移动
             char *pEnd = pHead;
             while (pEnd) {
