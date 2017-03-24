@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>alg_BinarySearch223wd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>algorithmKQYcLanguage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,21 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
+		</dict>
+		<key>jz08_MinNumberInRotatedArray.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>jz09_Fibonacci_p72.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>jz09_reverseAdd_p71.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
@@ -123,6 +143,26 @@
 			<true/>
 		</dict>
 		<key>68384E991E828BD800E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68EF76031E83B3E400034D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68EF760E1E83BC1200034D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68EF762F1E84DF5100034D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68EF763A1E84ED4400034D30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
