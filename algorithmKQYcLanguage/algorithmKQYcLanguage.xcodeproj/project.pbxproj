@@ -22,6 +22,7 @@
 		68EF76121E83BC1200034D30 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 68EF76111E83BC1200034D30 /* main.c */; };
 		68EF76331E84DF5100034D30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EF76321E84DF5100034D30 /* main.cpp */; };
 		68EF763E1E84ED4400034D30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EF763D1E84ED4400034D30 /* main.cpp */; };
+		68EF76491E850EFB00034D30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EF76481E850EFB00034D30 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -169,6 +170,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		68EF76441E850EFB00034D30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -203,6 +213,8 @@
 		68EF76321E84DF5100034D30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		68EF763B1E84ED4400034D30 /* jz09_Fibonacci_p72 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jz09_Fibonacci_p72; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EF763D1E84ED4400034D30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		68EF76461E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jz10_NumberOf1InBinary_p78; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EF76481E850EFB00034D30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +330,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68EF76431E850EFB00034D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -339,6 +358,7 @@
 				68EF76101E83BC1200034D30 /* jz08_MinNumberInRotatedArray */,
 				68EF76311E84DF5100034D30 /* jz09_reverseAdd_p71 */,
 				68EF763C1E84ED4400034D30 /* jz09_Fibonacci_p72 */,
+				68EF76471E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */,
 				682619211E7F927F00511248 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -362,6 +382,7 @@
 				68EF760F1E83BC1200034D30 /* jz08_MinNumberInRotatedArray */,
 				68EF76301E84DF5100034D30 /* jz09_reverseAdd_p71 */,
 				68EF763B1E84ED4400034D30 /* jz09_Fibonacci_p72 */,
+				68EF76461E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -484,6 +505,14 @@
 				68EF763D1E84ED4400034D30 /* main.cpp */,
 			);
 			path = jz09_Fibonacci_p72;
+			sourceTree = "<group>";
+		};
+		68EF76471E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */ = {
+			isa = PBXGroup;
+			children = (
+				68EF76481E850EFB00034D30 /* main.cpp */,
+			);
+			path = jz10_NumberOf1InBinary_p78;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,6 +790,23 @@
 			productReference = 68EF763B1E84ED4400034D30 /* jz09_Fibonacci_p72 */;
 			productType = "com.apple.product-type.tool";
 		};
+		68EF76451E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68EF764A1E850EFB00034D30 /* Build configuration list for PBXNativeTarget "jz10_NumberOf1InBinary_p78" */;
+			buildPhases = (
+				68EF76421E850EFB00034D30 /* Sources */,
+				68EF76431E850EFB00034D30 /* Frameworks */,
+				68EF76441E850EFB00034D30 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jz10_NumberOf1InBinary_p78;
+			productName = jz10_NumberOf1InBinary_p78;
+			productReference = 68EF76461E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -834,6 +880,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					68EF76451E850EFB00034D30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6826191B1E7F927E00511248 /* Build configuration list for PBXProject "algorithmKQYcLanguage" */;
@@ -864,6 +914,7 @@
 				68EF760E1E83BC1200034D30 /* jz08_MinNumberInRotatedArray */,
 				68EF762F1E84DF5100034D30 /* jz09_reverseAdd_p71 */,
 				68EF763A1E84ED4400034D30 /* jz09_Fibonacci_p72 */,
+				68EF76451E850EFB00034D30 /* jz10_NumberOf1InBinary_p78 */,
 			);
 		};
 /* End PBXProject section */
@@ -993,6 +1044,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				68EF763E1E84ED4400034D30 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EF76421E850EFB00034D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EF76491E850EFB00034D30 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1310,6 +1369,20 @@
 			};
 			name = Release;
 		};
+		68EF764B1E850EFB00034D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68EF764C1E850EFB00034D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1459,6 +1532,14 @@
 			buildConfigurations = (
 				68EF76401E84ED4400034D30 /* Debug */,
 				68EF76411E84ED4400034D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68EF764A1E850EFB00034D30 /* Build configuration list for PBXNativeTarget "jz10_NumberOf1InBinary_p78" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EF764B1E850EFB00034D30 /* Debug */,
+				68EF764C1E850EFB00034D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

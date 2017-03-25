@@ -20,16 +20,21 @@ int fibonacciReverse(int border) {
 int FibonacciFor(int border) {
     int front = 1;
     int back = 1;
-    if (border < 2) {
-        return 1;
+    int result = 0;
+    if (border < 3) {  
+        return border < 1 ?  0 : 1;
     }
-    for (int i = 3 ; i < border; ++i) {
-        
+    for (int i = 2 ; i < border; ++i) {
+        result = front + back;
+        back = front;
+        front = result;
     }
+    return result;
 }
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     cout<< fibonacciReverse(4) << endl;
+    cout << FibonacciFor(6) << endl;
     return 0;
 }

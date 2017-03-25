@@ -54,6 +54,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>jz10_NumberOf1InBinary_p78.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -163,6 +168,11 @@
 			<true/>
 		</dict>
 		<key>68EF763A1E84ED4400034D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68EF76451E850EFB00034D30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
