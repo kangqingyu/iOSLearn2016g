@@ -33,7 +33,7 @@ void displayList(NodeList pHead) {
     printf("%d\n", p->value);
 }
 NodeList reverseList(NodeList pHead) {
-    NodeList preP;
+    NodeList preP ;
     NodeList currentP;
     NodeList reverseP;
     currentP = pHead;

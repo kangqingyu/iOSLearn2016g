@@ -59,15 +59,45 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>jz10_NumberOf1InBinary_p79.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>jz11_power_p90.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>jz12_print1ToMaxOfDigits_p94.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>jz15_KthNodeFromEnd_p110Second avoidNull.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>jz15_KthNodeFromEnd_p110Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>jz16_ReverseList_p113.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>jz16_ReverseList_p113Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
 		</dict>
 		<key>jz16_ReverseList_p114.xcscheme</key>
 		<dict>
@@ -78,6 +108,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>sort_qzbd_p250.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
 		</dict>
 		<key>testCreateList.xcscheme</key>
 		<dict>
@@ -132,6 +167,36 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68317F631E877DFD00C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68317FAD1E889E2E00C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68317FB81E88ACA500C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68317FC31E88B57000C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68317FCE1E88C66F00C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68317FE41E88E93E00C24A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68384E781E824ADD00E58F68</key>
 		<dict>
 			<key>primary</key>
@@ -148,6 +213,11 @@
 			<true/>
 		</dict>
 		<key>68384E991E828BD800E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>689DEB231E892BB00045B228</key>
 		<dict>
 			<key>primary</key>
 			<true/>
