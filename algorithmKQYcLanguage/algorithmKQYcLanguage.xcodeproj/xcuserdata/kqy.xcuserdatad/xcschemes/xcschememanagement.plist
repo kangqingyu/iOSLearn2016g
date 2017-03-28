@@ -19,10 +19,20 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>jz03_FindInParticallySoftedMatrix_p38Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>jz04_ReplaceBlank_p45.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+		<key>jz04_ReplaceBlank_p45Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
 		</dict>
 		<key>jz04_ReplaceBlank_p46.xcscheme</key>
 		<dict>
@@ -73,6 +83,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>23</integer>
+		</dict>
+		<key>jz13_DeleteNodeInList.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>jz14_ReOrderArray.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
 		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
@@ -218,6 +238,26 @@
 			<true/>
 		</dict>
 		<key>689DEB231E892BB00045B228</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C74A281E8A2B2500AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C74A331E8A2B3C00AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C74A3E1E8A5C6400AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C74A491E8A65BD00AD18FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,8 @@
 //
 
 #include <iostream>
+#include <stack>
+using namespace std;
 typedef struct  LNode {
     int value;
     struct LNode * next;
@@ -45,7 +47,6 @@ LNode* reverseList(LNode *pHead) {
     pFront = pFront -> next -> next;
     pMove = pMove -> next;
     while (pMove -> next) {
-//        pMove ->next = NULL;//要先置空才行???。。。。NO!
         pMove ->next =pBack;
         pBack = pMove;
         pMove =pFront;
@@ -54,11 +55,26 @@ LNode* reverseList(LNode *pHead) {
     pMove = pBack;
     return pMove;
 }
+void reverListUseStack(LNode *pHead) {
+    stack <LNode *> nodes;
+    LNode *p = pHead;
+    while (p) {
+        nodes.push(p);
+        p = p-> next;
+    }
+    while (!nodes.empty()) {
+//        cout << nodes.top() << "  ";
+        pHead = nodes.top();
+        cout << pHead -> value << " ";
+        nodes.pop();
+    }
+}
 int main(int argc, const char * argv[]) {
     LNode *pHead;
     createListAuto(&pHead, 6);
     displayList(pHead, 6);
-    pHead = reverseList(pHead);
-    displayList(pHead, 6);
+//    pHead = reverseList(pHead);
+//    displayList(pHead, 6);
+    reverListUseStack(pHead);
     return 0;
 }

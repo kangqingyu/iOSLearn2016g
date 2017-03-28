@@ -18,11 +18,27 @@ void insertSort01 (int array[], int length) {
         }// for j
         array[++j] = array[0];
     }// for i
+//    array[0] = 999;
+}
+void shellInsertSort(int *array, int length) {
+    for (int step = length / 2; step >=1; step  /= 2) {
+        for (int i = step + 1; i < length ; ++i) {
+            array[0] = array[i];
+            int j;
+            for ( j = i-step ; j >0; j -= step ) {
+                if (array[j] > array[0]) {
+                    array[j + step] = array[j];
+                }
+            }// for j
+            array[j+step] = array[0];
+        }// for i
+    }// for step
     array[0] = 999;
 }
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
-    insertSort01(array0, 9);
+//    insertSort01(array0, 9);
+    shellInsertSort(array0, 9);
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";
