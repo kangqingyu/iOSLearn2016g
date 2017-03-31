@@ -35,10 +35,23 @@ void shellInsertSort(int *array, int length) {
     }// for step
     array[0] = 999;
 }
+void buddleSort01(int *array, int length) {
+    int temp ;
+    for (int i = length - 1; i > 0; --i ) {
+        for (int j = i - 1; j >= 0 ; --j) {
+            if (array[j] > array[i]) {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+}
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
 //    insertSort01(array0, 9);
-    shellInsertSort(array0, 9);
+//    shellInsertSort(array0, 9);
+    buddleSort01(array0, 9);
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";

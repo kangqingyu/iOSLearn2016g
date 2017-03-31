@@ -49,10 +49,20 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>jz05_reverseList_p52Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
 		<key>jz08_MinNumberInRotatedArray.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>13</integer>
+		</dict>
+		<key>jz08_MinNumberInRotatedArray_p66Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
 		</dict>
 		<key>jz09_Fibonacci_p72.xcscheme</key>
 		<dict>
@@ -128,6 +138,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>jz17_mergeSortedLists.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
 		</dict>
 		<key>sort_qzbd_p250.xcscheme</key>
 		<dict>
@@ -233,6 +248,21 @@
 			<true/>
 		</dict>
 		<key>68384E991E828BD800E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF6D81E8DF0B900A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF6E31E8DFC2100A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF6F91E8E229D00A2684F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
