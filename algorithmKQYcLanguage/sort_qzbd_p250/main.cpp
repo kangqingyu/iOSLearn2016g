@@ -47,7 +47,23 @@ void buddleSort01(int *array, int length) {
         }
     }
 }
-void quickSort(int *array, int length) {
+void quickSort(int *array, int low, int high) {
+    int parament =  int param(int *array, int length);
+    quickSort(array , low, parament -1);
+    quickSort(array, parament + 1, high);
+}
+int param(int *array, int length) {
+    int min = array[0];
+    int low = 1;
+    int high = length - 1;
+    while (low < high) {
+        while (array[low]< min ) {
+            ++low;
+        }
+        if (array[low] > min ) {
+            array[high] = array[low];
+        }
+    }
     
 }
 int main(int argc, const char * argv[]) {

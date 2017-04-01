@@ -69,6 +69,11 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>jz09_Fibonacci_p72Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>31</integer>
+		</dict>
 		<key>jz09_reverseAdd_p71.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -143,6 +148,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>30</integer>
+		</dict>
+		<key>jz26_copyCompleteList_p147.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>32</integer>
 		</dict>
 		<key>sort_qzbd_p250.xcscheme</key>
 		<dict>
@@ -263,6 +273,16 @@
 			<true/>
 		</dict>
 		<key>688AF6F91E8E229D00A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF70F1E8F5CE800A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF71A1E8F928800A2684F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
