@@ -47,6 +47,9 @@ void buddleSort01(int *array, int length) {
         }
     }
 }
+void quickSort(int *array, int length) {
+    
+}
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
 //    insertSort01(array0, 9);
