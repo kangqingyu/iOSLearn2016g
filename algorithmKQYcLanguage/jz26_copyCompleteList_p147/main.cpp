@@ -71,12 +71,27 @@ void display(pNode pHead)
     }
     cout<<endl;
 }
+
+void cloneHeadList(pNode pHead) {
+    pNode pStart = pHead;
+    while (pStart) {
+        pNode pAddNode = new Node( );
+        pAddNode ->next = NULL;
+        pAddNode -> next = pStart -> next;
+        pAddNode ->data = pStart -> data;
+        pStart -> next = pAddNode;
+        pStart = pAddNode -> next;
+    }
+//    return pHead; 
+}
+void copyPoint(pNode pHead) {
+      
+}
 int main(int argc, const char * argv[]) {
     pNode pHead = NULL;
     createComplexList(&pHead);
     cout<<"原始链表如下:"<<endl;
     display(pHead);
-     
     
     return 0;
 }
