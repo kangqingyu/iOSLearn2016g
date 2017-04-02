@@ -8,11 +8,12 @@
 
 #include <iostream>
 using namespace std;
-typedef struct  LNode {
-    int value;
-    struct LNode * next;
-    struct LNode *mutNext;
-}LNode, *pNode;
+typedef struct _NODE_
+{
+    int data;
+    struct _NODE_ *next;
+    struct _NODE_ *sibling;
+}Node,*pNode;
 //创建一个单链表
 void createLinkedList(pNode *pHead,int num)
 {
@@ -71,11 +72,11 @@ void display(pNode pHead)
     cout<<endl;
 }
 int main(int argc, const char * argv[]) {
-    LNode *pHead;
     pNode pHead = NULL;
     createComplexList(&pHead);
     cout<<"原始链表如下:"<<endl;
     display(pHead);
+     
     
     return 0;
 }
