@@ -17,6 +17,15 @@ int countNumber(char *strHead, int length) {
         return 2 + countNumber(strP, length -1);
     }
 }
+int countNumber(char *strHead, int length, int start) {
+    if (length == 1) {
+        return 1;
+    } else {
+        char *strP = strHead;
+        ++strP;
+        return 2 + countNumber(strP, length -1);
+    }
+}
 int main(int argc, const char * argv[]) {
     
     char testStr[100] = "helloWorld";
