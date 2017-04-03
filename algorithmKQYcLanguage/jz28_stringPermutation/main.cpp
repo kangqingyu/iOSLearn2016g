@@ -8,29 +8,36 @@
 
 #include <iostream>
 using namespace std;
-int countNumber(char *strHead, int length) {
-    if (length == 1) {
-        return 1;
+int   countNumber(char *strHead, char *pStart) {
+//    if (!strHead) {
+//        return  0;
+//    }
+    int count = 0;
+    if (*pStart == '\0') {
+        cout << strHead << ", ";
+        ++ count;
     } else {
-        char *strP = strHead;
-        ++strP;
-        return 2 + countNumber(strP, length -1);
+        char *pMove = pStart;
+        for ( ; *pMove != '\0' ; ++pMove) {
+            char temp;
+            temp = *pMove;
+            *pMove = *pStart;
+            *pStart = temp;
+            count = 1 + countNumber(strHead, pStart + 1);
+            temp = *pMove;
+            *pMove = *pStart;
+            *pStart = temp;
+        }// for
     }
+    return count;
 }
-int countNumber(char *strHead, int length, int start) {
-    if (length == 1) {
-        return 1;
-    } else {
-        char *strP = strHead;
-        ++strP;
-        return 2 + countNumber(strP, length -1);
-    }
-}
+
 int main(int argc, const char * argv[]) {
     
-    char testStr[100] = "helloWorld";
+    char testStr[100] = "abc";
     int length = strlen(testStr);
-    std::cout << countNumber(testStr, length) << endl;
+     std::cout << countNumber(testStr, testStr) << endl;
+    countNumber(testStr, testStr);
     std::cout << "Hello, World!\n";
     return 0;
 }
