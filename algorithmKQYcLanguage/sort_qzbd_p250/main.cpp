@@ -7,6 +7,11 @@
 //
 
 #include <iostream>
+//#include <algorithm>
+//#include <string>
+//#include <string.h>
+#include<cstring>
+
 #define arrayLength 10
 using namespace std;
 void insertSort01 (int array[], int length) {
@@ -47,30 +52,54 @@ void buddleSort01(int *array, int length) {
         }
     }
 }
+
+int param01(int *array, int low, int high ) {
+//    int min = array[0];
+    int pivot = array[low];
+    while (low < high) {
+        while (array[high] > pivot  && low < high)  -- high;
+//            array[high] = array[low];
+        array[low] = array[high];
+        while (array[low]< pivot  && low < high ) ++low;
+        array[high] = array[low];
+        
+    }// while
+    array[low] = pivot;
+    return low;
+}
+int partition02(int *array, int low, int high) {
+    int end = high;
+    int small = low - 1;
+    int index = low;
+    for (  ; index  < high; ++ index ) {
+        if (array[index] < array[end]) {
+            ++small;
+            if (index != small) {
+                std::swap(  array[small],  array[index]);
+                
+            }
+        }
+    }// for
+    ++small;
+    swap(array[small], array[end]);
+    
+    return small;
+}
 void quickSort(int *array, int low, int high) {
-    int parament =  int param(int *array, int length);
+    if (low < high) {
+    int parament =  partition02(array,  low, high );
     quickSort(array , low, parament -1);
     quickSort(array, parament + 1, high);
-}
-int param(int *array, int length) {
-    int min = array[0];
-    int low = 1;
-    int high = length - 1;
-    while (low < high) {
-        while (array[low]< min ) {
-            ++low;
-        }
-        if (array[low] > min ) {
-            array[high] = array[low];
-        }
     }
-    
 }
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
 //    insertSort01(array0, 9);
 //    shellInsertSort(array0, 9);
-    buddleSort01(array0, 9);
+//    buddleSort01(array0, 9);
+    quickSort(array0, 0, sizeof(array0)/ sizeof(array0[0]));
+//    cout << strlen(array0) ;
+
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";

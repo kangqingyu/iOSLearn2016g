@@ -84,6 +84,11 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>jz10_NumberOf1InBinary_p78Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>34</integer>
+		</dict>
 		<key>jz10_NumberOf1InBinary_p79.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -93,6 +98,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>21</integer>
+		</dict>
+		<key>jz11_power_p90Second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>35</integer>
 		</dict>
 		<key>jz12_print1ToMaxOfDigits_p94.xcscheme</key>
 		<dict>
@@ -293,6 +303,16 @@
 			<true/>
 		</dict>
 		<key>688AF7251E90E98900A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF7301E923AA300A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688AF73B1E92552000A2684F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
