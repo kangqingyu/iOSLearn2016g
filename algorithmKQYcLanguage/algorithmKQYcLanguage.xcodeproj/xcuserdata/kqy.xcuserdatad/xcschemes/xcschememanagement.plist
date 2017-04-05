@@ -114,10 +114,20 @@
 			<key>orderHint</key>
 			<integer>24</integer>
 		</dict>
+		<key>jz13_DeleteNodeInList_p99 second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>36</integer>
+		</dict>
 		<key>jz14_ReOrderArray.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>25</integer>
+		</dict>
+		<key>jz14_ReOrderArray_p102 second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>37</integer>
 		</dict>
 		<key>jz15_KthNodeFromEnd_p110.xcscheme</key>
 		<dict>
@@ -338,6 +348,16 @@
 			<true/>
 		</dict>
 		<key>68C74A491E8A65BD00AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68D900F31E93600100AB3D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68D900FE1E93848000AB3D9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

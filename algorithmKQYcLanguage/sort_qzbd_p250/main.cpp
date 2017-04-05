@@ -92,14 +92,32 @@ void quickSort(int *array, int low, int high) {
     quickSort(array, parament + 1, high);
     }
 }
+//            for (int j = i -1;  j >= 0; --j) {
+//                if (array[j] > array[i]) {
+//                    array[j + 1] = array[j];
+//                }
+//j 如何退出for循环呢？ 。改一下for: 条件放在for的第2个参数中。
+void insert_second(int *array, int length) {
+    for (int i = 2; i < length; ++i ) {
+        if (array[i] < array[i-1]) {
+            array[0] = array[i];
+            int j ;
+            for (j = i - 1; array[j] > array[0] && j > 0; --j ) {
+#warning array[j]> array[i]为何不对？不都是相同的i吗？
+                array[j +1] = array[j];
+            }//for
+            array[++j] = array[0];
+        } // if
+    }//for
+}
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
 //    insertSort01(array0, 9);
 //    shellInsertSort(array0, 9);
 //    buddleSort01(array0, 9);
-    quickSort(array0, 0, sizeof(array0)/ sizeof(array0[0]));
-//    cout << strlen(array0) ;
-
+//    quickSort(array0, 0, sizeof(array0)/ sizeof(array0[0]));
+    insert_second(array0, sizeof(array0) / sizeof(array0[0]));
+   
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";
