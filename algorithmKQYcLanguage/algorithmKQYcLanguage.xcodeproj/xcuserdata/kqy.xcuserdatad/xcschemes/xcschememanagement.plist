@@ -54,6 +54,16 @@
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
+		<key>jz06_constructBinaryTree_p54.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
+		<key>jz07_QueueWithTwoStacks_p59.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>38</integer>
+		</dict>
 		<key>jz08_MinNumberInRotatedArray.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -358,6 +368,16 @@
 			<true/>
 		</dict>
 		<key>68D900FE1E93848000AB3D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68D901091E94D0BD00AB3D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68D901141E95218400AB3D9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

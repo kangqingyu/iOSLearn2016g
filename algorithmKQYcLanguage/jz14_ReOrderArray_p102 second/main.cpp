@@ -25,7 +25,7 @@ void reOrderArray(int *array, int length) {
             swap(*back, *front);
             ++front;
             --back;
-        }
+        }  
         
     }
 }
