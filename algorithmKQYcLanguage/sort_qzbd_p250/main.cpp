@@ -12,7 +12,7 @@
 //#include <string.h>
 #include<cstring>
 
-#define arrayLength 10
+#define arrayLength 33
 using namespace std;
 void insertSort01 (int array[], int length) {
     int j;
@@ -110,14 +110,32 @@ void insert_second(int *array, int length) {
         } // if
     }//for
 }
+void shellInsertSort_second(int *array, int length) {
+    int step = length / 2;
+    int j;
+    for (int step = length / 2; step >=1; step /= 2) {
+        for (int i = step + 1; i < length; i ++) {
+            if (array[i - step] > array[i]) {
+                array[0] = array[i];
+                for ( j =i - step; array[0] < array[j] && j > 0; j -= step) {
+                    array[j + step] = array[j];
+                }
+                 array[j + step] = array[0];
+            }// if
+        }
+    }// for step
+    array[0] = 999;
+}
+
 int main(int argc, const char * argv[]) {
-    int array0[arrayLength] = {999, 7, 5, 9, 23, 98, 4, 19, 6};
+    int array0[arrayLength] = {999, 7, 5, 89, 9, 23, 98, 4, 78, 19, 6};
 //    insertSort01(array0, 9);
 //    shellInsertSort(array0, 9);
 //    buddleSort01(array0, 9);
 //    quickSort(array0, 0, sizeof(array0)/ sizeof(array0[0]));
-    insert_second(array0, sizeof(array0) / sizeof(array0[0]));
-   
+//     insert_second(array0, sizeof(array0) / sizeof(array0[0]));
+    shellInsertSort_second(array0, sizeof(array0) / sizeof(array0[0]));
+
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";

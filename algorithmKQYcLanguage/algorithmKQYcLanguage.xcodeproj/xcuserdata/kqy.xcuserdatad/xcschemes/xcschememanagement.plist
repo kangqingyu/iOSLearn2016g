@@ -179,6 +179,11 @@
 			<key>orderHint</key>
 			<integer>30</integer>
 		</dict>
+		<key>jz18_subStructInTree_p118.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
 		<key>jz26_copyCompleteList_p147.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -207,6 +212,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>680511911E960C3A00B75E5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6826191F1E7F927F00511248</key>
 		<dict>
 			<key>primary</key>
