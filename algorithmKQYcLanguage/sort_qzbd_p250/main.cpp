@@ -12,7 +12,7 @@
 //#include <string.h>
 #include<cstring>
 
-#define arrayLength 33
+#define arrayLength 18
 using namespace std;
 void insertSort01 (int array[], int length) {
     int j;
@@ -102,14 +102,16 @@ void insert_second(int *array, int length) {
         if (array[i] < array[i-1]) {
             array[0] = array[i];
             int j ;
-            for (j = i - 1; array[j] > array[0] && j > 0; --j ) {
-#warning array[j]> array[i]为何不对？不都是相同的i吗？
-                array[j +1] = array[j];
+            for (j = i - 1; array[j] > array[0] ; --j ) {
+#warning array[j]> array[i]为何不对？不都是相同的i吗？换成：    > array[i]就出错。
+#warning && j > 0 书上写了吗
+                array[j +1] = array[ j ];
             }//for
             array[++j] = array[0];
         } // if
     }//for
 }
+
 void shellInsertSort_second(int *array, int length) {
     int step = length / 2;
     int j;
@@ -126,7 +128,21 @@ void shellInsertSort_second(int *array, int length) {
     }// for step
     array[0] = 999;
 }
-
+void buddle_second(int *array, int length) {
+    int temp;
+    for (int i = length - 1; i >0 ; -- i) {
+        for (int j = 0; j < i ; ++j) {
+            if (array[j] > array[j+1]) {
+//                temp = array[j+1];
+//                array[j+1] = array[j];
+//                array[j] = temp;
+                array[j] = array[j] + array[j+1];
+                array[j+1] = array[j] - array[j+1];
+                array[j] = array[j] - array[j+1];
+            }
+        }
+    }
+}
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 89, 9, 23, 98, 4, 78, 19, 6};
 //    insertSort01(array0, 9);
@@ -134,8 +150,8 @@ int main(int argc, const char * argv[]) {
 //    buddleSort01(array0, 9);
 //    quickSort(array0, 0, sizeof(array0)/ sizeof(array0[0]));
 //     insert_second(array0, sizeof(array0) / sizeof(array0[0]));
-    shellInsertSort_second(array0, sizeof(array0) / sizeof(array0[0]));
-
+//    shellInsertSort_second(array0, sizeof(array0) / sizeof(array0[0]));
+    buddle_second(array0, sizeof(array0)/ sizeof(array0[0]));
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";

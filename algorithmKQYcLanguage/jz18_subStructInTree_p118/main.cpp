@@ -63,14 +63,21 @@ bool whetherSubTree(BitTreeNode * Tree1, BitTreeNode * Tree2){
     return whetherSubTree(Tree1 ->lChild, Tree2 -> lChild) && whetherSubTree(Tree1 -> rChild, Tree2 -> rChild);
 }
 int main(int argc, const char * argv[]) {
-    BitTreeNode *root1, *root2 ;
+    BitTreeNode *root1, *root2, *root2Left, *root3Right ;
    root1 =   createBitTree();
-    cout << "1 finish." << endl;;
-//    root2 = createBitTree();
     root2 =  new BitTreeNode( );
-    root2 -> value = 3;
-    root2 ->lChild = NULL;
-    root2 -> rChild = NULL;
+    root2Left = new BitTreeNode();
+    root3Right = new BitTreeNode();
+//    生成一个树999 - 1 -2 
+    root2 -> value = '9';
+    root2Left ->value = '1';
+    root3Right ->value = '2';
+    root2 ->lChild = root2Left;
+    root2 -> rChild = root3Right;
+    root2Left ->lChild = NULL;
+    root2Left ->rChild = NULL;
+    root3Right ->lChild = NULL;
+    root3Right -> rChild = NULL;
     cout << "2 finish  ." << endl;
     bool resultB = ifHavaSameSub(root1, root2);
     cout << "result: " << resultB << endl;

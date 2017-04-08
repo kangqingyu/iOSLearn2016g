@@ -179,15 +179,40 @@
 			<key>orderHint</key>
 			<integer>30</integer>
 		</dict>
+		<key>jz17_mergeSortedLists_p115_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
 		<key>jz18_subStructInTree_p118.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>40</integer>
 		</dict>
+		<key>jz19_mirrorOfBinaryTree_p125.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>41</integer>
+		</dict>
+		<key>jz20_printMatrix_p127.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>43</integer>
+		</dict>
+		<key>jz21_minInStack_p132.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>44</integer>
+		</dict>
 		<key>jz26_copyCompleteList_p147.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>32</integer>
+		</dict>
+		<key>jz26_copyCompleteList_p147_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>45</integer>
 		</dict>
 		<key>jz28_stringPermutation.xcscheme</key>
 		<dict>
@@ -213,6 +238,21 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>680511911E960C3A00B75E5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>680CF9EC1E98BBAD00C5352D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>680CF9F71E98D6CA00C5352D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>680CFA021E98D6EA00C5352D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -343,6 +383,16 @@
 			<true/>
 		</dict>
 		<key>688AF73B1E92552000A2684F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688E2F5D1E9782410044A270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>688E2F681E978D310044A270</key>
 		<dict>
 			<key>primary</key>
 			<true/>
