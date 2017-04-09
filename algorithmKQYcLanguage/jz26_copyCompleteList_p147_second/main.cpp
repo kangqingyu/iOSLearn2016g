@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+using namespace std;
 typedef struct ListNode {
     int value;
     struct ListNode *next;
@@ -18,7 +19,7 @@ void autoCreateComplictList(ListNode *pHead, int length) {
         ListNode *newNode = new ListNode( );
         pMove ->next = newNode;
         pMove = pMove -> next;
-        pMove -> value = (i +1) * 2;
+        pMove -> value = (i +1)  ;
         pMove ->sibling = NULL;
     }
     ListNode *pTest1 = pHead;
@@ -32,10 +33,10 @@ void autoCreateComplictList(ListNode *pHead, int length) {
 }
 void copy2List(ListNode *pHead) {
     ListNode *pMove = pHead;
-    while ( pHead) {
+    while ( pMove) {
         ListNode *addNode = new ListNode( );
-        addNode -> next = pHead -> next;
-        addNode -> value = pHead -> value;
+        addNode -> next = pMove -> next;
+        addNode -> value = pMove -> value;
         pMove -> next = addNode;
         pMove = addNode -> next;
     }
@@ -44,12 +45,14 @@ void copy2List(ListNode *pHead) {
 void copySiblingP(ListNode *pHead) {
     ListNode *pMove = pHead;
     ListNode *pCopyMove = pHead -> next;
-    while (pMove) {
+    while (pMove ) {  //如何用while( pMove)来解决。可能后面的还有。 52行加上判断？
         if (pMove ->sibling) {
             pCopyMove -> sibling = pMove ->sibling -> next;
         }
         pMove = pCopyMove -> next;
-        pCopyMove = pMove -> next;
+        if (pCopyMove -> next) {
+            pCopyMove = pMove -> next;
+        }
     }
 //    return pHead;
 }
@@ -75,6 +78,15 @@ int main(int argc, const char * argv[]) {
     ListNode *pHead = new ListNode( );
     autoCreateComplictList(pHead, 8);
     pHead = copyComplictList(pHead);
-    
+    ListNode *pMove = pHead;  
+    while (pMove) {
+        int nextValue = pMove -> next ? pMove -> next -> value : 0000;
+        cout << pMove -> value  << " next " << nextValue  << "-----";
+        if (pMove -> sibling) {
+            cout << "sibling:" << pMove -> sibling -> value  ;
+        }
+        cout << endl;
+        pMove = pMove -> next;
+    }
     return 0;
 }

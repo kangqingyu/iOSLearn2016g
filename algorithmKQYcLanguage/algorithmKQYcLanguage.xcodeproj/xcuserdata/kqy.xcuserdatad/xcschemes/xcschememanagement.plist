@@ -219,6 +219,11 @@
 			<key>orderHint</key>
 			<integer>33</integer>
 		</dict>
+		<key>jz28_stringPermutation_p155_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>46</integer>
+		</dict>
 		<key>sort_qzbd_p250.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -398,6 +403,11 @@
 			<true/>
 		</dict>
 		<key>689DEB231E892BB00045B228</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68AD8FFC1E99CE9800D71AE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
