@@ -8,10 +8,10 @@
 
 #include <iostream>
 using namespace std;
-const int count = 0;
+ int countNumber  = 0;
 int  permutation(char *pStr, char * pStart) {
     if (!*pStart) {
-        ++count;
+        ++countNumber;
         cout << pStr << endl;
     } else {
         for (char * pMove = pStart; *pMove != '\0'; ++pMove) {
@@ -24,9 +24,10 @@ int  permutation(char *pStr, char * pStart) {
             *pStart = temp;
         }
     }
-    return count ;
+    return countNumber ;
 }
 int main(int argc, const char * argv[]) {
+//    countNumber = 0;
     char str[100] = "abc";
     int length = 3;
     cout << permutation(str, str) << endl;

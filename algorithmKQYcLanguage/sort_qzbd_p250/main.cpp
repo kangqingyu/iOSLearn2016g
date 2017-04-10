@@ -54,15 +54,12 @@ void buddleSort01(int *array, int length) {
 }
 
 int param01(int *array, int low, int high ) {
-//    int min = array[0];
     int pivot = array[low];
     while (low < high) {
         while (array[high] > pivot  && low < high)  -- high;
-//            array[high] = array[low];
         array[low] = array[high];
         while (array[low]< pivot  && low < high ) ++low;
         array[high] = array[low];
-        
     }// while
     array[low] = pivot;
     return low;
@@ -142,6 +139,9 @@ void buddle_second(int *array, int length) {
             }
         }
     }
+}
+void quickSort01_second(int *array, int length) {
+    
 }
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {999, 7, 5, 89, 9, 23, 98, 4, 78, 19, 6};

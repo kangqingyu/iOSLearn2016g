@@ -119,6 +119,16 @@
 			<key>orderHint</key>
 			<integer>23</integer>
 		</dict>
+		<key>jz12_print1ToMaxOfDigits_p95.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
+		</dict>
+		<key>jz12_print1ToMaxOfDigits_p96.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
 		<key>jz13_DeleteNodeInList.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -204,6 +214,11 @@
 			<key>orderHint</key>
 			<integer>44</integer>
 		</dict>
+		<key>jz23_PrintTreeFromTopToBottom_p137.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
 		<key>jz26_copyCompleteList_p147.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -223,6 +238,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>46</integer>
+		</dict>
+		<key>sort02_qzbd_p250.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>50</integer>
 		</dict>
 		<key>sort_qzbd_p250.xcscheme</key>
 		<dict>
@@ -407,6 +427,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68AB6D131E9B15D20060EB51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68AD8FFC1E99CE9800D71AE4</key>
 		<dict>
 			<key>primary</key>
@@ -428,6 +453,11 @@
 			<true/>
 		</dict>
 		<key>68C74A491E8A65BD00AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68D681F11E9B57990075650D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -473,6 +503,21 @@
 			<true/>
 		</dict>
 		<key>68EF76451E850EFB00034D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68F371591E9A44410035F819</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68F371641E9A52990035F819</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68F3716F1E9A566B0035F819</key>
 		<dict>
 			<key>primary</key>
 			<true/>
