@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>algoKMP.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
 		<key>algorithmKQYcLanguage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -63,6 +68,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>38</integer>
+		</dict>
+		<key>jz07_QueueWithTwoStacks_p59_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>53</integer>
 		</dict>
 		<key>jz08_MinNumberInRotatedArray.xcscheme</key>
 		<dict>
@@ -214,6 +224,11 @@
 			<key>orderHint</key>
 			<integer>44</integer>
 		</dict>
+		<key>jz22_stackPushPopOrder_p135.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>52</integer>
+		</dict>
 		<key>jz23_PrintTreeFromTopToBottom_p137.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -262,7 +277,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6803D6801E9C871A002BC224</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>680511911E960C3A00B75E5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6805C8B21E9C9C89002EB863</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6805C8BD1E9C9F7B002EB863</key>
 		<dict>
 			<key>primary</key>
 			<true/>
