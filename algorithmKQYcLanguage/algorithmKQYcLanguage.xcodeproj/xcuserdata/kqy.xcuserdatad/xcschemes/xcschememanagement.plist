@@ -64,6 +64,11 @@
 			<key>orderHint</key>
 			<integer>39</integer>
 		</dict>
+		<key>jz06_constructBinaryTree_p54_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>54</integer>
+		</dict>
 		<key>jz07_QueueWithTwoStacks_p59.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -548,6 +553,11 @@
 			<true/>
 		</dict>
 		<key>68F3716F1E9A566B0035F819</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68FA87001E9DC2300009627F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
