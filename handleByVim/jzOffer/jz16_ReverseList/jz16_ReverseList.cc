@@ -28,12 +28,30 @@ void displayList(ListNode *pHead) {
     }
     std::cout << pMove -> value << std::endl;
 }
+ListNode * reverseList(ListNode *pHead) {
+    ListNode *pBack = NULL;  
+    ListNode *pMove = pHead;
+    ListNode *pFront = NULL;
+    ListNode *pRearHead;
+    while(pMove) {
+        pFront = pMove -> next;         
+        pMove -> next = pBack;
+        if (!pFront) {
+           pRearHead = pMove;
+          break;
+        }
 
+        pBack = pMove;
+        pMove = pFront;
+    }
+    return pRearHead;
+}
     
 int main(int arch, const char* argv[]) {
     ListNode *pHead;
     createListAuto(&pHead, 5);
     displayList(pHead) ;
-    
+    pHead = reverseList(pHead);
+    displayList(pHead);   
     return 0;
 }
