@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) ;
 typedef struct BitTreeNode {
     char value;
     struct BitTreeNode * lChild;
@@ -45,10 +46,21 @@ BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
     return reConstructTree(preOrder, preOrder + length -1, inOrder, inOrder + length -1);
 }
 BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) {
+   
     if (preStart == preEnd && preStart == inStart) {
-        return *preStart;
+        return  ;
     }//  递归结束
     
+    int leftLength = 0;
+    int *pMove = preStart;
+    while (*pMove != *inStart) {
+        ++leftLength;
+        ++ pMove;
+    }
+     BitTreeNode *rootNode = new BitTreeNode( );
+    rootNode -> value = *inStart;
+    rootNode -> lChild = reConstructTree(preStart, preStart + leftLength, <#int *inStart#>, <#int *inEnd#>)
+
 }
 int main(int argc, const char * argv[]) {
     

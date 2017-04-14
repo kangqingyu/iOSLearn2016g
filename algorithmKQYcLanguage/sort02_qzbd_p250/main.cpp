@@ -20,11 +20,10 @@ int partition01(int *array, int low, int high) {
         array[high] = array[low];
     }
     array[low] = compact;
-    return low;  
+    return low;
 }
 int partition02(int *array, int low, int high) {
     int small = low -1;
-    int front = low;
     int pivotPos = array[high];
     for (int i = low; i < high; ++ i) {
         if (array[i] < pivotPos) {
@@ -38,10 +37,36 @@ int partition02(int *array, int low, int high) {
     swap(array[small], array[high]);
     return small;
 }
+int partition02_second(int *array, int low, int high) {
+    int small = low -1;
+    int pivot = array[high];
+    for (int index = low ; index < high; ++index) {
+        if (array[index] < pivot) {
+            ++small;
+//            if (index != small) {
+            swap(array[index], array[small]);
+//            }
+        }
+    }
+//    ++small;
+    swap(array[++small], array[high]);
+    return small;
+}
 
+int partition01_second(int * array, int low, int high) {
+    int pivot = array[low];
+    while (low < high) {
+        while (array[high] > pivot && low < high) --high;
+        array[low] = array[high];
+        while (array[low] < pivot && low < high) ++low;
+        array[high] = array[low];
+    }
+    array[low] = pivot;
+    return low;
+}
 void quickSort01_second(int *array, int low, int high) {
     if (low < high ) {
-        int middle = partition02(array, low, high );
+        int middle = partition02_second(array, low, high );
         quickSort01_second(array, low, middle -1);
         quickSort01_second(array, middle +1, high);
     }
@@ -72,7 +97,9 @@ int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {12, 10, 7, 5, 89, 9, 23, 98, 4, 78, 19, 6};
 //    quickSort01_second(array0, 0, sizeof(array0)/ sizeof(array0[0]));
 //    selectSort(array0, sizeof(array0)/ sizeof(array0[0]));
-    buildMaxHeap(array0, sizeof(array0)/ sizeof(array0[0]));
+//    buildMaxHeap(array0, sizeof(array0)/ sizeof(array0[0]));
+      quickSort01_second(array0, 0, sizeof(array0)/ sizeof(array0[0]));
+
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";
