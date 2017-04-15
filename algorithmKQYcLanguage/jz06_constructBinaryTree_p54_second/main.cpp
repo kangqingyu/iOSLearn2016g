@@ -46,11 +46,6 @@ BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
     return reConstructTree(preOrder, preOrder + length -1, inOrder, inOrder + length -1);
 }
 BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) {
-   
-    if (preStart == preEnd && preStart == inStart) {
-        return  ;
-    }//  递归结束
-    
     int leftLength = 0;
     int *pMove = preStart;
     while (*pMove != *inStart) {
@@ -61,6 +56,10 @@ BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inE
     rootNode -> value = *inStart;
     rootNode -> lChild = reConstructTree(preStart, preStart + leftLength, <#int *inStart#>, <#int *inEnd#>)
 
+    if (preStart == preEnd && preStart == inStart) {
+        return  ;
+    }//  递归结束
+    
 }
 int main(int argc, const char * argv[]) {
     
