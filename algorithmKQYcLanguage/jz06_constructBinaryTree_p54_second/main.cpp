@@ -7,12 +7,13 @@
 //
 
 #include <iostream>
-BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) ;
 typedef struct BitTreeNode {
     char value;
     struct BitTreeNode * lChild;
     struct BitTreeNode *rChild;
 }BitTreeNode;
+BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) ;
+
 BitTreeNode * createBitTree( ) {
     BitTreeNode *pNewNode =  NULL;
     char tempChar = 0;
@@ -39,6 +40,16 @@ void preOrderTree(BitTreeNode * root) {
         preOrderTree(root -> rChild);
     }
 }
+void backOrderTree(BitTreeNode * root) {
+    if (root ==NULL ) {
+        return;
+    } else {
+        int valueR = root -> value;
+        backOrderTree(root -> lChild);
+        backOrderTree(root -> rChild);
+        std::cout << valueR << "  " ;
+    }
+}
 BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
     if (length < 1) {
         return NULL;
@@ -47,21 +58,39 @@ BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
 }
 BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) {
     int leftLength = 0;
-    int *pMove = preStart;
-    while (*pMove != *inStart) {
-        ++leftLength;
-        ++ pMove;
-    }
-     BitTreeNode *rootNode = new BitTreeNode( );
-    rootNode -> value = *inStart;
-    rootNode -> lChild = reConstructTree(preStart, preStart + leftLength, <#int *inStart#>, <#int *inEnd#>)
-
-    if (preStart == preEnd && preStart == inStart) {
-        return  ;
+    BitTreeNode *rootNode = new BitTreeNode( );
+    int rootValue = preStart[0];
+    rootNode -> value = rootValue;
+    rootNode -> lChild = NULL;
+    rootNode -> rChild = NULL;
+    
+    if (preStart == inStart) {
+        if (preStart == preEnd && *preEnd == *inEnd) {
+        return  rootNode;
+        }
     }//  递归结束
     
+    int *inRoot = inStart; // 中序 中的 首根结点.
+    while (*inRoot != *preStart) {
+        ++leftLength;
+        ++ inRoot;
+    }
+    int rightLength = preEnd - preStart - leftLength ;
+    int *leftPreEnd = preStart + leftLength ;
+    if (leftLength > 0) {
+    rootNode -> lChild = reConstructTree(preStart + 1, preStart + leftLength , inStart, inStart + leftLength -1);
+    }
+    if (leftLength < preEnd - preStart) {
+    rootNode -> rChild = reConstructTree(preStart + leftLength + 1, preEnd, inStart + leftLength + 1, inEnd);
+    }
+    return rootNode;
 }
+
 int main(int argc, const char * argv[]) {
-    
+    int  array1[10] = {1, 2, 4, 7, 3, 5, 6, 8};
+    int array2[10] = {4, 7, 2, 1, 5, 3, 8, 6};
+    BitTreeNode *root ;
+   root = createTree(array1, array2, 8);
+    backOrderTree(root);
     return 0;
 }

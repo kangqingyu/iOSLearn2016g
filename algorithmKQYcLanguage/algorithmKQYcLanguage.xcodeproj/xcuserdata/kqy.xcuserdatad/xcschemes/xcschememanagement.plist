@@ -219,6 +219,11 @@
 			<key>orderHint</key>
 			<integer>41</integer>
 		</dict>
+		<key>jz19_mirrorOfBinaryTree_p125_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
 		<key>jz20_printMatrix_p127.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -468,6 +473,11 @@
 			<true/>
 		</dict>
 		<key>68AD8FFC1E99CE9800D71AE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68BD729D1EA254CC00498E94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
