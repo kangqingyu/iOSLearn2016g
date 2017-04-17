@@ -40,14 +40,24 @@ void preOrderTree(BitTreeNode * root) {
         preOrderTree(root -> rChild);
     }
 }
-void mirrorTree(BitTreeNode *root) {
+ void  mirrorTree(BitTreeNode *root) {
     if (root == NULL ) {
-        return;
+        return   ;
+    }
+    if (root -> lChild == NULL && root -> rChild == NULL) {
+        return  ;
     }
     BitTreeNode *tempRoot  = new BitTreeNode( );
     tempRoot = root -> lChild;
     root -> lChild = root -> rChild;
     root -> rChild = tempRoot;
+    if (root -> lChild) {
+        mirrorTree(root -> lChild);
+    }
+    if (root -> rChild) {
+        mirrorTree(root -> rChild);
+    }
+     
 }
 int main(int argc, const char * argv[]) {
     BitTreeNode *root;
