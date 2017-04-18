@@ -139,6 +139,11 @@
 			<key>orderHint</key>
 			<integer>47</integer>
 		</dict>
+		<key>jz12_print1ToMaxOfDigits_p95_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>59</integer>
+		</dict>
 		<key>jz12_print1ToMaxOfDigits_p96.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -214,6 +219,11 @@
 			<key>orderHint</key>
 			<integer>40</integer>
 		</dict>
+		<key>jz18_subStructInTree_p118_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>56</integer>
+		</dict>
 		<key>jz19_mirrorOfBinaryTree_p125.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -229,10 +239,20 @@
 			<key>orderHint</key>
 			<integer>43</integer>
 		</dict>
+		<key>jz20_printMatrix_p127_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>57</integer>
+		</dict>
 		<key>jz21_minInStack_p132.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>44</integer>
+		</dict>
+		<key>jz21_minInStack_p132_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>58</integer>
 		</dict>
 		<key>jz22_stackPushPopOrder_p135.xcscheme</key>
 		<dict>
@@ -318,6 +338,11 @@
 			<true/>
 		</dict>
 		<key>680CFA021E98D6EA00C5352D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6825EDAB1EA4903A005D8F68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -408,6 +433,21 @@
 			<true/>
 		</dict>
 		<key>68384E991E828BD800E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68763E371EA4C60000B82856</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68763E421EA5A00B00B82856</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68763E4D1EA5B7C700B82856</key>
 		<dict>
 			<key>primary</key>
 			<true/>

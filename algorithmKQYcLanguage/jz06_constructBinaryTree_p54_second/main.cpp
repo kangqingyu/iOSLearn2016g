@@ -56,7 +56,7 @@ BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
     }
     return reConstructTree(preOrder, preOrder + length -1, inOrder, inOrder + length -1);
 }
-BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd) {
+BitTreeNode *reConstructTree01(int *preStart, int * preEnd, int *inStart, int *inEnd) {
     int leftLength = 0;
     BitTreeNode *rootNode = new BitTreeNode( );
     int rootValue = preStart[0];
@@ -85,7 +85,33 @@ BitTreeNode *reConstructTree(int *preStart, int * preEnd, int *inStart, int *inE
     }
     return rootNode;
 }
-
+BitTreeNode * reConstructTree(int *preStart, int *preEnd, int *inStart, int *inEnd) {
+    int rootValue = preStart[0];
+    BitTreeNode *root = new BitTreeNode( );
+    root -> value = rootValue;
+    if (preStart == preEnd) {
+        if (*preStart == *inStart) {
+            *preEnd == * inEnd;
+            return root;
+        }
+        else return NULL;
+    }
+    int *inRoot = inStart;
+    while (*inRoot != *preStart) {
+        ++inRoot;
+    }
+    int leftLength  = inRoot - inStart;
+    int *startLeftEnd = leftLength + preStart;
+    if (leftLength > 0) {
+        root -> lChild = reConstructTree(preStart + 1, startLeftEnd, inStart, inRoot - 1);
+    }
+#warning  leftLength< 这个如何计算？
+//  < endPre - startPre.
+    if (leftLength < inEnd - inRoot) {
+        root -> rChild = reConstructTree(startLeftEnd + 1, preEnd, inRoot + 1, inEnd);
+    }
+    return root;
+}
 int main(int argc, const char * argv[]) {
     int  array1[10] = {1, 2, 4, 7, 3, 5, 6, 8};
     int array2[10] = {4, 7, 2, 1, 5, 3, 8, 6};
