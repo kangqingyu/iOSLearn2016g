@@ -264,6 +264,11 @@
 			<key>orderHint</key>
 			<integer>49</integer>
 		</dict>
+		<key>jz23_PrintTreeFromTopToBottom_p137_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>60</integer>
+		</dict>
 		<key>jz26_copyCompleteList_p147.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -283,6 +288,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>46</integer>
+		</dict>
+		<key>jz29_MoreThanHalfNumber_p163.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>61</integer>
+		</dict>
+		<key>jz29_MoreThanHalfNumber_p164.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>62</integer>
 		</dict>
 		<key>sort02_qzbd_p250.xcscheme</key>
 		<dict>
@@ -448,6 +463,21 @@
 			<true/>
 		</dict>
 		<key>68763E4D1EA5B7C700B82856</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>687B397B1EA6F1E200EEEAE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>687B39861EA6F9C700EEEAE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>687B39911EA6F9D200EEEAE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

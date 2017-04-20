@@ -11,7 +11,7 @@ using namespace std;
 typedef struct BitTreeNode {
     char value;
     struct BitTreeNode * lChild;
-    struct BitTreeNode *rChild;  
+    struct BitTreeNode *rChild;
 }BitTreeNode;
 BitTreeNode * createBitTree( ) {
     BitTreeNode *pNewNode =  NULL;
@@ -29,32 +29,34 @@ BitTreeNode * createBitTree( ) {
     }
     return pNewNode;
 }
-
 bool isSameTree(BitTreeNode *rootA, BitTreeNode *rootB) ;
-bool isSubTree(BitTreeNode *rootA, BitTreeNode *rootB) {
+bool isSubTree(BitTreeNode *ARoot, BitTreeNode *BRoot) {
     bool result = false;
-    if (rootA != NULL && rootB != NULL ) {
-        if (rootA -> value == rootB -> value) {
-            result = isSameTree(rootA, rootB);
-        }
-        if (!result) {
-            result  = isSubTree(rootA -> lChild, rootB);
-        }
-        if (!result) {
-            result  = isSubTree(rootA -> rChild, rootB);
-        }
+    if (ARoot == NULL ) {
+        return result;
     }
-    return result;
+    if (ARoot -> value == BRoot -> value) {
+        result =  isSameTree(ARoot -> value, BRoot -> value);
+    } else if (ARoot -> lChild){
+        result=  isSubTree(ARoot -> lChild, BRoot);
+    } else if (ARoot -> rChild) result = isSubTree(ARoot -> rChild, BRoot);
+    return  result;
 }
 bool isSameTree(BitTreeNode *rootA, BitTreeNode *rootB) {
-    if (rootB == NULL ) {
-        return true;
+    bool result = false;
+    if (!rootA && !rootB) {
+        result = true;
+        return result;
     }
-    if (rootA == NULL&& rootB != NULL ) {
-        return false;
+    if (!rootA && rootB) {
+        result = false;
+        return result;
     }
-    if (rootA -> value != rootB -> value) return  false;
-    return isSameTree(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
+    if (rootA -> value == rootB -> value) {
+        result = rootA -> lChild;
+        result = rootB ->
+    }
+    
 }
 int main(int argc, const char * argv[]) {
     BitTreeNode *root1, *root2, *root2Left, *root3Right ;
@@ -78,3 +80,30 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
+
+bool isSubTree0417(BitTreeNode *rootA, BitTreeNode *rootB) {
+    bool result = false;
+    if (rootA != NULL && rootB != NULL ) {
+        if (rootA -> value == rootB -> value) {
+            result = isSameTree(rootA, rootB);
+        }
+        if (!result) {
+            result  = isSubTree(rootA -> lChild, rootB);
+        }
+        if (!result) {
+            result  = isSubTree(rootA -> rChild, rootB);
+        }
+    }
+    return result;
+}
+bool isSameTree0417(BitTreeNode *rootA, BitTreeNode *rootB) {
+    if (rootB == NULL ) {
+        return true;
+    }
+    if (rootA == NULL&& rootB != NULL ) {
+        return false;
+    }
+    if (rootA -> value != rootB -> value) return  false;
+    return isSameTree(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
+}
+int m
