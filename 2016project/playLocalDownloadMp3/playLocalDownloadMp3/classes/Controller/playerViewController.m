@@ -46,7 +46,6 @@
     // start btn
     UIButton *startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:startBtn];
-    
 }
 
 @end
