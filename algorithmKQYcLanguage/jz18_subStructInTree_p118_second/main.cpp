@@ -32,36 +32,36 @@ BitTreeNode * createBitTree( ) {
 bool isSameTree(BitTreeNode *rootA, BitTreeNode *rootB) ;
 bool isSubTree(BitTreeNode *ARoot, BitTreeNode *BRoot) {
     bool result = false;
-    if (ARoot == NULL ) {
-        return result;
+    if (ARoot != NULL && ARoot != NULL) {
+        if (ARoot -> value = BRoot ->value) {
+            result = isSameTree(ARoot, BRoot);
+        }
+        if (!result) {
+            isSubTree(ARoot -> lChild, BRoot );
+        }
+        if (!result) {
+            isSubTree(ARoot -> rChild, BRoot);
+        }
     }
-    if (ARoot -> value == BRoot -> value) {
-        result =  isSameTree(ARoot -> value, BRoot -> value);
-    } else if (ARoot -> lChild){
-        result=  isSubTree(ARoot -> lChild, BRoot);
-    } else if (ARoot -> rChild) result = isSubTree(ARoot -> rChild, BRoot);
     return  result;
 }
 bool isSameTree(BitTreeNode *rootA, BitTreeNode *rootB) {
     bool result = false;
-    if (!rootA && !rootB) {
-        result = true;
-        return result;
+    if (rootB == NULL) {
+        return  true;
     }
-    if (!rootA && rootB) {
-        result = false;
-        return result;
+    if (rootA == NULL) {
+        return false;
     }
-    if (rootA -> value == rootB -> value) {
-        result = rootA -> lChild;
-        result = rootB ->
+    if (rootA -> value != rootB -> value) {
+        return false;
     }
-    
+    return isSameTree(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
 }
 int main(int argc, const char * argv[]) {
     BitTreeNode *root1, *root2, *root2Left, *root3Right ;
     root1 =   createBitTree();
-    root2 =  new BitTreeNode( );
+    root2 =  new BitTreeNode();
     root2Left = new BitTreeNode();
     root3Right = new BitTreeNode();
     //    生成一个树999 - 1 -2
@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
     root2Left ->rChild = NULL;
     root3Right ->lChild = NULL;
     root3Right -> rChild = NULL;
-    cout << "2 finish  ." << endl;
+    cout << "input finish  ." << endl;
     bool resultB = isSubTree(root1, root2);
     cout << "result: " << resultB << endl;
 
@@ -106,4 +106,4 @@ bool isSameTree0417(BitTreeNode *rootA, BitTreeNode *rootB) {
     if (rootA -> value != rootB -> value) return  false;
     return isSameTree(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
 }
-int m
+
