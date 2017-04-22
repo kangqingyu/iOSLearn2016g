@@ -314,6 +314,11 @@
 			<key>orderHint</key>
 			<integer>65</integer>
 		</dict>
+		<key>jz34_UglyNumber.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>66</integer>
+		</dict>
 		<key>sort02_qzbd_p250.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -463,6 +468,11 @@
 			<true/>
 		</dict>
 		<key>68384E991E828BD800E58F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6847B8461EAA1B1500D76A7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
