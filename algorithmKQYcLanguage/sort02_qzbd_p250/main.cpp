@@ -93,13 +93,26 @@ void buildMaxHeap(int *array, int length) {
         adjustDown(array, i, length);
     }
 }
+void selectSort_second(int *array, int length) {
+    for (int i = 0 ; i < length ; ++i) {
+        int small = array[i];
+        for (int j = i ; j < length; ++j) {
+            if (array[j] < small) {
+                array[j] = array[j] + small;
+                small =array[j] - small;
+                array[j] = array[j] - small;
+            }
+        }
+        array[i] = small;
+    }
+}
 int main(int argc, const char * argv[]) {
     int array0[arrayLength] = {12, 10, 7, 5, 89, 9, 23, 98, 4, 78, 19, 6};
 //    quickSort01_second(array0, 0, sizeof(array0)/ sizeof(array0[0]));
 //    selectSort(array0, sizeof(array0)/ sizeof(array0[0]));
 //    buildMaxHeap(array0, sizeof(array0)/ sizeof(array0[0]));
-      quickSort01_second(array0, 0, sizeof(array0)/ sizeof(array0[0]));
-
+//      quickSort01_second(array0, 0, sizeof(array0)/ sizeof(array0[0]));
+    selectSort_second(array0, sizeof(array0)/ sizeof(array0[0]));
     std::cout << std::endl;
     for (int i = 0; i < arrayLength; ++i) {
         std::cout << array0[i] <<  "  ";
