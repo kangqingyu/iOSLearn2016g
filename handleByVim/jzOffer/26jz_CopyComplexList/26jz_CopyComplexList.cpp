@@ -1,4 +1,7 @@
-#include <iostream>
+//2017.4.24
+//有问题，在creaList xcode中写成功了。对应26vim.cpp.	
+//
+//#include <iostream>
 using namespace std;
 typedef struct ListNode {
     struct ListNode *next;
