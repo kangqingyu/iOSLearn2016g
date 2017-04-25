@@ -50,6 +50,34 @@ void backOrderTree(BitTreeNode * root) {
         std::cout << valueR << "  " ;
     }
 }
+//4.25再写一次(7).
+BitTreeNode *reConstructTree(int *preStartOrder, int *preEnd, int *inStartOrder, int *inEnd) {
+    BitTreeNode *root = new BitTreeNode();
+    root -> value = preStartOrder[0];
+    if (preStartOrder == preEnd ) {
+        if (*preStartOrder == *inStartOrder && *preEnd && *inEnd) {
+            return root;
+        }
+        return NULL;
+    }
+    
+}
+BitTreeNode *createTree(int *array1, int *array2, int length) {
+    if (length <1 ) {
+        return NULL;
+    }
+    return reConstructTree(array1 , array1 + length - 1 , array2, array2 + length -1);
+}
+int main(int argc, const char * argv[]) {
+    int  array1[10] = {1, 2, 4, 7, 3, 5, 6, 8};
+    int array2[10] = {4, 7, 2, 1, 5, 3, 8, 6};
+    BitTreeNode *root ;
+   root = createTree(array1, array2, 8);
+    backOrderTree(root);
+    return 0;
+}
+
+#if 1
 BitTreeNode * createTree(int *preOrder, int *inOrder, int length) {
     if (length < 1) {
         return NULL;
@@ -66,7 +94,7 @@ BitTreeNode *reConstructTree01(int *preStart, int * preEnd, int *inStart, int *i
     
     if (preStart == inStart) {
         if (preStart == preEnd && *preEnd == *inEnd) {
-        return  rootNode;
+            return  rootNode;
         }
     }//  递归结束
     
@@ -78,10 +106,10 @@ BitTreeNode *reConstructTree01(int *preStart, int * preEnd, int *inStart, int *i
     int rightLength = preEnd - preStart - leftLength ;
     int *leftPreEnd = preStart + leftLength ;
     if (leftLength > 0) {
-    rootNode -> lChild = reConstructTree(preStart + 1, preStart + leftLength , inStart, inStart + leftLength -1);
+        rootNode -> lChild = reConstructTree(preStart + 1, preStart + leftLength , inStart, inStart + leftLength -1);
     }
     if (leftLength < preEnd - preStart) {
-    rootNode -> rChild = reConstructTree(preStart + leftLength + 1, preEnd, inStart + leftLength + 1, inEnd);
+        rootNode -> rChild = reConstructTree(preStart + leftLength + 1, preEnd, inStart + leftLength + 1, inEnd);
     }
     return rootNode;
 }
@@ -106,17 +134,10 @@ BitTreeNode * reConstructTree(int *preStart, int *preEnd, int *inStart, int *inE
         root -> lChild = reConstructTree(preStart + 1, startLeftEnd, inStart, inRoot - 1);
     }
 #warning  leftLength< 这个如何计算？
-//  < endPre - startPre.
+    //  < endPre - startPre.
     if (leftLength < inEnd - inRoot) {
         root -> rChild = reConstructTree(startLeftEnd + 1, preEnd, inRoot + 1, inEnd);
     }
     return root;
 }
-int main(int argc, const char * argv[]) {
-    int  array1[10] = {1, 2, 4, 7, 3, 5, 6, 8};
-    int array2[10] = {4, 7, 2, 1, 5, 3, 8, 6};
-    BitTreeNode *root ;
-   root = createTree(array1, array2, 8);
-    backOrderTree(root);
-    return 0;
-}
+#endif

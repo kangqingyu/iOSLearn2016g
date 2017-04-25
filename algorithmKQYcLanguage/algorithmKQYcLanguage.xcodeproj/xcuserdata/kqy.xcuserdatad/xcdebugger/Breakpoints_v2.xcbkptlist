@@ -2330,38 +2330,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jz06_constructBinaryTree_p54_second/main.cpp"
-            timestampString = "513954932.569054"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jz06_constructBinaryTree_p54_second/main.cpp"
-            timestampString = "513954932.569054"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "reConstructTree(int *preStart, int * preEnd, int *inStart, int *inEnd)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jz06_constructBinaryTree_p54_second/main.cpp"
             timestampString = "514103302.751022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -3136,6 +3104,22 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "numberOf1_met2(char *numbers)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jz35_FirstNotRepeatingChar/main.cpp"
+            timestampString = "514780356.371442"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "firstRepeatingChar(char *str)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
