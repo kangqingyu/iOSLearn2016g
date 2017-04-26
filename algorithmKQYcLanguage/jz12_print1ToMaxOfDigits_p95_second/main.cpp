@@ -8,7 +8,80 @@
 
 #include <iostream>
 using namespace std;
-bool increase(char *numbers) {
+bool increase(char *number) {
+    int overFlow = 0;
+    int takeOver = 0;
+    int sum = 0;
+    int length = strlen(number);
+    for (int i = length -1; i >= 0; --i) {
+        sum = number[i] - '0' + takeOver;
+        if (i == length - 1) {
+            ++sum;
+        }
+        if (sum >= 10) {
+            if (i == 0) {
+                overFlow = 1;
+//                break;//多余
+            } else {
+                takeOver = 1;
+                sum -= 10;
+                number[i] = sum + '0';
+            }
+        } else {
+            number[i] = '0' + sum;
+            break;
+        }
+    }
+    return overFlow;
+}
+void printNumber(char *number) {
+    int zeroStart = 1;
+    int   length = strlen(number);
+    for (int i = 0; i < length  ; ++i ) {
+        if (zeroStart && number[i] != 0) {
+            zeroStart = 0;
+        }
+        if (!zeroStart) {
+            cout << number[i];
+        }
+    }
+    cout << "   ";
+}
+void print1ToN(int digit) {
+    char *number = new char[digit + 1];
+    memset(number, '0', digit);
+    number[digit + 1] = '\0' ;
+    while (!increase(number)) {
+        printNumber(number);
+    }
+}
+void print1ToNRecurivively_0425(char *numbers, int length, int index) {
+    if (index == length-1) {
+        printNumber(numbers);
+        return;
+    }
+    for (int i = 0; i < 10; ++i) {
+        numbers[index + 1] = '0' + i;
+        print1ToNRecurivively_0425(numbers, length, index + 1);
+    }
+}
+void print1ToN_method2_0425(int digit) {
+    char *numbers = new char[digit+1];
+    memset(numbers, '0', digit);
+    numbers[digit+1] = '\0' ;
+    for (int i = 0; i < 10; ++i) {
+        numbers[0] = '0' + i;
+        print1ToNRecurivively_0425( numbers, digit, 0);
+    }
+}
+int main(int argc, const char * argv[]) {
+//    print1ToN(3);
+    print1ToN_method2_0425(3);
+    return 0;
+}
+
+//0420
+bool increase0420(char *numbers) {
     int overFlow = 0;
     int takeOver = 0;
     int length = strlen(numbers);
@@ -33,7 +106,7 @@ bool increase(char *numbers) {
     }
     return overFlow;
 }
-void printThese(char *numbers) {
+void printThese0420(char *numbers) {
     int length = strlen(numbers);
     int zeroDigit = 1;
     for (int i = 0; i < length; ++i) {
@@ -46,19 +119,15 @@ void printThese(char *numbers) {
     }
     cout << " ";
 }
-void print1ToN(int digit) {
+void print1ToN0420(int digit) {
     char *numbers = new char[digit + 1];
     memset(numbers, '0', digit);
     numbers[digit] = '\0';
-    while (!increase(numbers)) {
-        printThese(numbers);
+    while (!increase0420(numbers)) {
+        printThese0420(numbers);
     }
 }
-int main(int argc, const char * argv[]) {
-    print1ToN(3);
-    return 0;
-}
-
+//0418
 bool increase01(char *n) {
     int length = strlen(n);
     int isOverFlow = 0;
@@ -101,7 +170,7 @@ void print1ToN01(int n) {
     char *numbers = new char[n+1];
     memset(numbers, '0', n);
     numbers[n+1] = '\0';
-    while (!increase(numbers)) {
+    while (!increase01(numbers)) {
         printToN01(numbers);
         cout << " ";
 

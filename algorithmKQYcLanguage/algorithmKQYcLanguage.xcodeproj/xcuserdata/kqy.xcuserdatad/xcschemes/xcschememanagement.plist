@@ -324,6 +324,11 @@
 			<key>orderHint</key>
 			<integer>67</integer>
 		</dict>
+		<key>jz37_FirstCommonNodesInList.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>68</integer>
+		</dict>
 		<key>sort02_qzbd_p250.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -643,6 +648,11 @@
 			<true/>
 		</dict>
 		<key>68D901141E95218400AB3D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68DE25841EB0A33F0021D35B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
