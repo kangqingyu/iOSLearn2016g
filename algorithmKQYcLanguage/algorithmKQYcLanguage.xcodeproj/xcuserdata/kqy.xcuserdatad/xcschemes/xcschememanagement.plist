@@ -329,6 +329,11 @@
 			<key>orderHint</key>
 			<integer>68</integer>
 		</dict>
+		<key>jz38_numberOfK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>69</integer>
+		</dict>
 		<key>sort02_qzbd_p250.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -483,6 +488,11 @@
 			<true/>
 		</dict>
 		<key>6847B8461EAA1B1500D76A7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68517B401EB1C331002C9A7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

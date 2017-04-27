@@ -84,3 +84,5 @@ int chooseMiddleNumber0419(int *array, int length) {
     int middleNumber = array[middle];
     return middleNumber;
 }
+
+  
