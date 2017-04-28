@@ -304,10 +304,20 @@
 			<key>orderHint</key>
 			<integer>63</integer>
 		</dict>
+		<key>jz30_KLeastNumbers_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>70</integer>
+		</dict>
 		<key>jz31_greateNumberOfSubArrays.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>64</integer>
+		</dict>
+		<key>jz31_greateNumberOfSubArrays_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>71</integer>
 		</dict>
 		<key>jz32_NumberOf1.xcscheme</key>
 		<dict>
@@ -517,6 +527,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>686FE4D01EB2E78200E52FEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68763E371EA4C60000B82856</key>
 		<dict>
 			<key>primary</key>
@@ -543,6 +558,11 @@
 			<true/>
 		</dict>
 		<key>687B39911EA6F9D200EEEAE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68851A061EB2D1D400440673</key>
 		<dict>
 			<key>primary</key>
 			<true/>

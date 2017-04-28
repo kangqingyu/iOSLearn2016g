@@ -19,7 +19,7 @@ template <typename T> void CQueue<T>::pushNumber(const T& number) {
 template <typename T> T  CQueue<T>::popNumber(void) {
     T temp;
     while(stack2.size()<=0) {
-	while(stack1.size()>=0) {
+	while(stack1.size()>0) {
 	    temp = stack1.top();
 	    stack2.push(temp);
 	    stack1.pop();
@@ -32,6 +32,13 @@ template <typename T> T  CQueue<T>::popNumber(void) {
 }
 int main(int argc, const char * argv[]) {
     CQueue<int> myQueue;
+    myQueue.pushNumber(10);
+    myQueue.pushNumber(11);
+    cout << myQueue.popNumber();
+    myQueue.pushNumber(2);
+    myQueue.pushNumber(3);
+    myQueue.pushNumber(4);
+    cout << myQueue.popNumber();
     myQueue.pushNumber(5);
     cout << myQueue.popNumber();
     return 0;
