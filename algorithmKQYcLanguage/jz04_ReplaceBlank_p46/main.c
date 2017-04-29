@@ -33,7 +33,7 @@ void changeBlackStr(char *pStr, int length) {
         if (*pHead ==' ') {
             pStr[newLoc--] = '0';
             pStr[newLoc--] = '2';
-            pStr[newLoc--] = '@';
+            pStr[newLoc--] = '%';
             --pHead;
         } else {
             pStr[newLoc--] = *pHead;

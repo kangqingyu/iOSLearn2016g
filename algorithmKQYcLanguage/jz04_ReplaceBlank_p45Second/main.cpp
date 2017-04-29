@@ -40,9 +40,50 @@ void replaceBlank(char *strHead) {
     }
     *pNew = *strHead;
 }
+void replaceBlank0429(char *str) {
+         char blankCount = 0;
+        char *pOrigin = str;
+        char *pNew = str;
+        while(*pOrigin) {
+            if(*pOrigin == ' ') {
+                ++ blankCount;
+                ++pNew;
+                ++pNew;
+            }
+            ++pOrigin;
+            ++pNew;
+        }
+        *pNew = '\0';
+        --pNew;
+        --pOrigin;
+        while(pOrigin != str) {
+            if (*pOrigin != ' ') {
+                *pNew = *pOrigin;
+                --pNew;
+                --pOrigin;
+            } else {
+                --pOrigin;
+                *pNew-- = '0';
+                *pNew-- = '2';
+                *pNew-- = '%';
+                -- blankCount;
+            }
+        }
+        if(pNew == pOrigin) return  ;
+        else {
+            while(blankCount --) {
+                *pNew -- = '0';
+                *pNew -- = '2';
+                *pNew -- = '%';
+            }
+            ++pNew;
+        }
+        
+ }
 int main(int argc, const char * argv[]) {
     char str01[100] = "   hello world we are happy";
-    replaceBlank(str01);
-    std::cout << str01 << std::endl;
+    char str02[100] = " helloworld";
+    replaceBlank0429(str02);
+    std::cout << str02 << std::endl;
     return 0;
 }
