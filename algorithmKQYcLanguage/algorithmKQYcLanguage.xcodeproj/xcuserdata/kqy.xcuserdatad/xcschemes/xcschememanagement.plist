@@ -329,6 +329,11 @@
 			<key>orderHint</key>
 			<integer>66</integer>
 		</dict>
+		<key>jz34_UglyNumber_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>72</integer>
+		</dict>
 		<key>jz35_FirstNotRepeatingChar.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -508,6 +513,11 @@
 			<true/>
 		</dict>
 		<key>6855C9FB1EAEE85000EFFB2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68653AE71EB42FB400C20437</key>
 		<dict>
 			<key>primary</key>
 			<true/>
