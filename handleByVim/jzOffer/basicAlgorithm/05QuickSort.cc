@@ -8,7 +8,7 @@ void display(int *array, int length) {
 }
 int param(int *array, int low, int high) {
     int pivot = array[high];   
-    int small = -1;
+    int small = low-1;
     int temp;
     for (int index = low; index < high; ++index) {
 	if(array[index] < pivot) {
@@ -26,8 +26,20 @@ int param(int *array, int low, int high) {
     array[high] = temp;
     return small;
 }
+int param02(int *array, int low, int high) {
+    int pivot = array[low];   
+    while(low < high) {
+    	while(array[high] > pivot && low < high) --high;
+	array[low] = array[high];
+	while(array[low] < pivot && low < high) ++low;
+	array[high] = array[low];
+    }
+    array[low] = pivot;
+    return low;
+}
 void quickSort(int *array, int low, int high) {
-    int pivot = param(array, low, high);  
+    if(low >= high) return;
+    int pivot = param02(array, low, high);  
     quickSort(array, low, pivot -1);
     quickSort(array, pivot + 1, high);
 }
