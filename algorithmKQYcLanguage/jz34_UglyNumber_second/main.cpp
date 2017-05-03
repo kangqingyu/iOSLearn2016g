@@ -54,6 +54,5 @@ int main(int argc, const char * argv[]) {
     cout << theKUglyNumber(1501) << endl;
     
     
-    
     return 0;
 }
