@@ -24,10 +24,10 @@ int param(int *array, int low, int high) {
         }
     }// for
     ++small;
-//    array[small] = array[small] + array[high];
-//    array[high] = array[small] - array[high];
-//    array[small] = array[small] - array[high];
-    swap(array[small], array[high]);
+    array[small] = array[small] + array[high];
+    array[high] = array[small] - array[high];
+    array[small] = array[small] - array[high];
+//    swap(array[small], array[high]);
     return small;
 }
 void findKLeastNumber(int *array, int length, int target) {

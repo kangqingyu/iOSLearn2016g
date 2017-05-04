@@ -10,7 +10,32 @@
 using namespace std;
  int countNumber  = 0;
 
-void permutation(char *originStr, char *startStr){
+void permutation(char *str, char *startStr) {
+    if (*startStr == '\0') {
+        cout << str << " ";
+    }
+    char temp;
+    for (char *index = startStr; *index != '\0'; ++index) {
+        temp = *index;
+        *index = *startStr;
+        *startStr = temp;
+        permutation(str, startStr + 1);
+        temp = *index;
+        *index = *startStr;
+        *startStr = temp;
+    }
+    cout << "-";
+}
+
+int main(int argc, const char * argv[]) {
+//    countNumber = 0;
+    char str[100] = "abc";
+//    cout << permutation(str, str) << endl;
+    permutation(str, str);
+    return 0;
+}
+
+void permutation002(char *originStr, char *startStr){
     if (*startStr == '\0') {
         cout << originStr << " ' ";
         return;
@@ -25,13 +50,7 @@ void permutation(char *originStr, char *startStr){
         *startStr = temp;
     }
 }
-int main(int argc, const char * argv[]) {
-//    countNumber = 0;
-    char str[100] = "abc";
-//    cout << permutation(str, str) << endl;
-    permutation(str, str);
-    return 0;
-}
+
 void permutation02(char *str, char *startStr) {
     if (*startStr == '\0') {
         cout << str << " ";
