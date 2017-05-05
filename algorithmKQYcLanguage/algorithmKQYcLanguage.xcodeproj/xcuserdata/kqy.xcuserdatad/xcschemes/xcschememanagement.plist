@@ -324,6 +324,11 @@
 			<key>orderHint</key>
 			<integer>65</integer>
 		</dict>
+		<key>jz32_NumberOf1_second.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>73</integer>
+		</dict>
 		<key>jz34_UglyNumber.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -628,6 +633,11 @@
 			<true/>
 		</dict>
 		<key>689DEB231E892BB00045B228</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68A1BF501EBC17A200FEC889</key>
 		<dict>
 			<key>primary</key>
 			<true/>
