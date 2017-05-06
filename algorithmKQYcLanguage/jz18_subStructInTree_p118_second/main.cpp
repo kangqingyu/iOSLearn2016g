@@ -29,34 +29,7 @@ BitTreeNode * createBitTree( ) {
     }
     return pNewNode;
 }
-bool isSameTree(BitTreeNode *rootA, BitTreeNode *rootB) ;
-// 0425
-bool isSubTree(BitTreeNode *rootA, BitTreeNode *rootB) {
-    bool result = false;
-    if (rootB == NULL || rootA == NULL ) {
-        return result;
-    }
-    if (rootA -> value == rootB -> value) {
-        result = isSameTree(rootA, rootB);
-    }
-    if (!result) {
-        result = isSubTree(rootA -> lChild, rootB);
-    }
-    if (!result) {
-        result = isSubTree(rootA -> rChild, rootB);
-    }
-    return result;
-}
-bool isSameTree(BitTreeNode *rootA,  BitTreeNode *rootB) {
-    if (rootB == NULL) {
-        return true;
-    }
-    if (rootA -> value != rootB -> value) {
-        return false;
-    }
-    
-    return isSameTree(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
-}
+
 int main(int argc, const char * argv[]) {
     BitTreeNode *root1, *root2, *root2Left, *root3Right ;
     root1 =   createBitTree();
@@ -79,6 +52,66 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+
+bool isSameTree0505(BitTreeNode *root1, BitTreeNode *root2) ;
+bool isSubTree0505(BitTreeNode *root1, BitTreeNode *root2) {
+    bool result = false;
+    if (root1 == NULL || root2 == NULL ) {
+        return result;
+    }
+    if (root1 -> value == root2 -> value) {
+        result = isSameTree0505(root1, root2);
+    }
+    if (!result) {
+        result = isSubTree0505(root1 -> lChild, root2);
+    }
+    if (!result) {
+        result = isSubTree0505(root1 -> rChild, root2);
+    }
+    return result;
+}
+bool isSameTree0505(BitTreeNode *root1, BitTreeNode *root2) {
+    if (root2 == NULL) {
+        return true;
+    }
+    if (root1 == NULL) {
+        return false;
+    }
+    if (root1 -> value != root2 -> value) {
+        return false;
+    }
+    return isSameTree0505(root1-> lChild, root2 -> lChild) && isSameTree0505(root2 -> rChild, root2 -> rChild);
+}
+
+bool isSameTree0425(BitTreeNode *rootA, BitTreeNode *rootB) ;
+// 0425
+bool isSubTree0425(BitTreeNode *rootA, BitTreeNode *rootB) {
+    bool result = false;
+    if (rootB == NULL || rootA == NULL ) {
+        return result;
+    }
+    if (rootA -> value == rootB -> value) {
+        result = isSameTree0425(rootA, rootB);
+    }
+    if (!result) {
+        result = isSubTree0425(rootA -> lChild, rootB);
+    }
+    if (!result) {
+        result = isSubTree0425(rootA -> rChild, rootB);
+    }
+    return result;
+}
+bool isSameTree0425(BitTreeNode *rootA,  BitTreeNode *rootB) {
+    if (rootB == NULL) {
+        return true;
+    }
+    if (rootA -> value != rootB -> value) {
+        return false;
+    }
+    
+    return isSameTree0425(rootA -> lChild, rootB -> lChild) && isSameTree(rootA -> rChild, rootB -> rChild);
+}
+
 // 0420
 bool isSubTree0420(BitTreeNode *ARoot, BitTreeNode *BRoot) {
     bool result = false;

@@ -2287,7 +2287,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "isSubStr(char *strOrigin, char *strP)"
+            landmarkName = "isSubStr01(char *strOrigin, char *strP)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2303,7 +2303,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "isSubStr(char *strOrigin, char *strP)"
+            landmarkName = "isSubStr01(char *strOrigin, char *strP)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
