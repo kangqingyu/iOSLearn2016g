@@ -26,7 +26,9 @@ int main(int argc, const char *argv[]) {
    cout <<searchSubStr(str, subStr2) << " ";
    char subStr3[5] = "hll";  
    cout <<searchSubStr(str, subStr3) << " ";
+
    char subStr4[5] = "om";  
    cout <<searchSubStr(str, subStr4) << " ";
+
    return 0;
 }
