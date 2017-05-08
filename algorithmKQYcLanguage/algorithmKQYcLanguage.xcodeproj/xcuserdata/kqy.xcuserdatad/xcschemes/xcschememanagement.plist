@@ -4,6 +4,31 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>31_1_TreeDepth.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>77</integer>
+		</dict>
+		<key>39_1_TreeDepth.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>79</integer>
+		</dict>
+		<key>41_1_TwoNumberWithSum.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>78</integer>
+		</dict>
+		<key>42_1_ReverseWordsInSentence.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>80</integer>
+		</dict>
+		<key>42_2_LeftRotateString.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>81</integer>
+		</dict>
 		<key>alg_BinarySearch223wd.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -522,6 +547,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68464FF81EC00E9A004F868D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>684650031EC01123004F868D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6846500E1EC01801004F868D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6847B8461EAA1B1500D76A7E</key>
 		<dict>
 			<key>primary</key>
@@ -773,6 +813,16 @@
 			<true/>
 		</dict>
 		<key>68F3716F1E9A566B0035F819</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68F9F9281EC0433600743A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68F9F93E1EC04F3300743A23</key>
 		<dict>
 			<key>primary</key>
 			<true/>
