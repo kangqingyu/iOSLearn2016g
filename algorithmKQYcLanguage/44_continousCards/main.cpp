@@ -36,7 +36,6 @@ bool isContinous(int *numbers, int length) {
     }
     return false;
 }
-
 int main(int argc, const char * argv[]) {
     int array[8] = {10, 4, 5, 7, 0, 8, 10, 9};
     bool b1 = isContinous(array, sizeof(array) / sizeof(int));
