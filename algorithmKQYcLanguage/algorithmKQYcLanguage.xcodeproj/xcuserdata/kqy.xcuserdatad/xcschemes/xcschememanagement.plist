@@ -34,6 +34,21 @@
 			<key>orderHint</key>
 			<integer>82</integer>
 		</dict>
+		<key>51_repeatNumberInArray.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>83</integer>
+		</dict>
+		<key>56_entranceOfCircleList.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>84</integer>
+		</dict>
+		<key>57_deleteDuplicationList.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>85</integer>
+		</dict>
 		<key>alg_BinarySearch223wd.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -732,6 +747,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68B86A601EC2EA1200DC1BF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68B86A6B1EC2F7A200DC1BF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68BD729D1EA254CC00498E94</key>
 		<dict>
 			<key>primary</key>
@@ -753,6 +778,11 @@
 			<true/>
 		</dict>
 		<key>68C74A491E8A65BD00AD18FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68C9F6201EC19AEC0095D72E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
