@@ -75,5 +75,3 @@ int main(int argc, const char * argv[]) {
     displayList(p1, 9);
     return 0;
 }
-
-
