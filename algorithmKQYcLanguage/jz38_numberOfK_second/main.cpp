@@ -8,7 +8,47 @@
 
 #include <iostream>
 using namespace std;
-int getFirstLoc(int *array, int target, int low, int high) {
+int main(int argc, const char * argv[]) {
+    int array[10] = {1, 2, 3, 4, 4, 5, 5, 5, 5, 6};
+    cout << getFirstLoc(array,  0, 9, 4) <<" " ;
+    cout <<getBackLoc(array, 0, 9, 4 ) << endl;
+    cout << numberOfK(array, 10, 4);
+    return 0;
+}
+int getFirstLoc0513(int *array, int low, int high, int target) {
+    if (low > high) return -1;
+    int middle = (low + high) >> 1;
+    //以前多写了外层的if (low < high)这是错误的。
+        if (target == array[middle]) {
+            if ((middle  == 0) || (middle > 0 && array[middle-1] != target)) {
+                return middle;
+            } else high = middle - 1;
+        } else if (array[middle] > target) high = middle - 1;
+        else low = middle + 1;
+    
+    return getFirstLoc0513(array, low, high, target);
+}
+int getBackLoc0513(int *array, int low, int high, int target) {
+    if (low > high) return -1;
+    int middle = (low + high) >> 1;
+  
+        if (array[middle] == target) {
+            if (middle == high || (middle < high && array[middle+1] != target )) {
+                return middle;
+            } else low = middle + 1;
+        } else if (array[middle] > target) high = middle - 1;
+        else low = middle + 1;
+   
+    return getBackLoc0513(array, low, high, target);
+}
+int numberOfK0513(int *array, int length, int target) {
+    int low = getFirstLoc0513(array, 0, length - 1, target);
+    int high = getBackLoc0513(array, 0, length - 1, target);
+    return high - low + 1;
+}
+
+
+int getFirstLoc0508(int *array, int target, int low, int high) {
     if (low > high) {
         return -1;
     }
@@ -23,11 +63,11 @@ int getFirstLoc(int *array, int target, int low, int high) {
         } else {
             low = middle + 1;
         }
-        middle = getFirstLoc(array, target, low, high);
+        middle = getFirstLoc0508(array, target, low, high);
     }
     return middle;
 }
-int getBackLoc(int *array, int target, int low, int high) {
+int getBackLoc0508(int *array, int target, int low, int high) {
     if (low > high) return -1;
     int middle = (low + high) >> 1;
     while (low < high) {
@@ -36,20 +76,14 @@ int getBackLoc(int *array, int target, int low, int high) {
             else low = middle + 1;
         } else if (array[middle] > target) high = middle - 1;
         else low = middle + 1;
-        middle = getBackLoc(array, target, low, high);
+        middle = getBackLoc0508(array, target, low, high);
     }
     return middle;
 }
-int numberOfK(int *array, int length, int target) {
-    int low = getFirstLoc(array, target, 0, length - 1);
-    int high = getBackLoc(array, target, 0, length - 1);
+int numberOfK0508(int *array, int length, int target) {
+    int low = getFirstLoc0508(array, target, 0, length - 1);
+    int high = getBackLoc0508(array, target, 0, length - 1);
     return high - low  + 1;
-}
-int main(int argc, const char * argv[]) {
-    int array[10] = {1, 2, 3, 4, 4, 5, 5, 5, 5, 6};
-    cout << getFirstLoc(array,  4, 0, 9) <<" " <<getBackLoc(array,   4, 0, 9 ) << endl;
-    cout << numberOfK(array, 10, 4);
-    return 0;
 }
 
 int getFirstLoc0504wrong(int *array, int low, int high, int length, int target) {
