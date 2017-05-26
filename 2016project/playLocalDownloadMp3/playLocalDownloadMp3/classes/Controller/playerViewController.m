@@ -8,6 +8,8 @@
 
 #import "playerViewController.h"
 #import "Masonry.h"
+#import "kqyMusicTool.h"
+#import "kqyAudioTool.h"
 @interface playerViewController ()
 
 @end
@@ -19,8 +21,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
     [self setupUI];
+    [self setMusic];
 }
-
+- (void) setMusic {
+    kqyMusicModel *musicMod = [kqyMusicTool playingMusic];
+    AVAudioPlayer *currentPlayer = [kqyAudioTool playMusicWithFileName:musicMod.filename];
+}
 - (void) setupUI {
     UILabel *songNameLbl = [[UILabel alloc] init];
     [self.view addSubview:songNameLbl];

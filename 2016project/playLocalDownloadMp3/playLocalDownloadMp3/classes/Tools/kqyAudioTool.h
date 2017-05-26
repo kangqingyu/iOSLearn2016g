@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface kqyAudioTool : NSObject
-
++ (AVAudioPlayer *) playMusicWithFileName:(NSString *)fileName;
++ (void) pauseMusicWithFileName:(NSString *)fileName;
++ (void)stopMudicWithFileName:(NSString *)fileName;
++(void) playSoundWithSoundName:(NSString *)soundName;
 @end
